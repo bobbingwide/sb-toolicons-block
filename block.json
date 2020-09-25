@@ -1,0 +1,14 @@
+{
+	"name": "oik-sb/toolicons",
+	"title": "Tool icons",
+	"category": "widgets",
+	"icon": "block-default",
+	"description": "Helps you to document tool icons for a block.",
+	"textdomain": "sb-toolicons-block",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
