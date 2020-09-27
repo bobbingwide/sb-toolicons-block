@@ -23,6 +23,7 @@ import { TextControl, PanelBody, PanelRow } from '@wordpress/components';
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import './editor.scss';
+import './style.scss';
 import {toolIconStyled} from "./toolicons";
 
 /**
@@ -37,7 +38,7 @@ import {toolIconStyled} from "./toolicons";
  * @return {WPElement} Element to render.
  */
 export default function edit ( { attributes, className, isSelected, setAttributes } )   {
-
+	console.log( "edit being called");
 	const onChangeToolicon = ( event ) => {
 		setAttributes( { toolicon: event } );
 	}
@@ -45,19 +46,9 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 	var toolicon = toolIconStyled( attributes.toolicon, attributes );
 	return (
 		<Fragment>
-			<InspectorControls >
-				<PanelBody>
-					<PanelRow>
-
-					</PanelRow>
 
 
-
-				</PanelBody>
-
-			</InspectorControls>
-
-			<div className={ props.className }>
+			<div className={ attributes.className }>
 				{ toolicon }
 			</div>
 		</Fragment>

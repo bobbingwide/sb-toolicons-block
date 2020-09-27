@@ -85,8 +85,12 @@ registerBlockType( 'oik-sb/toolicons', {
 		}
 
 	},
+
+	/*
 	example: {
 	},
+	*/
+
 
 	/**
 	 * @see ./edit.js

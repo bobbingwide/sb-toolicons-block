@@ -1,5 +1,7 @@
 import {toolIconStyled} from "./toolicons";
 
+import { blocktoolmap } from "./blocktoolmap";
+
 /**
  * The save function defines the way in which the different attributes should
  * be combined into the final markup, which is then serialized by the block
@@ -10,6 +12,8 @@ import {toolIconStyled} from "./toolicons";
  * @return {WPElement} Element to render.
  */
 export default function save( attributes) {
+	console.log( "toolicons save being called. But why?");
+	console.log( blocktoolmap);
 	var toolicon = toolIconStyled( attributes.toolicon, attributes );
 	return( <div> { toolicon } </div> );
 }
