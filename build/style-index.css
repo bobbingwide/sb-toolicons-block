@@ -5,6 +5,29 @@
  * Replace them with your own styles or remove the file completely.
 
  */
+.wp-block-oik-sb-toolicons svg,
+.blockToolbar svg,
+ul.icons svg {
+  border: 1px solid grey; }
+
+.blockToolbar svg {
+  display: inline-block; }
+
+ul.icons {
+  list-style-type: none; }
+
+ul.icons svg {
+  display: inline;
+  margin-right: 1em; }
+
+.blockToolbar svg,
+ul.icons svg {
+  height: 48px;
+  min-width: 48px;
+  padding: 12px; }
+
+ul.icons span {
+  padding: 8px; }
 
 
 /*# sourceMappingURL=style-index.css.map*/

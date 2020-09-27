@@ -9,5 +9,22 @@
   border: 1px dotted #f00;
   padding: 0.5em; }
 
+.editor-styles-wrapper ul.icons,
+ul.icons {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+.wp-block-oik-sb-toolicons svg,
+.blockToolbar svg {
+  border: 1px solid grey;
+  padding: 12px; }
+
+.blockToolbar {
+  height: 48px; }
+
+ul.icons span {
+  padding: 8px; }
+
 
 /*# sourceMappingURL=index.css.map*/
