@@ -1,4 +1,6 @@
 /**
+ * (C) Copyright Bobbing Wide 2020
+ *
  * List of the icons that are used in the toolbars.
  * with the tooltip as the label
  * and a short description to explain the purpose of the tool.
@@ -63,7 +65,7 @@ const heading =
 		icon: icon.heading,  /* @TODO This should be the h2 icon */
 		label: __('Heading'),
 		description: __('Choose the heading level.'),
-		key: heading
+		key: 'heading'
 	};
 
 const link =
@@ -71,7 +73,7 @@ const link =
 		icon: icon.link,
 		label: __('Link'),
 		description: __('Use Link to create a hyperlink to your highlighted text.'),
-		key: link
+		key: 'link'
 	};
 
 

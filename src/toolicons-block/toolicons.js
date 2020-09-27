@@ -63,16 +63,42 @@ function toolIconsList( props ) {
 	);
 }
 
+function copyIcon( icon ) {
+	var groupIcon = {};
+	groupIcon.icon = icon.icon;
+	groupIcon.label = icon.label;
+	groupIcon.description = icon.description;
+	groupIcon.key = icon.key;
+	console.log( groupIcon );
+	return groupIcon;
+}
+
+
+
 function MyToolIcon( icon ) {
-	console.log( MyToolIcon.name );
-	console.log( icon );
-return(
-	<li key={icon.key}>
-		<Icon icon={icon.icon} />
-		<span className={"label"}>{icon.label}</span>
-		<span className={"description"}>{ icon.description}</span>
-	</li>
-);
+	console.log(MyToolIcon.name);
+	console.log(icon);
+	if ( undefined !== icon.tools) {
+		console.log( 'processing group');
+		var groupIcon = copyIcon( icon );
+		var iconGroup = MyToolIcon( groupIcon );
+		console.log( iconGroup );
+		var nestedIcons = icon.tools.map( icon => MyToolIcon( icon ) );
+		return ( <Fragment>
+			{ iconGroup }
+			<ul className="icons">
+				{ nestedIcons }
+			</ul>
+		</Fragment> );
+	} else {
+		return (
+			<li key={icon.key}>
+				<Icon icon={icon.icon}/>
+				<span className={"label"}>{icon.label}</span>
+				<span className={"description"}>{icon.description}</span>
+			</li>
+		);
+	}
 }
 
 
@@ -83,9 +109,9 @@ return(
  */
 
 function MyToolBarOrGroup( icon ) {
-	console.log( icon );
+	//console.log( icon );
 	if ( undefined !== icon.tools ) {
-		return( MyToolBar( icon.icon));
+		return( MyToolBar( icon ));
 	} else {
 		return( MyToolBar( icon ));
 	}
@@ -106,8 +132,8 @@ function MyToolBar( icon ) {
 
 function aBlockTool( blocktool ) {
 	console.log( "aBlockTool " + blocktool.blockname  );
-	//var icons = blocktool.tools.map( ( icon ) => MyToolIcon( icon ) );
-	var icons = 'icons';
+	var icons = blocktool.tools.map( ( icon ) => MyToolIcon( icon ) );
+	//var icons = 'icons';
 	return( <li key={blocktool.blockname}>{blocktool.blockname} {icons}</li>);
 }
 
@@ -124,7 +150,7 @@ function allBlockTools( blockname ) {
 	return(
 		<div>
 			{blocktool.blockname}
-			<ul class="icons" >
+			<ul className="icons" >
 			{icons}
 			</ul>
 		</div>
@@ -141,8 +167,8 @@ function blockToolbar( blockName) {
 function toolIconStyled( iconname, blocktype ) {
 	//var toolIcons = toolIconsList( props );
 	var toolBar = blockToolbar( blocktype);
-	//var blockTools = allBlockTools( blocktype);
-	var blockTools = 'blockTools';
+	var blockTools = allBlockTools( blocktype);
+	//var blockTools = 'blockTools';
 	return(
 		<Fragment>
 			{toolBar}

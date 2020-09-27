@@ -22,7 +22,7 @@ const blocktoolmap = [
 
 	{
 		blockname: 'core/heading',
-		tools: [toolgroup.alignGroup, toolicon.formatBold, toolicon.formatItalic, toolicon.link],
+		tools: [toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link],
 		/* horizontal: [ h1, h2, h3, h4, h5, h6 ] */
 	},
 

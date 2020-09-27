@@ -7,11 +7,12 @@
  */
 
 import { __ } from '@wordpress/i18n';
+import { alignLeft } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 
-const alignGroup =
+const alignmentToolbar =
 	{
-		icon: toolicon.alignLeft,
+		icon: alignLeft,
 		label: __( 'Change text alignment' ),
 		description: __( 'Use Change text alignment to choose how to align the text.'),
 		tools: [ toolicon.alignLeft, toolicon.alignCenter, toolicon.alignRight],
@@ -31,4 +32,4 @@ const headingGroup =
 
  */
 
-export { alignGroup };
+export { alignmentToolbar };
