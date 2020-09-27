@@ -12,8 +12,11 @@
 .wp-block-oik-sb-toolicons svg,
 .blockToolbar svg,
 ul.icons svg{
-  border: 1px solid grey;
-
+  border-right: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: none;
+  padding: 12px;
 }
 
 .block-editor-block-toolbar svg { }
@@ -41,6 +44,20 @@ ul.icons svg  {
 
 ul.icons span {
   padding: 8px;
+}
+
+
+
+
+.blockToolbar svg:first-child {
+  border-left: 1px solid grey;
+}
+
+svg.formatBold,
+svg.formatItalic,
+svg.Link {
+  border-right: none;
+
 }
 
 

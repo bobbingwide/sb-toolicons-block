@@ -22,18 +22,16 @@ ul.icons {
   padding-left: 0;
 }
 
-.wp-block-oik-sb-toolicons svg,
-.blockToolbar svg {
-  border: 1px solid grey;
-  padding: 12px;
+
+
+
+.blockToolbar svg:first-child {
+  border-left: 1px solid grey;
 }
 
-.blockToolbar {
-  height: 48px;
+svg.formatBold,
+svg.formatItalic,
+svg.Link {
+  border-right: none;
 
 }
-
-ul.icons span {
-  padding: 8px;
-}
-

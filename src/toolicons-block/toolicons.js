@@ -75,8 +75,33 @@ return(
 );
 }
 
+
+/**
+ * If this is a single icon display it, otherwise display the default icon.
+ * @param icon
+ * @constructor
+ */
+
+function MyToolBarOrGroup( icon ) {
+	console.log( icon );
+	if ( undefined !== icon.tools ) {
+		return( MyToolBar( icon.icon));
+	} else {
+		return( MyToolBar( icon ));
+	}
+}
+
+/**
+ * We need to give it a class name so that it can be styled.
+ * How it is done in the editor?
+ *
+ * @param icon
+ * @returns {JSX.Element}
+ * @constructor
+ */
+
 function MyToolBar( icon ) {
-	return(	<Icon icon={icon.icon} key={icon.key} />);
+	return(	<Icon icon={icon.icon} key={icon.key} className={icon.key} />);
 }
 
 function aBlockTool( blocktool ) {
@@ -108,14 +133,16 @@ function allBlockTools( blockname ) {
 
 function blockToolbar( blockName) {
 	var block = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
-	var icons = block.tools.map( ( icon ) => MyToolBar( icon ) );
-	return( <div class="blockToolbar">{icons}</div> );
+
+	var icons = block.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
+	return( <div className="blockToolbar">{icons}</div> );
 }
 
 function toolIconStyled( iconname, blocktype ) {
 	//var toolIcons = toolIconsList( props );
 	var toolBar = blockToolbar( blocktype);
-	var blockTools = allBlockTools( blocktype);
+	//var blockTools = allBlockTools( blocktype);
+	var blockTools = 'blockTools';
 	return(
 		<Fragment>
 			{toolBar}

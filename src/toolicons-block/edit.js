@@ -53,7 +53,9 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		<Fragment>
 			<InspectorControls>
 				<PanelBody>
-					<SelectControl label={__("Block type",'sb-toolicons-block')} value={attributes.blocktype} onChange={onChangeBlockType} options={blockTypeOptions}  />
+					<PanelRow>
+						<SelectControl label={__("Block type",'sb-toolicons-block')} value={attributes.blocktype} onChange={onChangeBlockType} options={blockTypeOptions}  />
+					</PanelRow>
 				</PanelBody>
 			</InspectorControls>
 
