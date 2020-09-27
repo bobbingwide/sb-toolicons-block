@@ -17,13 +17,13 @@ const blocktoolmap = [
 
 	{ blockname: 'core/paragraph',
 	  variation: null,
-	  tools: [  toolicon.alignLeft, toolicon.alignCenter, toolicon.alignRight, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolicon.chevronDown ]
+	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls, toolgroup.moreOptions ]
 	},
 
 	{
 		blockname: 'core/heading',
-		tools: [toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link],
-		/* horizontal: [ h1, h2, h3, h4, h5, h6 ] */
+		tools: [toolgroup.headingGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls],
+
 	},
 
 	{
