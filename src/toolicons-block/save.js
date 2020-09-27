@@ -11,9 +11,10 @@ import { blocktoolmap } from "./blocktoolmap";
  *
  * @return {WPElement} Element to render.
  */
-export default function save( attributes) {
+export default function save( { attributes } ) {
 	console.log( "toolicons save being called. But why?");
 	console.log( blocktoolmap);
-	var toolicon = toolIconStyled( attributes.toolicon, attributes );
+	console.log( attributes );
+	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype );
 	return( <div> { toolicon } </div> );
 }

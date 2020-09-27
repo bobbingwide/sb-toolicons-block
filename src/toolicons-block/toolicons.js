@@ -16,6 +16,14 @@ import {
 } from '@wordpress/icons';
 
 
+function getBlockTypeOptions( ) {
+	return blocktoolmap.map( ( blocktool ) => MyBlockTypeOption( blocktool ));
+	//var icons = block.tools.map( ( icon ) => MyToolBar( icon ) );
+}
+function MyBlockTypeOption( blocktool) {
+	return {  label: blocktool.blockname, value: blocktool.blockname };
+}
+
 /**
  * Displays the icon for the selected tool
  */
@@ -61,14 +69,14 @@ function MyToolIcon( icon ) {
 return(
 	<li key={icon.key}>
 		<Icon icon={icon.icon} />
-		<span class={"label"}>{icon.label}</span>
-		<span class={"description"}>{ icon.description}</span>
+		<span className={"label"}>{icon.label}</span>
+		<span className={"description"}>{ icon.description}</span>
 	</li>
 );
 }
 
 function MyToolBar( icon ) {
-	return(	<Icon icon={icon.icon} key={icon.id} />);
+	return(	<Icon icon={icon.icon} key={icon.key} />);
 }
 
 function aBlockTool( blocktool ) {
@@ -104,10 +112,10 @@ function blockToolbar( blockName) {
 	return( <div class="blockToolbar">{icons}</div> );
 }
 
-function toolIconStyled( iconname, ...props ) {
+function toolIconStyled( iconname, blocktype ) {
 	//var toolIcons = toolIconsList( props );
-	var toolBar = blockToolbar( 'core/heading');
-	var blockTools = allBlockTools( 'core/heading');
+	var toolBar = blockToolbar( blocktype);
+	var blockTools = allBlockTools( blocktype);
 	return(
 		<Fragment>
 			{toolBar}
@@ -118,4 +126,4 @@ function toolIconStyled( iconname, ...props ) {
 	);
 }
 
-export { toolIconStyled };
+export { toolIconStyled, getBlockTypeOptions };

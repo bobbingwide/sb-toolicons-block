@@ -82,6 +82,11 @@ registerBlockType( 'oik-sb/toolicons', {
 		toolicon: {
 			type: 'string',
 			default: 'alignCenter'
+		},
+
+		blocktype: {
+			type: 'string',
+			default: 'core/paragraph'
 		}
 
 	},
