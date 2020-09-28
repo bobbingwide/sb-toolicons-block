@@ -7,15 +7,6 @@ import { __ } from '@wordpress/i18n';
 import { Fragment } from '@wordpress/element';
 
 import { blocktoolmap } from './blocktoolmap';
-import {
-	alignLeft,
-	alignCenter,
-	alignRight,
-	positionLeft,
-	positionCenter,
-	positionRight,
-
-} from '@wordpress/icons';
 
 import { dragHandle, moveUp, moveDown} from './tooliconslist';
 
@@ -28,67 +19,40 @@ function MyBlockTypeOption( blocktool) {
 	return {  label: blocktool.blockname, value: blocktool.blockname };
 }
 
-/**
- * Displays the icon for the selected tool
- */
-
-function toolIconStuff() {
-	return (
-		<Fragment>
-			<BlockControls>
-				<AlignmentToolbar
-
-				/>
-			</BlockControls>
-			<BlockControls
-				controls={[
-					{
-						icon: 'editor-table',
-						title: __('Display as table'),
-
-					}
-				]}
-			/>
-		</Fragment>
-	);
-}
-
-function toolIconsList( props ) {
-	return( <div className="block-editor-block-toolbar" >
-
-
-			<Icon icon={ alignLeft} />
-			<Icon icon={ alignCenter} />
-			<Icon icon={ alignRight } />
-			<Icon icon={ positionLeft} />
-			<Icon icon={positionCenter} />
-			<Icon icon={positionRight} />
-		</div>
-	);
-}
-
 function copyIcon( icon ) {
 	var groupIcon = {};
 	groupIcon.icon = icon.icon;
 	groupIcon.label = icon.label;
 	groupIcon.description = icon.description;
 	groupIcon.key = icon.key;
+	groupIcon.text = icon.text;
 	console.log( 'copyIcon');
 	console.log( groupIcon );
 	return groupIcon;
 }
 
+function MyIconOrText( icon ) {
+	var iconOrText = '';
+		if ( undefined !== icon.icon ) {
+		iconOrText = <Icon icon={icon.icon} />
+	}
+	if ( undefined !== icon.text ) {
+		iconOrText += icon.text;
+	}
+	return iconOrText;
+}
+
 
 
 function MyToolIcon( icon ) {
-	console.log(MyToolIcon.name);
-	console.log(icon);
+	//console.log(MyToolIcon.name);
+	//console.log(icon);
 	if ( undefined !== icon.tools) {
-		console.log( 'processing group');
+		//console.log( 'processing group');
 		var groupIcon = copyIcon( icon );
 		var iconGroup = MyToolIcon( groupIcon );
-		console.log( iconGroup );
-		console.log( 'after iconGroup');
+		//console.log( iconGroup );
+		//console.log( 'after iconGroup');
 		var nestedIcons = icon.tools.map( iconNested => MyToolIcon( iconNested ) );
 		return ( <Fragment key={iconGroup.key}>
 			{ iconGroup }
@@ -97,10 +61,11 @@ function MyToolIcon( icon ) {
 			</ul>
 		</Fragment> );
 	} else {
-		console.log( 'iconkey' + icon.key );
+		//console.log( 'iconkey' + icon.key );
+		var iconOrText = MyIconOrText( icon );
 		return (
 			<li key={icon.key}>
-				<Icon icon={icon.icon} />
+				<span className={"tool"}>{iconOrText}</span>
 				<span className={"label"}>{icon.label}</span>
 				<span className={"description"}>{icon.description}</span>
 			</li>
@@ -135,11 +100,14 @@ function MyToolBarOrGroup( icon ) {
  * @constructor
  */
 function MyToolBar( icon ) {
+	var iconOrText = MyIconOrText( icon );
+	var classText = ( undefined === icon.text ) ? '' :  'text ';
+	classText += icon.key ;
 	return(
-		<div className={icon.key} key={icon.key} >
-		<Icon icon={icon.icon} />
+		<div className={classText} key={icon.key} >
+			{iconOrText}
 		</div>
-		);
+	);
 }
 
 function aBlockTool( blocktool ) {
@@ -150,13 +118,13 @@ function aBlockTool( blocktool ) {
 }
 
 function allBlockTools( blockname ) {
-	console.log( blocktoolmap);
-	console.log( blockname );
+	//console.log( blocktoolmap);
+	//console.log( blockname );
 	//console.log( 'wtf');
 	//console.trace();
 	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockname );
 	///find( variation => variation.name === variation_name);
-	console.log( blocktool);
+	//console.log( blocktool);
 	//console.log( 'wtf2');
 	var icons = blocktool.tools.map( ( icon ) => MyToolIcon( icon ) );
 	return(
@@ -191,7 +159,7 @@ function MoveUpDownIcons() {
  */
 
 function blockToolbarControls( blockName ) {
-	console.log( blockName );
+	//console.log( blockName );
 	var block = getBlockType( blockName);
 	var dragHandleIcon = MyToolBar( dragHandle);
 	var moveUpDown = MoveUpDownIcons();

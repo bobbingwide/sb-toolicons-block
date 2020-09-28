@@ -16,7 +16,7 @@ import {sprintf} from "../../../gutenberg-wordpress-source/packages/i18n/src";
 const alignCenter =
 		{ icon: icon.alignCenter,
 			label: __( 'Align text center'),
-			description: __( 'Align content centrally'),
+			description: __( 'Align content centrally.'),
 			key: 'alignCenter'
 		};
 const alignLeft =
@@ -34,9 +34,10 @@ const alignRight =
 	};
 
 const blockSettings =
-	{ icon: null,
+	{
+		text: '',
 	label: __( 'Show block settings'),
-	description: __('Show the block settings in the sidebar'),
+	description: __('Show the block settings in the sidebar.'),
 	key: 'blockSettings'
 };
 
@@ -60,8 +61,16 @@ const dragHandle =
 	{
 		icon: icon.dragHandle,
 		label: __( 'Drag block'),
-		description: __( 'Use to drag the selected block to another location'),
+		description: __( 'Use to drag the selected block to another location.'),
 		key: 'dragHandle'
+	};
+
+const editURL =
+	{
+		icon: icon.edit,
+		label: __('Edit URL'),
+		description: __( 'Use Edit URL to change the embed URL in the embed block. Overwrite the existing URL and click on the “Embed” Button on the right.'),
+		key: 'editURL'
 	};
 
 
@@ -69,7 +78,7 @@ const formatBold =
 	{
 		icon: icon.formatBold,
 		label: __('Bold'),
-		description: __('Use Bold to mark selected text as bold'),
+		description: __('Use Bold to mark selected text as bold.'),
 		key: 'formatBold'
 	};
 
@@ -77,7 +86,7 @@ const formatItalic =
 	{
 		icon: icon.formatItalic,
 		label: __('Italic'),
-		description: __('Use Italic to mark selected text as italic'),
+		description: __('Use Italic to mark selected text as italic.'),
 		key: 'formatItalic'
 	};
 
@@ -208,6 +217,14 @@ const positionRight =
 		key: 'positionRight'
 	};
 
+const replace =
+	{
+		text: __( "Replace"),
+		label: __( 'Replace'),
+		description: __( 'Replace the existing file.'),
+		key: 'replace'
+	};
+
 const stretchWide =
 	{ icon: icon.stretchWide,
 		label: __( 'Wide width'),
@@ -250,9 +267,10 @@ const textColor =
 
 
 export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code,
-	dragHandle, formatBold, formatItalic, formatStrikethrough,
+	dragHandle, editURL, formatBold, formatItalic, formatStrikethrough,
 	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
 	moveDown, moveUp,
 	positionLeft, positionCenter, positionRight,
+	replace,
  subscript, superscript,
 	stretchWide, stretchFullWidth, textColor };

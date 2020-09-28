@@ -14,11 +14,19 @@ import * as toolicon from './tooliconslist';
 import * as toolgroup from './toolgroups';
 
 const blocktoolmap = [
+	{
+		blockname: 'core/archives',
+		tools: [ toolgroup.changeAlignment, toolgroup.moreOptions ],
+	},
+
+	{
+		blockname: 'core/audio',
+		tools: [ toolgroup.changeAlignment, toolicon.replace, toolgroup.moreOptions ]
+	},
 
 	{
 		blockname: 'core/embed',
-		tools: [ toolgroup.changeAlignment],
-
+		tools: [ toolgroup.changeAlignment, toolicon.editURL, toolgroup.moreOptions ],
 		/* Not sure how wide-width and full-width icons work */
 	},
 
