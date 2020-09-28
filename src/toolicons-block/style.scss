@@ -55,6 +55,19 @@ ul.icons svg  {
 
 }
 
+ul.icons li {
+  display: grid;
+  grid-template-columns: 1fr 3fr 6fr ;
+  grid-template-rows: 1fr;
+
+}
+
+span.tool,
+span.label,
+span.description{
+  display: grid;
+}
+
 ul.icons span.tool {
   min-width: 48px;
 }

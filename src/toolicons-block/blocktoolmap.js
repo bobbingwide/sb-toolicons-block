@@ -25,6 +25,16 @@ const blocktoolmap = [
 	},
 
 	{
+		blockname: 'core/button',
+		tools: [toolicon.link, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreRichTextControls]
+	},
+
+	{
+		blockname: 'core/buttons',
+		tools: [toolgroup.changeAlignment]
+	},
+
+	{
 		blockname: 'core/embed',
 		tools: [ toolgroup.changeAlignment, toolicon.editURL, toolgroup.moreOptions ],
 		/* Not sure how wide-width and full-width icons work */
