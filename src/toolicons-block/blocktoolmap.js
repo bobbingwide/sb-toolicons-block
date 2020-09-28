@@ -15,25 +15,28 @@ import * as toolgroup from './toolgroups';
 
 const blocktoolmap = [
 
+	{
+		blockname: 'core/embed',
+		tools: [ toolgroup.changeAlignment],
+
+		/* Not sure how wide-width and full-width icons work */
+	},
+
+	{
+	blockname: 'core/heading',
+	tools: [toolgroup.headingGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls],
+	},
+
 	{ blockname: 'core/paragraph',
 	  variation: null,
 	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls, toolgroup.moreOptions ]
 	},
 
-	{
-		blockname: 'core/heading',
-		tools: [toolgroup.headingGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls],
-
+	{blockname: 'core/quote',
+		variation: null,
+		tools: [ toolgroup.alignmentToolbar]
 	},
 
-	{
-		blockname: 'core/embed',
-		tools: [],
-		/* toolicon.positionLeft, toolicon.positionCenter, toolicon.positionRight], */
-
-		vertical: [ icon.positionLeft, icon.positionCenter, icon.positionRight,]
-		/* Not sure how wide-width and full-width icons work */
-	},
 	];
 
 export { blocktoolmap } ;

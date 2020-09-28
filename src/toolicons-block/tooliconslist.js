@@ -164,6 +164,28 @@ const formatStrikethrough =
 
 	};
 
+const positionLeft =
+	{
+		icon: icon.positionLeft,
+		label: __( 'Align left'),
+		description: __( 'Align to the left'),
+		key: 'positionLeft'
+	};
+const positionCenter =
+	{
+		icon: icon.positionCenter,
+		label: __( 'Align center'),
+		description: __( 'Align in the center'),
+		key: 'positionCenter'
+	};
+const positionRight =
+	{
+		icon: icon.positionRight,
+		label: __( 'Align right'),
+		description: __( 'Align to the right'),
+		key: 'positionRight'
+	};
+
 const subscript =
 	{
 		icon: icon.subscript,
@@ -193,4 +215,5 @@ const textColor =
 
 export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code, formatBold, formatItalic, formatStrikethrough,
 	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
+	positionLeft, positionCenter, positionRight,
  subscript, superscript, textColor };

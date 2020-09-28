@@ -49,7 +49,8 @@ ul.icons span {
 
 
 
-.blockToolbar svg:first-child {
+.blockToolbar svg:first-child,
+ul.icons svg:first-child{
   border-left: 1px solid grey;
 }
 

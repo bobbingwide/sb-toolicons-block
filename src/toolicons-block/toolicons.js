@@ -69,6 +69,7 @@ function copyIcon( icon ) {
 	groupIcon.label = icon.label;
 	groupIcon.description = icon.description;
 	groupIcon.key = icon.key;
+	console.log( 'copyIcon');
 	console.log( groupIcon );
 	return groupIcon;
 }
@@ -83,24 +84,28 @@ function MyToolIcon( icon ) {
 		var groupIcon = copyIcon( icon );
 		var iconGroup = MyToolIcon( groupIcon );
 		console.log( iconGroup );
-		var nestedIcons = icon.tools.map( icon => MyToolIcon( icon ) );
-		return ( <Fragment>
+		console.log( 'after iconGroup');
+		var nestedIcons = icon.tools.map( iconNested => MyToolIcon( iconNested ) );
+		return ( <Fragment key={iconGroup.key}>
 			{ iconGroup }
-			<ul className="icons">
+			<ul className="icons nested">
 				{ nestedIcons }
 			</ul>
 		</Fragment> );
 	} else {
+		console.log( 'iconkey' + icon.key );
 		return (
 			<li key={icon.key}>
-				<Icon icon={icon.icon}/>
+				<Icon icon={icon.icon} />
 				<span className={"label"}>{icon.label}</span>
 				<span className={"description"}>{icon.description}</span>
 			</li>
 		);
 	}
 }
+/*
 
+				*/
 
 /**
  * If this is a single icon display it, otherwise display the default icon.
@@ -140,16 +145,15 @@ function aBlockTool( blocktool ) {
 function allBlockTools( blockname ) {
 	console.log( blocktoolmap);
 	console.log( blockname );
-	console.log( 'wtf');
+	//console.log( 'wtf');
 	//console.trace();
 	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockname );
 	///find( variation => variation.name === variation_name);
 	console.log( blocktool);
-	console.log( 'wtf2');
+	//console.log( 'wtf2');
 	var icons = blocktool.tools.map( ( icon ) => MyToolIcon( icon ) );
 	return(
 		<div>
-			{blocktool.blockname}
 			<ul className="icons" >
 			{icons}
 			</ul>
@@ -167,6 +171,7 @@ function blockToolbar( blockName) {
 function toolIconStyled( iconname, blocktype ) {
 	//var toolIcons = toolIconsList( props );
 	var toolBar = blockToolbar( blocktype);
+
 	var blockTools = allBlockTools( blocktype);
 	//var blockTools = 'blockTools';
 	return(

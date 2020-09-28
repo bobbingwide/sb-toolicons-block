@@ -7,7 +7,7 @@
  */
 
 import { __ } from '@wordpress/i18n';
-import { alignLeft, chevronDown, moreVertical } from '@wordpress/icons';
+import { alignLeft, chevronDown, moreVertical, positionCenter } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
 
@@ -21,11 +21,12 @@ const alignmentToolbar =
 	};
 
 const moreRichTextControls =
-	{ icon: chevronDown,
-	 label: __( 'More rich text controls' ),
-	description: __('Find more text controls in this dropdown.'),
-	tools: [ toolicon.code, toolicon.image, toolicon.formatStrikethrough, toolicon.subscript, toolicon.superscript, toolicon.textColor],
-	key: 'moreRichTextControls'
+	{
+		icon: chevronDown,
+	 	label: __( 'More rich text controls' ),
+		description: __('Find more text controls in this dropdown.'),
+		tools: [ toolicon.code, toolicon.image, toolicon.formatStrikethrough, toolicon.subscript, toolicon.superscript, toolicon.textColor],
+		key: 'moreRichTextControls'
 	};
 
 const headingGroup =
@@ -46,4 +47,12 @@ const moreOptions =
 		key: 'moreOptions'
 	};
 
-export { alignmentToolbar, moreRichTextControls, headingGroup, moreOptions };
+const changeAlignment =
+	{ icon: positionCenter,
+		label: __( 'Change alignment'),
+		description: __( 'Use Change alignment to choose the alignment'),
+		tools: [toolicon.positionLeft, toolicon.positionCenter, toolicon.positionRight],
+		key: 'changeAlignment'
+	};
+
+export { alignmentToolbar, moreRichTextControls, headingGroup, moreOptions, changeAlignment };
