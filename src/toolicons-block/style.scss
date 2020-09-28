@@ -9,13 +9,22 @@
 
 }
 
+.blockToolbar {
+  display: inline-flex;
+  flex-direction: row;
+  border: 1px solid #1e1e1e;
+  border-radius: 2px;
+  line-height: 0;
+}
+
+.blockToolbar div {
+  display: inline-block;
+}
+
 .wp-block-oik-sb-toolicons svg,
-.blockToolbar svg,
-ul.icons svg{
-  border-right: 1px solid grey;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  border-left: none;
+.blockToolbar svg
+{
+   border-left: none;
   padding: 12px;
 }
 
@@ -38,7 +47,8 @@ ul.icons svg {
 ul.icons svg  {
   height: 48px;
  min-width: 48px;
-  padding: 12px;
+  padding-left: 11px;
+  padding-right: 6px;
 
 }
 
@@ -46,30 +56,116 @@ ul.icons span {
   padding: 8px;
 }
 
-.blockToolbar svg:first-child,
-ul.icons svg:first-child{
-  border-left: 1px solid grey;
+.blockToolbar div {
+  border-right: 1px solid #1e1e1e;
 }
 
-.blockToolbar svg:first-child {
+.blockToolbar div:first-child {
   border-right: none;
 }
 
-svg.formatBold,
-svg.formatItalic,
-svg.link,
-svg.dragHandle{
+
+div.dragHandle,
+div.moveUpDown,
+div.moveUp,
+div.moveDown,
+div.formatBold,
+div.formatItalic,
+div.link,
+div.moreOptions
+{
   border-right: none;
 
 }
 
-svg.dragHandle {
-  padding: 8px 15px 8px 0px;
-  width: 20px;
-  min-width: 33px;
-  margin-left: -1px;
+div.formatBold svg {
+  min-width: 42px;
+  width: 42px;
+  padding-left: 11px;
+  padding-right: 6px;
+}
+
+div.formatItalic svg,
+div.link svg {
+  min-width: 36px;
+  width: 36px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+}
+
+
+
+div.dragHandle {
+  margin-left: -3px;
   display: inline-flex;
 }
+
+.dragHandle svg {
+  padding: 8px 11px 8px 0px;
+  width: 20px;
+  min-width: 29px;
+}
+
+div.moveUpDown {
+  display: inline-flex;
+  position: relative;
+  line-height: 0;
+  vertical-align: top;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 34px;
+  min-width: 34px;
+  padding: 6px 10px 6px 0px;
+  justify-content: center;
+  border-right: 1px solid #1e1e1e;
+}
+
+div.moveUpDown .moveUp {
+  position: absolute;
+  top: 4px;
+
+  /* padding-right: 3px; */
+}
+
+div.moveUpDown .moveDown {
+  /* padding-bottom: 5px; */
+  overflow: hidden;
+  position: absolute;
+  top: 20px
+}
+
+
+
+.moveUp svg,
+.moveDown svg {
+
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  padding: 0px;
+  border-top: 0px solid grey;
+  border-bottom: 0px solid grey;
+
+
+}
+
+/*
+
+.moveUp svg {
+
+  background-color: yellow;
+}
+
+.moveDown svg {
+
+  background-color: green;
+
+
+}
+*/
+
 
 
 

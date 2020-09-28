@@ -81,6 +81,15 @@ const formatItalic =
 		key: 'formatItalic'
 	};
 
+const formatStrikethrough =
+	{
+		icon: icon.formatStrikethrough,
+		label: __( 'Strikethrough'),
+		description: __( 'Use Strikethrough to strikethrough the selected text.'),
+		key: 'formatStrikethrough'
+
+	};
+
 /*
   There should be 6 heading icons.
  */
@@ -161,13 +170,20 @@ const link =
 		key: 'link'
 	};
 
-const formatStrikethrough =
+const moveDown =
 	{
-		icon: icon.formatStrikethrough,
-		label: __( 'Strikethrough'),
-		description: __( 'Use Strikethrough to strikethrough the selected text.'),
-		key: 'formatStrikethrough'
+		icon: icon.chevronDown,
+		label: __( 'Move down'),
+		description: __( 'Move the block downwards'),
+		key: 'moveDown'
+	};
 
+const moveUp =
+	{
+		icon: icon.chevronUp,
+		label: __( 'Move up'),
+		description: __( 'Move the block upwards'),
+		key: 'moveUp'
 	};
 
 const positionLeft =
@@ -236,6 +252,7 @@ const textColor =
 export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code,
 	dragHandle, formatBold, formatItalic, formatStrikethrough,
 	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
+	moveDown, moveUp,
 	positionLeft, positionCenter, positionRight,
  subscript, superscript,
 	stretchWide, stretchFullWidth, textColor };

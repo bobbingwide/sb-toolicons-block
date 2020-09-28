@@ -17,7 +17,7 @@ import {
 
 } from '@wordpress/icons';
 
-import { dragHandle} from './tooliconslist';
+import { dragHandle, moveUp, moveDown} from './tooliconslist';
 
 
 function getBlockTypeOptions( ) {
@@ -134,9 +134,12 @@ function MyToolBarOrGroup( icon ) {
  * @returns {JSX.Element}
  * @constructor
  */
-
 function MyToolBar( icon ) {
-	return(	<Icon icon={icon.icon} key={icon.key} className={icon.key} />);
+	return(
+		<div className={icon.key} key={icon.key} >
+		<Icon icon={icon.icon} />
+		</div>
+		);
 }
 
 function aBlockTool( blocktool ) {
@@ -165,6 +168,16 @@ function allBlockTools( blockname ) {
 	);
 }
 
+function MoveUpDownIcons() {
+	var up = MyToolBar( moveUp );
+	var down = MyToolBar( moveDown );
+	return(
+		<div className="moveUpDown">
+			{up}
+			{down}
+		</div>	);
+}
+
 
 /**
  * Displays the block Toolbar controls
@@ -181,11 +194,15 @@ function blockToolbarControls( blockName ) {
 	console.log( blockName );
 	var block = getBlockType( blockName);
 	var dragHandleIcon = MyToolBar( dragHandle);
+	var moveUpDown = MoveUpDownIcons();
 	return(
 /* components-toolbar-group block-editor-block-toolbar__block-controls */
 <Fragment>
+	<div className={blockName}>
 		<Icon icon={block.icon.src} />
-		{ dragHandleIcon }
+	</div>
+	{ dragHandleIcon }
+	{ moveUpDown}
 </Fragment>
 	);
 }
