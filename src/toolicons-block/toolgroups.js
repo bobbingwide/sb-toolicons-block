@@ -51,7 +51,7 @@ const changeAlignment =
 	{ icon: positionCenter,
 		label: __( 'Change alignment'),
 		description: __( 'Use Change alignment to choose the alignment'),
-		tools: [toolicon.positionLeft, toolicon.positionCenter, toolicon.positionRight],
+		tools: [toolicon.positionLeft, toolicon.positionCenter, toolicon.positionRight, toolicon.stretchWide, toolicon.stretchFullWidth],
 		key: 'changeAlignment'
 	};
 

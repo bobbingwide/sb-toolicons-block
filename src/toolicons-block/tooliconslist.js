@@ -126,8 +126,6 @@ const heading6 =
 		key: 'heading6'
 	};
 
-
-
 /**
  * I had to copy this from Gutenberg - packages/components/src/toolbar/stories/index.js
  */
@@ -186,6 +184,20 @@ const positionRight =
 		key: 'positionRight'
 	};
 
+const stretchWide =
+	{ icon: icon.stretchWide,
+		label: __( 'Wide width'),
+		description: __( 'Increase the width of the block beyond the content size. Requires theme support.'),
+		key: 'stretchWide'
+	};
+
+const stretchFullWidth =
+	{ icon: icon.stretchFullWidth,
+		label: __('Full width'),
+		description: __( 'Extend the block to cover the full width of the screen. Requires theme support.'),
+		key: 'stretchFullWidth'
+	};
+
 const subscript =
 	{
 		icon: icon.subscript,
@@ -216,4 +228,5 @@ const textColor =
 export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code, formatBold, formatItalic, formatStrikethrough,
 	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
 	positionLeft, positionCenter, positionRight,
- subscript, superscript, textColor };
+ subscript, superscript,
+	stretchWide, stretchFullWidth, textColor };
