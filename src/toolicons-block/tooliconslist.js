@@ -56,6 +56,14 @@ const code =
 		key: 'code'
 	};
 
+const dragHandle =
+	{
+		icon: icon.dragHandle,
+		label: __( 'Drag block'),
+		description: __( 'Use to drag the selected block to another location'),
+		key: 'dragHandle'
+	};
+
 
 const formatBold =
 	{
@@ -225,7 +233,8 @@ const textColor =
 
 
 
-export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code, formatBold, formatItalic, formatStrikethrough,
+export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code,
+	dragHandle, formatBold, formatItalic, formatStrikethrough,
 	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
 	positionLeft, positionCenter, positionRight,
  subscript, superscript,

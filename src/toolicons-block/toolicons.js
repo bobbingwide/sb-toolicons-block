@@ -1,5 +1,7 @@
 import { Toolbar, ToolbarItem, Button, Icon } from '@wordpress/components';
 import { BlockControls, AlignmentToolbar} from '@wordpress/block-editor';
+import { getBlockType } from '@wordpress/blocks';
+import { BlockIcon  } from '@wordpress/editor';
 
 import { __ } from '@wordpress/i18n';
 import { Fragment } from '@wordpress/element';
@@ -14,6 +16,8 @@ import {
 	positionRight,
 
 } from '@wordpress/icons';
+
+import { dragHandle} from './tooliconslist';
 
 
 function getBlockTypeOptions( ) {
@@ -161,11 +165,37 @@ function allBlockTools( blockname ) {
 	);
 }
 
+
+/**
+ * Displays the block Toolbar controls
+ * - block icon
+ * - drag icon ( number 6 domino )
+ * - Move up/move down
+ *
+ * Not sure why I can't use BlockIcon here!
+ * @param blockName
+ * @returns {JSX.Element}
+ */
+
+function blockToolbarControls( blockName ) {
+	console.log( blockName );
+	var block = getBlockType( blockName);
+	var dragHandleIcon = MyToolBar( dragHandle);
+	return(
+/* components-toolbar-group block-editor-block-toolbar__block-controls */
+<Fragment>
+		<Icon icon={block.icon.src} />
+		{ dragHandleIcon }
+</Fragment>
+	);
+}
+
 function blockToolbar( blockName) {
 	var block = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
-
+	var blockToolBar = blockToolbarControls( blockName );
 	var icons = block.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
-	return( <div className="blockToolbar">{icons}</div> );
+	return( <div className="blockToolbar">{blockToolBar}
+	{icons}</div> );
 }
 
 function toolIconStyled( iconname, blocktype ) {
