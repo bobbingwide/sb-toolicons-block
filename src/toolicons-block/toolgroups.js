@@ -4,6 +4,11 @@
  * with the tooltip as the label
  * and a short description to explain the purpose of the tool.
  *
+ * Note: Some tools toggle depending on the state.
+ * Some tools may not be present for every block due to block settings.
+ * e.g. editAsHTML toggles with editVisually.
+ * The embed block doesn't support editAsHTML.
+ *
  */
 
 import { __ } from '@wordpress/i18n';
@@ -43,7 +48,8 @@ const moreOptions =
 		icon: moreVertical,
 		label: __( 'More options'),
 		description: __( 'Display more options'),
-		tools: [ toolicon.blockSettings ],
+		tools: [ toolicon.blockSettings, toolicon.copy, toolicon.duplicate, toolicon.insertAfter, toolicon.insertBefore,
+			toolicon.moveTo, toolicon.editAsHTML, toolicon.group, toolicon.addToReusable, toolicon.removeBlock ],
 		key: 'moreOptions'
 	};
 
@@ -55,4 +61,13 @@ const changeAlignment =
 		key: 'changeAlignment'
 	};
 
-export { alignmentToolbar, moreRichTextControls, headingGroup, moreOptions, changeAlignment };
+const replaceGroup =
+	{
+		text: __( 'Replace'),
+		label: __( 'Replace' ),
+		description: __( 'Replace the selected file.'),
+		tools: [ toolicon.media, toolicon.upload],
+		key: 'replaceGroup'
+	}
+
+export { alignmentToolbar, moreRichTextControls, headingGroup, moreOptions, changeAlignment, replaceGroup };

@@ -12,6 +12,13 @@ import { Path, SVG } from '@wordpress/components';
 import { HeadingLevelIcon } from './heading-level-icon.js';
 import {sprintf} from "../../../gutenberg-wordpress-source/packages/i18n/src";
 
+const addToReusable =
+	{
+		icon: icon.reusableBlock,
+		label: __( 'Add to Reusable blocks'),
+		description: __( 'Create a Reusable block.'),
+		key: 'addToReusable'
+};
 
 const alignCenter =
 		{ icon: icon.alignCenter,
@@ -36,7 +43,7 @@ const alignRight =
 const blockSettings =
 	{
 		text: '',
-	label: __( 'Show block settings'),
+	label: __( 'Show More Settings'),
 	description: __('Show the block settings in the sidebar.'),
 	key: 'blockSettings'
 };
@@ -57,12 +64,35 @@ const code =
 		key: 'code'
 	};
 
+const copy =
+	{  text: '',
+		label: __('Copy'),
+		description: __( 'Copy the block to the clipboard.'),
+		key: 'copy'
+	};
+
 const dragHandle =
 	{
 		icon: icon.dragHandle,
 		label: __( 'Drag block'),
 		description: __( 'Use to drag the selected block to another location.'),
 		key: 'dragHandle'
+	};
+
+const duplicate =
+	{
+		text: '',
+		label: __('Duplicate'),
+		description: __( 'Use Duplicate to create a copy of the block.'),
+		key: 'duplicate'
+	};
+
+const editAsHTML =
+	{
+		 text: '',
+		label: __('Edit as HTML'),
+		description: __( 'Edit the HTML of the block.'),
+		key: 'editAsHTML'
 	};
 
 const editURL =
@@ -97,6 +127,14 @@ const formatStrikethrough =
 		description: __( 'Use Strikethrough to strikethrough the selected text.'),
 		key: 'formatStrikethrough'
 
+	};
+
+const group =
+	{
+		text: '',
+		label: __('Group'),
+		description: __( 'Transform the selected block(s) into a group.'),
+		key: 'group'
 	};
 
 /*
@@ -171,6 +209,22 @@ const image =
 	key: 'image'
 	};
 
+const insertAfter =
+	{
+		text: '',
+		label: __( 'Insert After'),
+		description: __( 'Insert a new block after the selected block(s).'),
+		key: 'insertAfter'
+	};
+
+const insertBefore =
+	{
+		text: '',
+		label: __( 'Insert Before'),
+		description: __( 'Insert a new block before the selected block(s).'),
+		key: 'insertBefore'
+	};
+
 const link =
 	{
 		icon: icon.link,
@@ -187,12 +241,28 @@ const moveDown =
 		key: 'moveDown'
 	};
 
+const moveTo =
+	{
+		text: '',
+		label: __( 'Move To'),
+		description: __(' Use Move To to move a block. Up/Down or Left/Right' ),
+		key: 'moveTo',
+	};
+
 const moveUp =
 	{
 		icon: icon.chevronUp,
 		label: __( 'Move up'),
 		description: __( 'Move the block upwards'),
 		key: 'moveUp'
+	};
+
+const media =
+	{
+		icon: icon.media,
+		label: __('Open Media Library'),
+		description: __( 'Choose from the Media library.'),
+		key: 'media'
 	};
 
 const positionLeft =
@@ -215,6 +285,14 @@ const positionRight =
 		label: __( 'Align right'),
 		description: __( 'Align to the right'),
 		key: 'positionRight'
+	};
+
+const removeBlock =
+	{
+		text: '',
+		label: __('Remove block'),
+		description: __( 'Delete the block.'),
+		key: 'removeBlock'
 	};
 
 const replace =
@@ -262,15 +340,28 @@ const textColor =
 	key: 'textColor'
 	};
 
+const upload =
+	{
+		icon: icon.upload,
+		label: __('Upload'),
+		description: __( 'Upload a file.'),
+		key: 'upload'
+	};
 
 
-
-
-export { alignCenter, alignLeft, alignRight, blockSettings, chevronDown, code,
-	dragHandle, editURL, formatBold, formatItalic, formatStrikethrough,
-	heading1, heading2, heading3, heading4, heading5, heading6, image, link,
-	moveDown, moveUp,
+export { addToReusable, alignCenter, alignLeft, alignRight,
+	blockSettings,
+	chevronDown, code, copy,
+	dragHandle, duplicate,
+	editAsHTML, editURL,
+	formatBold, formatItalic, formatStrikethrough,
+	group,
+	heading1, heading2, heading3, heading4, heading5, heading6,
+	image, insertAfter, insertBefore,
+	link,
+	media, moveDown, moveTo, moveUp,
 	positionLeft, positionCenter, positionRight,
-	replace,
- subscript, superscript,
-	stretchWide, stretchFullWidth, textColor };
+	replace, removeBlock,
+ 	subscript, superscript,	stretchWide, stretchFullWidth,
+	textColor,
+	upload };

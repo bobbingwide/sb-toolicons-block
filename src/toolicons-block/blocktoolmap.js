@@ -27,7 +27,7 @@ const blocktoolmap = [
 
 	{
 		blockname: 'core/audio',
-		tools: [ toolgroup.changeAlignment, toolicon.replace ]
+		tools: [ toolgroup.changeAlignment, toolgroup.replaceGroup ]
 	},
 
 	{
