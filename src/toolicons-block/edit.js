@@ -14,7 +14,7 @@ import { Fragment} from '@wordpress/element';
 import { InspectorControls } from '@wordpress/block-editor';
 //const { InspectorControls } = wp.blockEditor;
 // deprecated.js?ver=cd9e35508705772fbc5e2d9736bde31b:177 wp.editor.InspectorControls is deprecated. Please use wp.blockEditor.InspectorControls instead.
-import { TextControl, PanelBody, PanelRow, SelectControl } from '@wordpress/components';
+import { TextControl, PanelBody, PanelRow, SelectControl, ToggleControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -47,7 +47,12 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { blocktype: event } );
 	}
 
-	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype);
+	const onChangeShowMoreOptions = ( event ) => {
+		setAttributes( { showMoreOptions: ! attributes.showMoreOptions });
+	}
+
+
+	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype, attributes.showMoreOptions );
 	var blockTypeOptions = getBlockTypeOptions();
 	return (
 		<Fragment>
@@ -55,6 +60,14 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 				<PanelBody>
 					<PanelRow>
 						<SelectControl label={__("Block type",'sb-toolicons-block')} value={attributes.blocktype} onChange={onChangeBlockType} options={blockTypeOptions}  />
+					</PanelRow>
+					<PanelRow>
+						<ToggleControl
+							label={ __( 'Show More Options' ) }
+							checked={ !! attributes.showMoreOptions }
+							onChange={ onChangeShowMoreOptions }
+
+						/>
 					</PanelRow>
 				</PanelBody>
 			</InspectorControls>

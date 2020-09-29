@@ -87,6 +87,11 @@ registerBlockType( 'oik-sb/toolicons', {
 		blocktype: {
 			type: 'string',
 			default: 'core/paragraph'
+		},
+
+		showMoreOptions: {
+			type: 'boolean',
+			default: true
 		}
 
 	},

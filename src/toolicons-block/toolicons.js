@@ -8,7 +8,8 @@ import { Fragment } from '@wordpress/element';
 
 import { blocktoolmap } from './blocktoolmap';
 
-import { dragHandle, moveUp, moveDown} from './tooliconslist';
+import { dragHandle, moveUp, moveDown } from './tooliconslist';
+import * as toolgroup from "./toolgroups";
 
 
 function getBlockTypeOptions( ) {
@@ -117,24 +118,37 @@ function aBlockTool( blocktool ) {
 	return( <li key={blocktool.blockname}>{blocktool.blockname} {icons}</li>);
 }
 
-function allBlockTools( blockname ) {
+function allBlockTools( blockname, showMoreOptions ) {
 	//console.log( blocktoolmap);
 	//console.log( blockname );
 	//console.log( 'wtf');
 	//console.trace();
 	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockname );
+	var moreOptions = '';
+	if ( showMoreOptions ) {
+		var moreOptions =  MyToolIcon( toolgroup.moreOptions );
+	}
 	///find( variation => variation.name === variation_name);
 	//console.log( blocktool);
 	//console.log( 'wtf2');
 	var icons = blocktool.tools.map( ( icon ) => MyToolIcon( icon ) );
+
 	return(
 		<div>
 			<ul className="icons" >
 			{icons}
+			{moreOptions}
 			</ul>
 		</div>
 	);
 }
+
+/**
+ * Most blocks have Move up and Move down icons.
+ * Some have Move left and Move right.
+ * @returns {JSX.Element}
+ * @constructor
+ */
 
 function MoveUpDownIcons() {
 	var up = MyToolBar( moveUp );
@@ -175,26 +189,38 @@ function blockToolbarControls( blockName ) {
 	);
 }
 
+/**
+ * Displays the moreOption icon regardless of the value of showMoreOptions.
+ * It gets displayed for block toolbars.
+ * @param showMoreOptions
+ * @returns {JSX.Element|string}
+ */
+
+function blockToolbarMoreOptions( showMoreOptions=true ) {
+	if ( showMoreOptions) {
+		return( MyToolBar( toolgroup.moreOptions ));
+	}
+	return('');
+}
+
 function blockToolbar( blockName) {
 	var block = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
 	var blockToolBar = blockToolbarControls( blockName );
 	var icons = block.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
+	var moreOptions = blockToolbarMoreOptions();
 	return( <div className="blockToolbar">{blockToolBar}
-	{icons}</div> );
+	{icons}{moreOptions}</div> );
 }
 
-function toolIconStyled( iconname, blocktype ) {
+function toolIconStyled( iconname, blocktype, showMoreOptions ) {
 	//var toolIcons = toolIconsList( props );
-	var toolBar = blockToolbar( blocktype);
-
-	var blockTools = allBlockTools( blocktype);
+	var toolBar = blockToolbar( blocktype );
+	var blockTools = allBlockTools( blocktype, showMoreOptions );
 	//var blockTools = 'blockTools';
 	return(
 		<Fragment>
 			{toolBar}
 			{blockTools}
-
-
 		</Fragment>
 	);
 }

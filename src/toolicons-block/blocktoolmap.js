@@ -13,20 +13,27 @@ import * as icon from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import * as toolgroup from './toolgroups';
 
+/**
+ * Some blocks support left/right movement rather than up/down.
+ * These have `leftright: true` attributes. e.g. core/button
+ *
+ * All blocks have toolgroup.moreoptions, so this can be added later.
+ */
 const blocktoolmap = [
 	{
 		blockname: 'core/archives',
-		tools: [ toolgroup.changeAlignment, toolgroup.moreOptions ],
+		tools: [ toolgroup.changeAlignment ],
 	},
 
 	{
 		blockname: 'core/audio',
-		tools: [ toolgroup.changeAlignment, toolicon.replace, toolgroup.moreOptions ]
+		tools: [ toolgroup.changeAlignment, toolicon.replace ]
 	},
 
 	{
 		blockname: 'core/button',
-		tools: [toolicon.link, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreRichTextControls]
+		tools: [toolicon.link, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreRichTextControls],
+		leftright: true
 	},
 
 	{
@@ -36,7 +43,7 @@ const blocktoolmap = [
 
 	{
 		blockname: 'core/embed',
-		tools: [ toolgroup.changeAlignment, toolicon.editURL, toolgroup.moreOptions ],
+		tools: [ toolgroup.changeAlignment, toolicon.editURL ],
 		/* Not sure how wide-width and full-width icons work */
 	},
 
@@ -47,7 +54,7 @@ const blocktoolmap = [
 
 	{ blockname: 'core/paragraph',
 	  variation: null,
-	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls, toolgroup.moreOptions ]
+	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
 	},
 
 	{blockname: 'core/quote',

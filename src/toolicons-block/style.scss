@@ -57,8 +57,9 @@ ul.icons svg  {
 
 ul.icons li {
   display: grid;
-  grid-template-columns: 1fr 3fr 6fr ;
+  grid-template-columns: 2fr 3fr 6fr ;
   grid-template-rows: 1fr;
+  grid-gap: 1%;
 
 }
 
