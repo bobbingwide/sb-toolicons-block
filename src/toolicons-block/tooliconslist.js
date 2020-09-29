@@ -4,6 +4,10 @@
  * List of the icons that are used in the toolbars.
  * with the tooltip as the label
  * and a short description to explain the purpose of the tool.
+ * Where the toolbar item is plain text ( not an icon) then we use text:
+ *
+ * For styling of the description: see
+ * See https://developers.google.com/style/ui-elements
  *
  */
 import { __, sprintf } from '@wordpress/i18n';
@@ -25,6 +29,7 @@ const alignCenter =
 			description: __( 'Align content centrally.','sb-toolicons-block'),
 			key: 'alignCenter'
 		};
+
 const alignLeft =
 		{ icon: icon.alignLeft,
 			label: __( 'Align text left','sb-toolicons-block'),

@@ -41,6 +41,10 @@ const blocktoolmap = [
 		tools: [toolgroup.changeAlignment]
 	},
 
+	{ blockname: 'core/calendar',
+		tools: [ toolgroup.changeAlignment]
+	},
+
 	{
 		blockname: 'core/embed',
 		tools: [ toolgroup.changeAlignment, toolicon.editURL ],
