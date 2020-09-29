@@ -8,7 +8,10 @@ import { Fragment } from '@wordpress/element';
 import { BlockIcon  } from '@wordpress/editor';
 
 
-function Transforms( blockName ) {
+function Transforms( blockName, showTransforms ) {
+	if ( !showTransforms ) {
+		return('');
+	}
 	var block = getBlockType( blockName);
 	/**
 	 * I'm not sure what getBlockTransforms is intended to do but

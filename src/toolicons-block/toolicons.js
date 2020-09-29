@@ -213,12 +213,12 @@ function blockToolbar( blockName) {
 	{icons}{moreOptions}</div> );
 }
 
-function toolIconStyled( iconname, blocktype, showMoreOptions ) {
+function toolIconStyled( iconname, blocktype, showMoreOptions, showTransforms ) {
 	//var toolIcons = toolIconsList( props );
 	var toolBar = blockToolbar( blocktype );
 	var blockTools = allBlockTools( blocktype, showMoreOptions );
 	//var blockTools = 'blockTools';
-	var transforms = Transforms( blocktype );
+	var transforms = Transforms( blocktype, showTransforms );
 	return(
 		<Fragment>
 			{toolBar}

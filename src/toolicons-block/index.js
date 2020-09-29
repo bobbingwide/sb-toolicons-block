@@ -92,7 +92,13 @@ registerBlockType( 'oik-sb/toolicons', {
 		showMoreOptions: {
 			type: 'boolean',
 			default: true
-		}
+		},
+
+		showTransforms: {
+			type: 'boolean',
+			default: true
+		},
+
 
 	},
 

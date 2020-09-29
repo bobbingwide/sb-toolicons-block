@@ -51,8 +51,11 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { showMoreOptions: ! attributes.showMoreOptions });
 	}
 
+	const onChangeShowTransforms = ( event ) => {
+		setAttributes( { showTransforms: ! attributes.showTransforms });
+	}
 
-	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype, attributes.showMoreOptions );
+	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype, attributes.showMoreOptions, attributes.showTransforms );
 	var blockTypeOptions = getBlockTypeOptions();
 	return (
 		<Fragment>
@@ -66,6 +69,14 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 							label={ __( 'Show More options menu items', 'sb-toolicons-block' ) }
 							checked={ !! attributes.showMoreOptions }
 							onChange={ onChangeShowMoreOptions }
+
+						/>
+					</PanelRow>
+					<PanelRow>
+						<ToggleControl
+							label={ __( 'Show Transforms', 'sb-toolicons-block' ) }
+							checked={ !! attributes.showTransforms }
+							onChange={ onChangeShowTransforms }
 
 						/>
 					</PanelRow>
