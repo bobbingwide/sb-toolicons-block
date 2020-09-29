@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-09-29T12:16:00+00:00\n"
+"POT-Creation-Date: 2020-09-29T13:10:16+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sb-toolicons-block\n"
@@ -23,7 +23,7 @@ msgid "https://www.oik-plugins.com/oik-plugins/sb-toolicons-block"
 msgstr ""
 
 #. Description of the plugin
-#: build/index.js:1
+#: build/index.js:3
 msgid "Helps you to document tool icons for a block."
 msgstr ""
 
@@ -76,6 +76,7 @@ msgid "Show the block settings in the sidebar."
 msgstr ""
 
 #: build/index.js:1
+#: build/index.js:3
 msgid "More rich text controls"
 msgstr ""
 
@@ -163,246 +164,251 @@ msgstr ""
 msgid "Transform the selected block(s) into a group."
 msgstr ""
 
-#: build/index.js:1
+#. translators: %d: heading level e.g: "1", "2", "3"
+#: build/index.js:3
 msgid "Heading %d"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 1."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 2."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 3."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 4."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 5."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose heading level 6."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Inline image"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Insert an inline image."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Insert After"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Insert a new block after the selected block(s)."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Insert Before"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Insert a new block before the selected block(s)."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Link"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Link to create a hyperlink to your highlighted text."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Move down"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Move the block downwards"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Move To"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid " Use Move To to move a block. Up/Down or Left/Right"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Move up"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Move the block upwards"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Open Media Library"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Choose from the Media library."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align left"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align to the left"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align center"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align in the center"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align right"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Align to the right"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Remove block"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Delete the block."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Replace"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Replace the existing file."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Wide width"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Increase the width of the block beyond the content size. Requires theme support."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Full width"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Extend the block to cover the full width of the screen. Requires theme support."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Subscript"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Subscript to add subscript to your highlighted text."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Superscript"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Superscript to add superscript to your highlighted text."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Text color"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Text color to change the color of the selected text"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Upload"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Upload a file."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Change text alignment"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Change text alignment to choose how to align the text."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Find more text controls in this dropdown."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Change heading level"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Change heading level to choose the heading level."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "More options"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Display more options"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Change alignment"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Use Change alignment to choose the alignment"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Replace the selected file."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Toolbar icons"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Icons"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Blocks"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Toolbar"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Tools"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:3
 msgid "Block type"
+msgstr ""
+
+#: build/index.js:3
+msgid "Show More options menu items"
 msgstr ""
