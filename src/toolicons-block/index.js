@@ -61,10 +61,10 @@ registerBlockType( 'oik-sb/toolicons', {
 
 
 	keywords: [
-		__( 'Tree', 'sb-toolicons-block' ),
-		__( 'Descendents', 'sb-toolicons-block' ),
-		__( 'Child list', 'sb-toolicons-block' ),
-		__( 'Page list', 'sb-toolicons-block' ),
+		__( 'Icons', 'sb-toolicons-block' ),
+		__( 'Blocks', 'sb-toolicons-block' ),
+		__( 'Toolbar', 'sb-toolicons-block' ),
+		__( 'Tools', 'sb-toolicons-block' ),
 	],
 
 	/**

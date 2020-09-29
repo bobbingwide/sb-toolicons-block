@@ -63,7 +63,7 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={ __( 'Show More Options' ) }
+							label={ __( 'Show More options menu items', 'sb-toolicons-block' ) }
 							checked={ !! attributes.showMoreOptions }
 							onChange={ onChangeShowMoreOptions }
 

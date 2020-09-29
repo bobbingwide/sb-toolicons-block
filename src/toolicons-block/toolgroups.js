@@ -19,8 +19,8 @@ import { HeadingLevelIcon } from './heading-level-icon';
 const alignmentToolbar =
 	{
 		icon: alignLeft,
-		label: __( 'Change text alignment' ),
-		description: __( 'Use Change text alignment to choose how to align the text.'),
+		label: __( 'Change text alignment','sb-toolicons-block'),
+		description: __( 'Use Change text alignment to choose how to align the text.','sb-toolicons-block'),
 		tools: [ toolicon.alignLeft, toolicon.alignCenter, toolicon.alignRight],
 		key: 'alignmentToolbar'
 	};
@@ -28,8 +28,8 @@ const alignmentToolbar =
 const moreRichTextControls =
 	{
 		icon: chevronDown,
-	 	label: __( 'More rich text controls' ),
-		description: __('Find more text controls in this dropdown.'),
+	 	label: __( 'More rich text controls','sb-toolicons-block'),
+		description: __('Find more text controls in this dropdown.','sb-toolicons-block'),
 		tools: [ toolicon.code, toolicon.image, toolicon.formatStrikethrough, toolicon.subscript, toolicon.superscript, toolicon.textColor],
 		key: 'moreRichTextControls'
 	};
@@ -37,8 +37,8 @@ const moreRichTextControls =
 const headingGroup =
 	{
 		icon: <HeadingLevelIcon level="2" />,
-		label: __( 'Change heading level'),
-		description: __( 'Use Change heading level to choose the heading level.'),
+		label: __( 'Change heading level','sb-toolicons-block'),
+		description: __( 'Use Change heading level to choose the heading level.','sb-toolicons-block'),
 		tools: [ toolicon.heading1, toolicon.heading2, toolicon.heading3, toolicon.heading4, toolicon.heading5, toolicon.heading6 ],
 		key: 'headingGroup'
 	};
@@ -46,8 +46,8 @@ const headingGroup =
 const moreOptions =
 	{
 		icon: moreVertical,
-		label: __( 'More options'),
-		description: __( 'Display more options'),
+		label: __( 'More options','sb-toolicons-block'),
+		description: __( 'Display more options','sb-toolicons-block'),
 		tools: [ toolicon.blockSettings, toolicon.copy, toolicon.duplicate, toolicon.insertAfter, toolicon.insertBefore,
 			toolicon.moveTo, toolicon.editAsHTML, toolicon.group, toolicon.addToReusable, toolicon.removeBlock ],
 		key: 'moreOptions'
@@ -55,17 +55,17 @@ const moreOptions =
 
 const changeAlignment =
 	{ icon: positionCenter,
-		label: __( 'Change alignment'),
-		description: __( 'Use Change alignment to choose the alignment'),
+		label: __( 'Change alignment','sb-toolicons-block'),
+		description: __( 'Use Change alignment to choose the alignment','sb-toolicons-block'),
 		tools: [toolicon.positionLeft, toolicon.positionCenter, toolicon.positionRight, toolicon.stretchWide, toolicon.stretchFullWidth],
 		key: 'changeAlignment'
 	};
 
 const replaceGroup =
 	{
-		text: __( 'Replace'),
-		label: __( 'Replace' ),
-		description: __( 'Replace the selected file.'),
+		text: __( 'Replace','sb-toolicons-block'),
+		label: __( 'Replace','sb-toolicons-block'),
+		description: __( 'Replace the selected file.','sb-toolicons-block'),
 		tools: [ toolicon.media, toolicon.upload],
 		key: 'replaceGroup'
 	}
