@@ -10,6 +10,7 @@ import { blocktoolmap } from './blocktoolmap';
 
 import { dragHandle, moveUp, moveDown } from './tooliconslist';
 import * as toolgroup from "./toolgroups";
+import { Transforms } from './transforms';
 
 
 function getBlockTypeOptions( ) {
@@ -217,10 +218,12 @@ function toolIconStyled( iconname, blocktype, showMoreOptions ) {
 	var toolBar = blockToolbar( blocktype );
 	var blockTools = allBlockTools( blocktype, showMoreOptions );
 	//var blockTools = 'blockTools';
+	var transforms = Transforms( blocktype );
 	return(
 		<Fragment>
 			{toolBar}
 			{blockTools}
+			{transforms}
 		</Fragment>
 	);
 }

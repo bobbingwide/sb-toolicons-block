@@ -37,7 +37,8 @@
   display: inline-block;
 }
 
-ul.icons {
+ul.icons,
+ul.transform {
   list-style-type: none;
 }
 
@@ -47,7 +48,8 @@ ul.icons svg {
 }
 
 .blockToolbar svg,
-ul.icons svg  {
+ul.icons svg,
+ul.transform svg{
   height: 48px;
  min-width: 48px;
   padding-left: 11px;
@@ -61,6 +63,12 @@ ul.icons li {
   grid-template-rows: 1fr;
   grid-gap: 1%;
 
+}
+
+ul.transform li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
 }
 
 span.tool,
@@ -191,6 +199,8 @@ div.replace {
 	color: #1e1e1e;
   	border-right: 1px solid #1e1e1e;
 }
+
+
 
 /*
 
