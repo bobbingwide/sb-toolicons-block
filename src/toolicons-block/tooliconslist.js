@@ -14,6 +14,9 @@ import { __, sprintf } from '@wordpress/i18n';
 import * as icon from '@wordpress/icons';
 import { Path, SVG } from '@wordpress/components';
 import { HeadingLevelIcon } from './heading-level-icon.js';
+import * as valign from './vertical-align-icons';
+
+import {__experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
 
 const addToReusable =
 	{
@@ -52,6 +55,14 @@ const blockSettings =
 	key: 'blockSettings'
 };
 
+const changeContentPosition =
+	{
+		/* icon: <AlignmentMatrixControl.Icon value='center' />,*/
+		label: __( 'Change content position'),
+		description: __( 'Change the position of the content'),
+		key: 'changeContentPosition'
+	};
+
 const chevronDown =
 	{
 		icon: icon.chevronDown,
@@ -66,6 +77,14 @@ const code =
 		label: __( 'Inline code','sb-toolicons-block'),
 		description: __( 'Use inline code feature to format code snippets within your text.','sb-toolicons-block'),
 		key: 'code'
+	};
+
+const convertToBlocks =
+	{
+		text: __('Convert to blocks', 'sb-toolicons-block'),
+		label: __( 'Convert to blocks', 'sb-toolicons-block'),
+		description: __( 'Use Convert to blocks to convert the classic block to blocks'),
+		key: 'convertToBlocks'
 	};
 
 const copy =
@@ -197,6 +216,14 @@ const heading6 =
 		key: 'heading6'
 	};
 
+const html =
+	{
+		text: __( 'HTML', 'sb-toolicons-block'),
+		label: __( 'HTML' ),
+		description: __( 'Display the custom HTML'),
+		key: 'html'
+	}
+
 /**
  * I had to copy this from Gutenberg - packages/components/src/toolbar/stories/index.js
  */
@@ -294,6 +321,14 @@ const positionRight =
 		key: 'positionRight'
 	};
 
+const preview =
+	{
+		text: __( 'Preview', 'sb-toolicons-block'),
+		label: __( 'Preview','sb-toolicons-block'),
+		decscription: __( 'Preview the formatted HTML'),
+		key: 'preview'
+	};
+
 const removeBlock =
 	{
 		text: '',
@@ -355,20 +390,46 @@ const upload =
 		key: 'upload'
 	};
 
+const verticalAlignBottom =
+	{
+		icon: valign.alignBottom,
+		label: 	__('Vertically Align Bottom', 'sb-toolicons-block'),
+	description:__('Vertically align the columns to the bottom', 'sb-toolicons-block'),
+	key:'verticalAlignBottom'
+};
+
+const verticalAlignCenter =
+	{
+		icon: valign.alignCenter,
+		label: 	__('Vertically Align Middle', 'sb-toolicons-block'),
+		description:__('Vertically align the columns to the middle', 'sb-toolicons-block'),
+		key:'verticalAlignCenter'
+	};
+
+const verticalAlignTop =
+	{
+		icon: valign.alignTop,
+		label: 	__('Vertically Align Top', 'sb-toolicons-block'),
+		description:__('Vertically align the columns', 'sb-toolicons-block'),
+		key:'verticalAlignTop'
+	};
+
 
 export { addToReusable, alignCenter, alignLeft, alignRight,
 	blockSettings,
-	chevronDown, code, copy,
+	changeContentPosition, chevronDown, code, convertToBlocks, copy,
 	dragHandle, duplicate,
 	editAsHTML, editURL,
 	formatBold, formatItalic, formatStrikethrough,
 	group,
-	heading1, heading2, heading3, heading4, heading5, heading6,
+	heading1, heading2, heading3, heading4, heading5, heading6, html,
 	image, insertAfter, insertBefore,
 	link,
 	media, moveDown, moveTo, moveUp,
-	positionLeft, positionCenter, positionRight,
+	positionLeft, positionCenter, positionRight, preview,
 	replace, removeBlock,
  	subscript, superscript,	stretchWide, stretchFullWidth,
 	textColor,
-	upload };
+	upload,
+	verticalAlignTop, verticalAlignCenter, verticalAlignBottom
+};

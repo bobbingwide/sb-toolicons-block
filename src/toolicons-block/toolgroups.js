@@ -70,4 +70,14 @@ const replaceGroup =
 		key: 'replaceGroup'
 	}
 
-export { alignmentToolbar, moreRichTextControls, headingGroup, moreOptions, changeAlignment, replaceGroup };
+const verticallyAlign =
+	{
+		icon: toolicon.verticalAlignTop.icon,
+		label: __( 'Change vertical alignment', 'sb-toolicons-block'),
+		description: __( 'Change the vertical alignment of the columns', 'sb-toolicons-block'),
+		tools: [toolicon.verticalAlignTop, toolicon.verticalAlignCenter, toolicon.verticalAlignBottom ],
+		key: 'verticallyAlign'
+	};
+
+export { alignmentToolbar, moreRichTextControls, headingGroup,
+	moreOptions, changeAlignment, replaceGroup, verticallyAlign };

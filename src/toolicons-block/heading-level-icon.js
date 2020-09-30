@@ -1,5 +1,6 @@
 /**
- * Copied from Gutenberg
+ * Copied from Gutenberg /packages/block-library/src/heading/heading-level-icon.js
+ * on 2020/09/29
  */
 
 /**

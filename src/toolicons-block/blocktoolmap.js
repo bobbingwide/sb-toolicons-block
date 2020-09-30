@@ -4,8 +4,8 @@
  * In oik-blocks we flattened variations to `blockname|variation`
  *
  * For each block we'll list the icons in the tools array.
- * If an icon is not in he tooliconslist it'll have to be added first.
- * As of Gurenberg 9 there were 182 icons in @wordpress/icons.
+ * If an icon is not in the tooliconslist it'll have to be added first.
+ * As of Gutenberg 9 there were 182 icons in @wordpress/icons.
  */
 
 
@@ -45,16 +45,30 @@ const blocktoolmap = [
 		tools: [ toolgroup.changeAlignment]
 	},
 
+	{ blockname: 'core/categories', tools: [toolgroup.changeAlignment]},
+	{ blockname: 'core/code', tools: []},
+	{ blockname: 'core/column',
+		tools: [ toolgroup.verticallyAlign],
+		leftright: true
+	},
+	{ blockname: 'core/columns', tools: [toolgroup.changeAlignment, toolgroup.verticallyAlign]},
+	{ blockname: 'core/cover', tools: [toolgroup.changeAlignment, toolicon.changeContentPosition, toolgroup.replaceGroup]},
+
+
 	{
 		blockname: 'core/embed',
 		tools: [ toolgroup.changeAlignment, toolicon.editURL ],
 		/* Not sure how wide-width and full-width icons work */
 	},
+	{ blockname: 'core/freeform', tools: [toolicon.convertToBlocks]},
+
 
 	{
 	blockname: 'core/heading',
 	tools: [toolgroup.headingGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls],
 	},
+	{ blockname: 'core/html', tools: [toolicon.html, toolicon.preview]},
+
 
 	{ blockname: 'core/paragraph',
 	  variation: null,

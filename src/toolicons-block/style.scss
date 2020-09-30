@@ -71,9 +71,9 @@ ul.transform li {
   grid-template-rows: 1fr;
 }
 
-span.tool,
-span.label,
-span.description{
+ul.icons span.tool,
+ul.icons span.label,
+ul.icons span.description{
   display: grid;
 }
 
@@ -198,6 +198,10 @@ div.replace {
 
 	color: #1e1e1e;
   	border-right: 1px solid #1e1e1e;
+}
+
+div.changeContentPosition {
+  width: 48px;
 }
 
 
