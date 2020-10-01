@@ -60,7 +60,10 @@ const blocktoolmap = [
 		tools: [ toolgroup.changeAlignment, toolicon.editURL ],
 		/* Not sure how wide-width and full-width icons work */
 	},
+	{ blockname: 'core/file', tools: [toolgroup.changeAlignment, toolgroup.replaceGroup]},
 	{ blockname: 'core/freeform', tools: [toolicon.convertToBlocks]},
+	{ blockname: 'core/gallery', tools: [toolgroup.changeAlignment]},
+	{ blockname: 'core/group', tools: [toolgroup.changeAlignment]},
 
 
 	{
@@ -68,7 +71,7 @@ const blocktoolmap = [
 	tools: [toolgroup.headingGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls],
 	},
 	{ blockname: 'core/html', tools: [toolicon.html, toolicon.preview]},
-
+	{ blockname: 'core/image', tools: [toolgroup.changeAlignment, toolicon.link, toolicon.crop, toolgroup.replaceGroup] },
 
 	{ blockname: 'core/paragraph',
 	  variation: null,

@@ -13,6 +13,9 @@ function Transforms( blockName, showTransforms ) {
 		return('');
 	}
 	var block = getBlockType( blockName);
+	if ( !block ) {
+		return('');
+	}
 	/**
 	 * I'm not sure what getBlockTransforms is intended to do but
 	 * it doesn't return what I expected.

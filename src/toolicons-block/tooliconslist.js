@@ -47,6 +47,21 @@ const alignRight =
 		key: 'alignRight'
 	};
 
+const apply =
+	{ text: __('Apply', 'sb-toolicons-block'),
+		label: __( 'Apply', 'sb-toolicons-block'),
+		description: __( 'Apply the changes'),
+		key: 'apply'
+	};
+
+const aspectRatio =
+	{
+		icon: icon.aspectRatio,
+		label: __( 'Aspect ratio', 'sb-toolicon-block'),
+		description: __( 'Adjust the aspect ratio', 'sb-toolicon-block'),
+		key: 'aspectRatio'
+	};
+
 const blockSettings =
 	{
 		text: '',
@@ -54,6 +69,13 @@ const blockSettings =
 	description: __('Show the block settings in the sidebar.','sb-toolicons-block'),
 	key: 'blockSettings'
 };
+
+const cancel =
+	{ text: __('Cancel', 'sb-toolicons-block'),
+		label: __( 'Cancel', 'sb-toolicons-block'),
+		description: __( 'Cancel the changes'),
+		key: 'cancel'
+	};
 
 const changeContentPosition =
 	{
@@ -92,6 +114,14 @@ const copy =
 		label: __('Copy','sb-toolicons-block'),
 		description: __( 'Copy the block to the clipboard.','sb-toolicons-block'),
 		key: 'copy'
+	};
+
+const crop =
+	{
+		icon: icon.crop,
+		label: __('Crop', 'sb-toolicons-block'),
+		description: __( 'Crop the image.', 'sb-toolicons-block'),
+		key: 'crop'
 	};
 
 const dragHandle =
@@ -325,7 +355,7 @@ const preview =
 	{
 		text: __( 'Preview', 'sb-toolicons-block'),
 		label: __( 'Preview','sb-toolicons-block'),
-		decscription: __( 'Preview the formatted HTML'),
+		description: __( 'Preview the formatted HTML', 'sb-toolicons-block'),
 		key: 'preview'
 	};
 
@@ -339,10 +369,18 @@ const removeBlock =
 
 const replace =
 	{
-		text: __( "Replace"),
+		text: __( "Replace", 'sb-toolicons-block'),
 		label: __( 'Replace','sb-toolicons-block'),
 		description: __( 'Replace the existing file.','sb-toolicons-block'),
 		key: 'replace'
+	};
+
+const rotate =
+	{
+		icon: icon.rotateLeft,
+		label: __( 'Rotate', 'sb-toolicons-block'),
+		description: __( 'Rotate the image', 'sb-toolicons-block'),
+		key: 'rotate'
 	};
 
 const stretchWide =
@@ -414,10 +452,18 @@ const verticalAlignTop =
 		key:'verticalAlignTop'
 	};
 
+const zoom =
+	{
+		icon: icon.search,
+		label: __( 'Zoom', 'sb-toolicons-block'),
+		description: __( 'Zoom in or out.', 'sb-toolicons-block'),
+		key: 'zoom'
+	};
 
-export { addToReusable, alignCenter, alignLeft, alignRight,
+
+export { addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings,
-	changeContentPosition, chevronDown, code, convertToBlocks, copy,
+	cancel, changeContentPosition, chevronDown, code, convertToBlocks, copy, crop,
 	dragHandle, duplicate,
 	editAsHTML, editURL,
 	formatBold, formatItalic, formatStrikethrough,
@@ -427,9 +473,10 @@ export { addToReusable, alignCenter, alignLeft, alignRight,
 	link,
 	media, moveDown, moveTo, moveUp,
 	positionLeft, positionCenter, positionRight, preview,
-	replace, removeBlock,
+	removeBlock, replace, rotate,
  	subscript, superscript,	stretchWide, stretchFullWidth,
 	textColor,
 	upload,
-	verticalAlignTop, verticalAlignCenter, verticalAlignBottom
+	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,
+	zoom
 };

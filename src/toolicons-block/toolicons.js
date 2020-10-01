@@ -176,6 +176,9 @@ function MoveUpDownIcons() {
 function blockToolbarControls( blockName ) {
 	//console.log( blockName );
 	var block = getBlockType( blockName);
+	if ( !block) {
+		return('');
+	}
 	var dragHandleIcon = MyToolBar( dragHandle);
 	var moveUpDown = MoveUpDownIcons();
 	return(
