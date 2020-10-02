@@ -85,6 +85,9 @@ const blocktoolmap = [
 		tools: [ toolgroup.changeAlignment,toolicon.medialeft, toolicon.mediaright,
 			toolgroup.verticallyAlign, toolicon.link, toolgroup.replaceGroup ]
 	},
+	{blockname: 'core/more', tools: []},
+
+	{ blockname: 'core/navigation', tools: [ toolgroup.changeAlignment, toolicon.openblocknavigator, toolicon.opencolorsselector ] },
 
 	{ blockname: 'core/navigation-link', tools: [toolicon.link, toolicon.addsubmenu, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreNavigationControls ],
 		leftright: true },
