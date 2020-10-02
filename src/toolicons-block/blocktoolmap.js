@@ -95,8 +95,16 @@ const blocktoolmap = [
 	{blockname: 'core/nextpage', tools: []},
 
 	{ blockname: 'core/paragraph',
-	  variation: null,
-	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
+		variation: null,
+		tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
+	},
+
+	{ blockname: 'core/preformatted',
+	  tools: [ toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
+	},
+	
+	{blockname: 'core/pullquote',
+	tools: [ toolgroup.changeAlignment, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
 	},
 
 	{blockname: 'core/quote',
