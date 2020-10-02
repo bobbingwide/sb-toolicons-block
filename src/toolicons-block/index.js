@@ -101,6 +101,16 @@ registerBlockType( 'oik-sb/toolicons', {
 			default: 'core/paragraph'
 		},
 
+		showToolbar: {
+			type: 'boolean',
+			default: true
+		},
+
+		showDropDownMenus: {
+			type: 'boolean',
+			default: true
+		},
+
 		showMoreOptions: {
 			type: 'boolean',
 			default: true

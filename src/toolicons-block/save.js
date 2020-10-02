@@ -18,6 +18,10 @@ export default function save( { attributes } ) {
 	var toolicon = toolIconStyled( attributes.selection,
 		attributes.blocktype,
 		attributes.toolgroup,
-		attributes.toolicon, attributes.showMoreOptions, attributes.showTransforms );
+		attributes.toolicon,
+		attributes.showToolbar,
+		attributes.showDropDownMenus,
+		attributes.showMoreOptions,
+		attributes.showTransforms );
 	return( <div> { toolicon } </div> );
 }

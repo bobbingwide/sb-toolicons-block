@@ -9,7 +9,8 @@
 
 }
 
-.blockToolbar {
+.blockToolbar,
+.groupToolbar {
   display: inline-flex;
   flex-direction: row;
   border: 1px solid #1e1e1e;
@@ -20,7 +21,8 @@
   font-size: 13px;
 }
 
-.blockToolbar div {
+.blockToolbar div,
+.groupToolBar div {
   display: inline-block;
 }
 
@@ -33,7 +35,8 @@
 
 .block-editor-block-toolbar svg { }
 
-.blockToolbar svg {
+.blockToolbar svg
+.groupToolbar svg {
   display: inline-block;
 }
 
@@ -48,6 +51,7 @@ ul.icons svg {
 }
 
 .blockToolbar svg,
+.groupToolbar svg,
 ul.icons svg,
 ul.transform svg{
   height: 48px;

@@ -59,6 +59,14 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { toolicon: event } );
 	}
 
+	const onChangeShowToolbar = ( event ) => {
+		setAttributes( { showToolbar: ! attributes.showToolbar });
+	}
+
+	const onChangeShowDropDownMenus = ( event ) => {
+		setAttributes( { showDropDownMenus: ! attributes.showDropDownMenus });
+	}
+
 	const onChangeShowMoreOptions = ( event ) => {
 		setAttributes( { showMoreOptions: ! attributes.showMoreOptions });
 	}
@@ -71,6 +79,8 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		attributes.blocktype,
 		attributes.toolgroup,
 		attributes.toolicon,
+		attributes.showToolbar,
+		attributes.showDropDownMenus,
 		attributes.showMoreOptions,
 		attributes.showTransforms );
 
@@ -107,22 +117,48 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 									   onChange={onChangeToolIcon} options={toolIconOptions}/>
 					</PanelRow>
 					}
+
+					{'toolicon' !== attributes.selection &&
 					<PanelRow>
 						<ToggleControl
-							label={ __( 'Show More options menu items', 'sb-toolicons-block' ) }
-							checked={ !! attributes.showMoreOptions }
-							onChange={ onChangeShowMoreOptions }
+							label={__('Show toolbar', 'sb-toolicons-block')}
+							checked={!!attributes.showToolbar}
+							onChange={onChangeShowToolbar}
+						/>
+					</PanelRow>
+					}
+					{'toolicon' !== attributes.selection &&
+						<PanelRow>
+						<ToggleControl
+						label={__('Show Drop down menus', 'sb-toolicons-block')}
+						checked={!!attributes.showDropDownMenus}
+						onChange={onChangeShowDropDownMenus}
+
+						/>
+						</PanelRow>
+					}
+
+					{('blocktype' === attributes.selection) &&
+					<PanelRow>
+						<ToggleControl
+							label={__('Show More options menu items', 'sb-toolicons-block')}
+							checked={!!attributes.showMoreOptions}
+							onChange={onChangeShowMoreOptions}
 
 						/>
 					</PanelRow>
-					<PanelRow>
+					}
+					{('blocktype' === attributes.selection) &&
+
+						<PanelRow>
 						<ToggleControl
-							label={ __( 'Show Transforms', 'sb-toolicons-block' ) }
-							checked={ !! attributes.showTransforms }
-							onChange={ onChangeShowTransforms }
+						label={__('Show Transforms', 'sb-toolicons-block')}
+						checked={!!attributes.showTransforms}
+						onChange={onChangeShowTransforms}
 
 						/>
-					</PanelRow>
+						</PanelRow>
+					}
 				</PanelBody>
 			</InspectorControls>
 

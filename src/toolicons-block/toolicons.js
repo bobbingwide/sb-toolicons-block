@@ -217,6 +217,22 @@ function blockToolbar( blockName) {
 	{icons}{moreOptions}</div> );
 }
 
+/**
+ * Displays a horizontal toolbar for the group.
+ *
+ * Not suitable for displaying the More options pull down
+ * which doesn't have any icon/text labels for the menu items.
+ *
+ * @param toolgroupkey
+ * @returns {JSX.Element}
+ */
+function groupToolbarHorizontal( toolgroupkey ) {
+	var toolgroup = toolgroupmap.find( toolgroup => toolgroup.key === toolgroupkey );
+	var icons = toolgroup.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
+	return( <div className="groupToolbar">
+		{icons}</div> );
+}
+
 
 /**
  * The Group toolbar should be displayed vertically for most groups
@@ -241,7 +257,7 @@ function groupToolbar( toolgroupkey ) {
 function toolIconStyled( selection,
 	blocktype,
 	toolgroup,
-	toolicon, showMoreOptions, showTransforms ) {
+	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms ) {
 	//var toolIcons = toolIconsList( props );
 	if ( 'blocktype' === selection) {
 		var toolBar = blockToolbar(blocktype);
@@ -258,8 +274,9 @@ function toolIconStyled( selection,
 	}
 
 	if ( 'toolgroup' === selection ) {
-		var toolGroup = groupToolbar( toolgroup);
-		return( <div>{toolGroup}</div> );
+		var toolBar = (showToolBar) ? groupToolbarHorizontal( toolgroup ) : '';
+		var toolGroup = (showDropDownMenus ) ? groupToolbar( toolgroup) : '';
+		return( <div>{toolBar}{toolGroup}</div> );
 	}
 
 	if ('toolicon' === selection ) {
