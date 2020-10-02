@@ -452,7 +452,7 @@ const verticalAlignTop =
 		key:'verticalAlignTop'
 	};
 
-const zoom =
+export const zoom =
 	{
 		icon: icon.search,
 		label: __( 'Zoom', 'sb-toolicons-block'),
@@ -478,5 +478,29 @@ export { addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	textColor,
 	upload,
 	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,
-	zoom
+
 };
+
+var tooliconsmap = [
+		addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
+	blockSettings,
+	cancel, changeContentPosition, chevronDown, code, convertToBlocks, copy, crop,
+	dragHandle, duplicate,
+	editAsHTML, editURL,
+	formatBold, formatItalic, formatStrikethrough,
+	group,
+	heading1, heading2, heading3, heading4, heading5, heading6, html,
+	image, insertAfter, insertBefore,
+	link,
+	media, moveDown, moveTo, moveUp,
+	positionLeft, positionCenter, positionRight, preview,
+	removeBlock, replace, rotate,
+	subscript, superscript,	stretchWide, stretchFullWidth,
+	textColor,
+	upload,
+	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,
+	zoom
+	];
+
+export { tooliconsmap };
+

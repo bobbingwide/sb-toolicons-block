@@ -69,7 +69,7 @@ const replaceGroup =
 		description: __( 'Replace the selected file.','sb-toolicons-block'),
 		tools: [ toolicon.media, toolicon.upload],
 		key: 'replaceGroup'
-	}
+	};
 
 const verticallyAlign =
 	{
@@ -85,7 +85,7 @@ const cropGroup =
 		icon: toolicon.crop,
 		label: __( 'Crop image', 'sb-toolicons-block'),
 		description: __( 'Crop the image.', 'sb-toolicons-block'),
-		tools: [ toolgroup.changeAlignment, toolicon.zoom, toolicon.aspectRatio, toolicon.rotate, toolicon.apply, toolicon.cancel] ,
+		tools: [ changeAlignment, toolicon.zoom, toolicon.aspectRatio, toolicon.rotate, toolicon.apply, toolicon.cancel] ,
 		key: 'cropGroup',
 		horizontal: true
 	};
