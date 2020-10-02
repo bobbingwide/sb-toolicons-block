@@ -18,6 +18,39 @@ import * as valign from './vertical-align-icons';
 
 import {__experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
 
+/**
+ * Copied from Gutenberg 9.0.0 on 2020/10/02
+ * packages/block-library/src/navigation-link/icons.js
+ *
+ * Added viewBox= attribute to ToolbarSubmenuIcon
+ */
+
+export const ToolbarSubmenuIcon = () => (
+	<SVG xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+		<Path d="M2 12c0 3.6 2.4 5.5 6 5.5h.5V19l3-2.5-3-2.5v2H8c-2.5 0-4.5-1.5-4.5-4s2-4.5 4.5-4.5h3.5V6H8c-3.6 0-6 2.4-6 6zm19.5-1h-8v1.5h8V11zm0 5h-8v1.5h8V16zm0-10h-8v1.5h8V6z" />
+	</SVG>
+);
+
+export const ItemSubmenuIcon = () => (
+	<SVG
+		xmlns="http://www.w3.org/2000/svg"
+		width="12"
+		height="12"
+		viewBox="0 0 24 24"
+		transform="rotate(90)"
+	>
+		<Path d="M8 5v14l11-7z" />
+		<Path d="M0 0h24v24H0z" fill="none" />
+	</SVG>
+);
+
+export const addsubmenu =
+	{
+		icon: ToolbarSubmenuIcon,
+		label: __( 'Add submenu', 'sb-toolicons-block'),
+		description: __( 'Add a submenu to the navigation', 'sb-toolicons-block'),
+		key: 'addsubmenu'
+	};
 const addToReusable =
 	{
 		icon: icon.reusableBlock,
@@ -190,6 +223,14 @@ const group =
 		key: 'group'
 	};
 
+export const grid =
+	{
+		icon: icon.grid,
+		label: __('Grid view','sb-toolicons-block'),
+		description: __( 'Display the content in a grid','sb-toolicons-block'),
+		key: 'grid'
+	};
+
 
 
 /*
@@ -273,6 +314,14 @@ const image =
 	key: 'image'
 	};
 
+export const indent =
+	{
+		icon: icon.formatIndent,
+		label: __('Indent list item', 'sb-toolicons-block'),
+		description: __( 'Indent the selected list item', 'sb-toolicons-block'),
+		key: 'indent'
+	};
+
 const insertAfter =
 	{
 		text: '',
@@ -297,12 +346,36 @@ const link =
 		key: 'link'
 	};
 
+export const list =
+	{
+		icon: icon.list,
+		label: __('List view', 'sb-toolicons-block'),
+		description: __('View as a list.', 'sb-toolicons-block'),
+		key: 'list'
+	};
+
 const moveDown =
 	{
 		icon: icon.chevronDown,
 		label: __( 'Move down','sb-toolicons-block'),
 		description: __( 'Move the block downwards','sb-toolicons-block'),
 		key: 'moveDown'
+	};
+
+export const moveLeft =
+	{
+		icon: icon.chevronLeft,
+		label: __( 'Move left','sb-toolicons-block'),
+		description: __( 'Move the block to the left','sb-toolicons-block'),
+		key: 'moveLeft'
+	};
+
+export const moveRight =
+	{
+		icon: icon.chevronRight,
+		label: __( 'Move right','sb-toolicons-block'),
+		description: __( 'Move the block to the right','sb-toolicons-block'),
+		key: 'moveRight'
 	};
 
 const moveTo =
@@ -327,6 +400,22 @@ const media =
 		label: __('Open Media Library','sb-toolicons-block'),
 		description: __( 'Choose from the Media library.','sb-toolicons-block'),
 		key: 'media'
+	};
+
+export const ordered =
+	{
+		icon: icon.formatListNumbered,
+		label: __('Convert to ordered list', 'sb-toolicons-block'),
+		description: __( 'Convert the selected list to an ordered list', 'sb-toolicons-block'),
+		key: 'ordered'
+	};
+
+export const outdent =
+	{
+		icon: icon.formatOutdent,
+		label: __('Outdent list item', 'sb-toolicons-block'),
+		description: __( 'Outdent the selected list item', 'sb-toolicons-block'),
+		key: 'outdent'
 	};
 
 const positionLeft =
@@ -420,6 +509,14 @@ const textColor =
 	key: 'textColor'
 	};
 
+export const unordered =
+	{
+		icon: icon.formatListBullets,
+		label: __('Convert to unordered list', 'sb-toolicons-block'),
+		description: __( 'Convert the list to a bulleted/ unordered list', 'sb-toolicons-block'),
+		key: 'unordered'
+	};
+
 const upload =
 	{
 		icon: icon.upload,
@@ -482,21 +579,23 @@ export { addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 };
 
 var tooliconsmap = [
-		addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
+	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings,
 	cancel, changeContentPosition, chevronDown, code, convertToBlocks, copy, crop,
 	dragHandle, duplicate,
 	editAsHTML, editURL,
 	formatBold, formatItalic, formatStrikethrough,
-	group,
+	grid, group,
 	heading1, heading2, heading3, heading4, heading5, heading6, html,
-	image, insertAfter, insertBefore,
-	link,
-	media, moveDown, moveTo, moveUp,
+	image, indent, insertAfter, insertBefore,
+	link, list,
+	media, moveDown, moveLeft, moveRight, moveTo, moveUp,
+	ordered, outdent,
 	positionLeft, positionCenter, positionRight, preview,
 	removeBlock, replace, rotate,
 	subscript, superscript,	stretchWide, stretchFullWidth,
 	textColor,
+	unordered,
 	upload,
 	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,
 	zoom
