@@ -102,14 +102,14 @@ const blocktoolmap = [
 	{ blockname: 'core/preformatted',
 	  tools: [ toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
 	},
-	
+
 	{blockname: 'core/pullquote',
 	tools: [ toolgroup.changeAlignment, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
 	},
 
 	{blockname: 'core/quote',
 		variation: null,
-		tools: [ toolgroup.alignmentToolbar]
+		tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
 	},
 
 	];
