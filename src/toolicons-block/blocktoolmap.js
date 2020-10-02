@@ -91,6 +91,9 @@ const blocktoolmap = [
 
 	{ blockname: 'core/navigation-link', tools: [toolicon.link, toolicon.addsubmenu, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreNavigationControls ],
 		leftright: true },
+
+	{blockname: 'core/nextpage', tools: []},
+
 	{ blockname: 'core/paragraph',
 	  variation: null,
 	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
