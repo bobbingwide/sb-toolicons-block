@@ -81,6 +81,11 @@ const blocktoolmap = [
 		tools: [toolicon.unordered, toolicon.ordered, toolicon.outdent, toolicon.indent,
 		toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
 	},
+	{ blockname: 'core/media-text',
+		tools: [ toolgroup.changeAlignment,toolicon.medialeft, toolicon.mediaright,
+			toolgroup.verticallyAlign, toolicon.link, toolgroup.replaceGroup ]
+	},
+
 	{ blockname: 'core/navigation-link', tools: [toolicon.link, toolicon.addsubmenu, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreNavigationControls ],
 		leftright: true },
 	{ blockname: 'core/paragraph',

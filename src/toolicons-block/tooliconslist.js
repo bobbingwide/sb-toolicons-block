@@ -402,6 +402,22 @@ const media =
 		key: 'media'
 	};
 
+export const medialeft =
+	{
+		icon: icon.pullLeft,
+		label: __( 'Show media left', 'sb-toolicons-block'),
+		description: __( 'Show media on the left hand side', 'sb-toolicons-block'),
+		key: 'medialeft'
+	};
+
+export const mediaright =
+	{
+		icon: icon.pullRight,
+		label: __( 'Show media right', 'sb-toolicons-block'),
+		description: __( 'Show media on the right hand side', 'sb-toolicons-block'),
+		key: 'mediaright'
+	};
+
 export const ordered =
 	{
 		icon: icon.formatListNumbered,
@@ -589,7 +605,7 @@ var tooliconsmap = [
 	heading1, heading2, heading3, heading4, heading5, heading6, html,
 	image, indent, insertAfter, insertBefore,
 	link, list,
-	media, moveDown, moveLeft, moveRight, moveTo, moveUp,
+	media, medialeft, mediaright, moveDown, moveLeft, moveRight, moveTo, moveUp,
 	ordered, outdent,
 	positionLeft, positionCenter, positionRight, preview,
 	removeBlock, replace, rotate,
