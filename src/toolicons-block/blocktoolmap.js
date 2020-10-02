@@ -72,7 +72,17 @@ const blocktoolmap = [
 	},
 	{ blockname: 'core/html', tools: [toolicon.html, toolicon.preview]},
 	{ blockname: 'core/image', tools: [toolgroup.changeAlignment, toolicon.link, toolicon.crop, toolgroup.replaceGroup] },
-
+	{ blockname: 'core/latest-comments', tools: [ toolgroup.changeAlignment ]},
+	{ blockname: 'core/latest-posts', tools: [ toolgroup.changeAlignment, toolicon.list, toolicon.grid]},
+	/*
+	{ blockname: 'core/legacy-widget', NOT WORKING IN GUTENBERG 9.0.0
+	 */
+	{ blockname: 'core/list',
+		tools: [toolicon.unordered, toolicon.ordered, toolicon.outdent, toolicon.indent,
+		toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
+	},
+	{ blockname: 'core/navigation-link', tools: [toolicon.link, toolicon.addsubmenu, toolicon.formatBold, toolicon.formatItalic, toolgroup.moreNavigationControls ],
+		leftright: true },
 	{ blockname: 'core/paragraph',
 	  variation: null,
 	  tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]

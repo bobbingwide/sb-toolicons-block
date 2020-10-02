@@ -9,7 +9,7 @@ import { Fragment } from '@wordpress/element';
 import { blocktoolmap } from './blocktoolmap';
 import { toolgroupmap } from './toolgroupmap';
 
-import { dragHandle, moveUp, moveDown, tooliconsmap } from './tooliconslist';
+import { dragHandle, moveUp, moveDown, moveLeft, moveRight, tooliconsmap } from './tooliconslist';
 import * as toolgroup from "./toolgroups";
 import { Transforms } from './transforms';
 
@@ -162,6 +162,17 @@ function MoveUpDownIcons() {
 		</div>	);
 }
 
+function MoveLeftRightIcons() {
+	var left = MyToolBar( moveLeft );
+	var right = MyToolBar( moveRight );
+	return(
+		<div className="moveLeftRight">
+			{left}
+			{right}
+		</div>
+	);
+}
+
 
 /**
  * Displays the block Toolbar controls
@@ -174,14 +185,15 @@ function MoveUpDownIcons() {
  * @returns {JSX.Element}
  */
 
-function blockToolbarControls( blockName ) {
+function blockToolbarControls( blockName, blocktool ) {
 	//console.log( blockName );
 	var block = getBlockType( blockName);
 	if ( !block) {
 		return('');
 	}
 	var dragHandleIcon = MyToolBar( dragHandle);
-	var moveUpDown = MoveUpDownIcons();
+	var leftright = ( undefined === blocktool.leftright) ? false : blocktool.leftright;
+	var moveUpDownLeftRight = leftright ? MoveLeftRightIcons() : MoveUpDownIcons();
 	return(
 /* components-toolbar-group block-editor-block-toolbar__block-controls */
 <Fragment>
@@ -189,7 +201,7 @@ function blockToolbarControls( blockName ) {
 		<Icon icon={block.icon.src} />
 	</div>
 	{ dragHandleIcon }
-	{ moveUpDown}
+	{ moveUpDownLeftRight}
 </Fragment>
 	);
 }
@@ -209,9 +221,9 @@ function blockToolbarMoreOptions( showMoreOptions=true ) {
 }
 
 function blockToolbar( blockName) {
-	var block = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
-	var blockToolBar = blockToolbarControls( blockName );
-	var icons = block.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
+	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
+	var blockToolBar = blockToolbarControls( blockName, blocktool );
+	var icons = blocktool.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
 	var moreOptions = blockToolbarMoreOptions();
 	return( <div className="blockToolbar">{blockToolBar}
 	{icons}{moreOptions}</div> );

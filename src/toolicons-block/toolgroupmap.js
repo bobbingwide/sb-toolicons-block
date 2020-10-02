@@ -11,12 +11,18 @@ import {
 	alignmentToolbar,
 	changeAlignment,
 	headingGroup,
+	moreNavigationControls,
 	moreOptions,
 	moreRichTextControls,
+
 	replaceGroup, verticallyAlign, cropGroup
 } from "./toolgroups";
 
-const toolgroupmap = [ alignmentToolbar, moreRichTextControls, headingGroup, moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup];
+const toolgroupmap = [ alignmentToolbar, moreRichTextControls,
+	headingGroup, moreOptions, changeAlignment, replaceGroup,
+	verticallyAlign, cropGroup,
+	moreNavigationControls
+];
 
 
 function getToolGroupOptions( ) {

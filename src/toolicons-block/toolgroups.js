@@ -34,6 +34,16 @@ const moreRichTextControls =
 		key: 'moreRichTextControls'
 	};
 
+const moreNavigationControls =
+	{
+		icon: chevronDown,
+		label: __( 'More rich text controls','sb-toolicons-block'),
+		description: __('Find more text controls in this dropdown.','sb-toolicons-block'),
+		tools: [ toolicon.image, toolicon.formatStrikethrough],
+		key: 'moreNavigationControls'
+	};
+
+
 const headingGroup =
 	{
 		icon: <HeadingLevelIcon level="2" />,
@@ -53,6 +63,8 @@ const moreOptions =
 			toolicon.moveTo, toolicon.editAsHTML, toolicon.group, toolicon.addToReusable, toolicon.removeBlock ],
 		key: 'moreOptions'
 	};
+
+
 
 const changeAlignment =
 	{ icon: positionCenter,
@@ -91,5 +103,5 @@ const cropGroup =
 	};
 
 
-export { alignmentToolbar, moreRichTextControls, headingGroup,
+export { alignmentToolbar, moreNavigationControls, moreRichTextControls, headingGroup,
 	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup};
