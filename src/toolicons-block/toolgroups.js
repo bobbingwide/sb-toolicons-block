@@ -40,7 +40,8 @@ const headingGroup =
 		label: __( 'Change heading level','sb-toolicons-block'),
 		description: __( 'Use Change heading level to choose the heading level.','sb-toolicons-block'),
 		tools: [ toolicon.heading1, toolicon.heading2, toolicon.heading3, toolicon.heading4, toolicon.heading5, toolicon.heading6 ],
-		key: 'headingGroup'
+		key: 'headingGroup',
+		horizontal: true
 	};
 
 const moreOptions =
@@ -79,5 +80,16 @@ const verticallyAlign =
 		key: 'verticallyAlign'
 	};
 
+const cropGroup =
+	{
+		icon: toolicon.crop,
+		label: __( 'Crop image', 'sb-toolicons-block'),
+		description: __( 'Crop the image.', 'sb-toolicons-block'),
+		tools: [ toolgroup.changeAlignment, toolicon.zoom, toolicon.aspectRatio, toolicon.rotate, toolicon.apply, toolicon.cancel] ,
+		key: 'cropGroup',
+		horizontal: true
+	};
+
+
 export { alignmentToolbar, moreRichTextControls, headingGroup,
-	moreOptions, changeAlignment, replaceGroup, verticallyAlign };
+	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup};

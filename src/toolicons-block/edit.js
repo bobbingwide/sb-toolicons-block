@@ -25,6 +25,9 @@ import { TextControl, PanelBody, PanelRow, SelectControl, ToggleControl } from '
 import './editor.scss';
 import './style.scss';
 import {toolIconStyled, getBlockTypeOptions } from "./toolicons";
+import { getSelectionOptions } from './variations';
+import { getToolIconOptions } from './tooliconsmap';
+import { getToolGroupOptions } from './toolgroupmap';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -39,12 +42,21 @@ import {toolIconStyled, getBlockTypeOptions } from "./toolicons";
  */
 export default function edit ( { attributes, className, isSelected, setAttributes } )   {
 	console.log( "edit being called");
-	const onChangeToolicon = ( event ) => {
-		setAttributes( { toolicon: event } );
+
+	const onChangeSelection = ( event ) => {
+		setAttributes( { selection: event } );
 	}
 
 	const onChangeBlockType = ( event) => {
 		setAttributes( { blocktype: event } );
+	}
+
+	const onChangeToolGroup = ( event ) => {
+		setAttributes( { toolgroup: event } );
+	}
+
+	const onChangeToolIcon = ( event ) => {
+		setAttributes( { toolicon: event } );
 	}
 
 	const onChangeShowMoreOptions = ( event ) => {
@@ -55,15 +67,46 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { showTransforms: ! attributes.showTransforms });
 	}
 
-	var toolicon = toolIconStyled( attributes.toolicon, attributes.blocktype, attributes.showMoreOptions, attributes.showTransforms );
+	var toolicon = toolIconStyled( attributes.selection,
+		attributes.blocktype,
+		attributes.toolgroup,
+		attributes.toolicon,
+		attributes.showMoreOptions,
+		attributes.showTransforms );
+
+	var selectionOptions = getSelectionOptions();
 	var blockTypeOptions = getBlockTypeOptions();
+	var toolGroupOptions = getToolGroupOptions();
+	var toolIconOptions = getToolIconOptions();
+
+
 	return (
 		<Fragment>
 			<InspectorControls>
 				<PanelBody>
 					<PanelRow>
-						<SelectControl label={__("Block type",'sb-toolicons-block')} value={attributes.blocktype} onChange={onChangeBlockType} options={blockTypeOptions}  />
+						<SelectControl label={__("Selection",'sb-toolicons-block')} value={attributes.selection} onChange={onChangeSelection} options={selectionOptions}  />
 					</PanelRow>
+					{ ('blocktype' === attributes.selection ) &&
+					<PanelRow>
+						<SelectControl label={__("Block type", 'sb-toolicons-block')} value={attributes.blocktype}
+									   onChange={onChangeBlockType} options={blockTypeOptions}/>
+					</PanelRow>
+					}
+					{ ('toolgroup' === attributes.selection) &&
+					<PanelRow>
+						<SelectControl label={__("Tool group", 'sb-toolicons-block')} value={attributes.toolgroup}
+									   onChange={onChangeToolGroup} options={toolGroupOptions}/>
+					</PanelRow>
+					}
+
+					{'toolicon' === attributes.selection &&
+
+					<PanelRow>
+						<SelectControl label={__("Icon", 'sb-toolicons-block')} value={attributes.toolicon}
+									   onChange={onChangeToolIcon} options={toolIconOptions}/>
+					</PanelRow>
+					}
 					<PanelRow>
 						<ToggleControl
 							label={ __( 'Show More options menu items', 'sb-toolicons-block' ) }

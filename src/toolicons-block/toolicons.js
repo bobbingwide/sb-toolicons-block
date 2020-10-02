@@ -7,8 +7,9 @@ import { __ } from '@wordpress/i18n';
 import { Fragment } from '@wordpress/element';
 
 import { blocktoolmap } from './blocktoolmap';
+import { toolgroupmap } from './toolgroupmap';
 
-import { dragHandle, moveUp, moveDown } from './tooliconslist';
+import { dragHandle, moveUp, moveDown, tooliconsmap } from './tooliconslist';
 import * as toolgroup from "./toolgroups";
 import { Transforms } from './transforms';
 
@@ -216,19 +217,57 @@ function blockToolbar( blockName) {
 	{icons}{moreOptions}</div> );
 }
 
-function toolIconStyled( iconname, blocktype, showMoreOptions, showTransforms ) {
+
+/**
+ * The Group toolbar should be displayed vertically for most groups
+ * except those which are horizontal.
+ *
+ * The display should be
+ *
+ * @param toolgroupkey
+ * @returns {JSX.Element}
+ */
+
+function groupToolbar( toolgroupkey ) {
+	var toolgroup = toolgroupmap.find( toolgroup => toolgroup.key === toolgroupkey );
+	var icons = toolgroup.tools.map( (icon ) => MyToolIcon( icon ) );
+	return( <div>
+		<ul className="icons" >
+		{icons}
+		</ul>
+		</div>);
+}
+
+function toolIconStyled( selection,
+	blocktype,
+	toolgroup,
+	toolicon, showMoreOptions, showTransforms ) {
 	//var toolIcons = toolIconsList( props );
-	var toolBar = blockToolbar( blocktype );
-	var blockTools = allBlockTools( blocktype, showMoreOptions );
-	//var blockTools = 'blockTools';
-	var transforms = Transforms( blocktype, showTransforms );
-	return(
-		<Fragment>
-			{toolBar}
-			{blockTools}
-			{transforms}
-		</Fragment>
-	);
+	if ( 'blocktype' === selection) {
+		var toolBar = blockToolbar(blocktype);
+		var blockTools = allBlockTools(blocktype, showMoreOptions);
+		//var blockTools = 'blockTools';
+		var transforms = Transforms(blocktype, showTransforms);
+		return(
+			<Fragment>
+				{toolBar}
+				{blockTools}
+				{transforms}
+			</Fragment>
+		);
+	}
+
+	if ( 'toolgroup' === selection ) {
+		var toolGroup = groupToolbar( toolgroup);
+		return( <div>{toolGroup}</div> );
+	}
+
+	if ('toolicon' === selection ) {
+		var icon = tooliconsmap.find( iconobj => iconobj.key === toolicon );
+		var iconOrText = MyIconOrText( icon );
+
+		return( <div>{iconOrText}</div>);
+	}
 }
 
 export { toolIconStyled, getBlockTypeOptions };

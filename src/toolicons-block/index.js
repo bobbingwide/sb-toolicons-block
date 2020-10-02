@@ -27,6 +27,7 @@ import './style.scss';
 import { toolIconStyled } from './toolicons';
 import edit from './edit';
 import save from './save';
+import variations from './variations';
 
 /**
  * Every block starts by registering a new block type definition.
@@ -57,6 +58,7 @@ registerBlockType( 'oik-sb/toolicons', {
 	 * These can be any of WordPress’ Dashicons, or a custom svg element.
 	 */
 	icon: 'block-default',
+	variations,
 
 
 
@@ -78,6 +80,16 @@ registerBlockType( 'oik-sb/toolicons', {
 	// Set for each piece of dynamic data used in your block
 
 	attributes: {
+
+		selection: {
+			type: 'string',
+			default: 'blocktype'  /* 'toolgroup', 'toolicon' */
+		},
+
+		toolgroup: {
+			type: 'string',
+			default: 'moreOptions'
+		},
 
 		toolicon: {
 			type: 'string',
