@@ -116,7 +116,9 @@ const blocktoolmap = [
 		tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
 	},
 
-
+	{ blockname: 'core/rss',
+	tools: [ toolgroup.changeAlignment, toolicon.editRSSUrl, toolicon.list, toolicon.grid ]
+	},
 
 	];
 

@@ -189,6 +189,15 @@ const editAsHTML =
 		key: 'editAsHTML'
 	};
 
+export const editRSSUrl =
+	{
+		icon: icon.edit,
+		label: __('Edit RSS URL','sb-toolicons-block'),
+		description: __( 'Use Edit RSS URL to change the URL for the RSS feed. Overwrite the existing URL and click on the “Use URL” Button on the right.','sb-toolicons-block'),
+		key: 'editRSSUrl'
+	};
+
+
 const editURL =
 	{
 		icon: icon.edit,
@@ -651,7 +660,7 @@ var tooliconsmap = [
 	blockSettings,
 	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
 	dragHandle, duplicate,
-	editAsHTML, editURL,
+	editAsHTML, editRSSUrl, editURL,
 	formatBold, formatItalic, formatStrikethrough,
 	grid, group,
 	heading1, heading2, heading3, heading4, heading5, heading6, html,
