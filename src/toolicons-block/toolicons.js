@@ -126,6 +126,9 @@ function allBlockTools( blockname, showMoreOptions ) {
 	//console.log( 'wtf');
 	//console.trace();
 	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockname );
+	if ( !blocktool) {
+		return('');
+	}
 	var moreOptions = '';
 	if ( showMoreOptions ) {
 		var moreOptions =  MyToolIcon( toolgroup.moreOptions );
@@ -189,6 +192,7 @@ function blockToolbarControls( blockName, blocktool ) {
 	//console.log( blockName );
 	var block = getBlockType( blockName);
 	if ( !block) {
+		alert( 'Unrecognised block' + blockName );
 		return('');
 	}
 	var dragHandleIcon = MyToolBar( dragHandle);
@@ -222,6 +226,10 @@ function blockToolbarMoreOptions( showMoreOptions=true ) {
 
 function blockToolbar( blockName) {
 	var blocktool = blocktoolmap.find( blocktool => blocktool.blockname === blockName );
+	if ( !blocktool ) {
+		console.log( 'Block name not recognised: ' + blockName);
+		return( '' );
+	}
 	var blockToolBar = blockToolbarControls( blockName, blocktool );
 	var icons = blocktool.tools.map( ( icon ) => MyToolBarOrGroup( icon ) );
 	var moreOptions = blockToolbarMoreOptions();
@@ -272,7 +280,7 @@ function toolIconStyled( selection,
 	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms ) {
 	//var toolIcons = toolIconsList( props );
 	if ( 'blocktype' === selection) {
-		var toolBar = blockToolbar(blocktype);
+		var toolBar = ( showToolBar) ? blockToolbar(blocktype) : '';
 		var blockTools = allBlockTools(blocktype, showMoreOptions);
 		//var blockTools = 'blockTools';
 		var transforms = Transforms(blocktype, showTransforms);

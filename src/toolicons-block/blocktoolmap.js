@@ -45,6 +45,10 @@ const blocktoolmap = [
 		tools: [ toolgroup.changeAlignment]
 	},
 
+	{ blockname: 'core/block',
+		tools: [ toolicon.converttoRegularBlocks]
+	},
+
 	{ blockname: 'core/categories', tools: [toolgroup.changeAlignment]},
 	{ blockname: 'core/code', tools: []},
 	{ blockname: 'core/column',
@@ -112,6 +116,9 @@ const blocktoolmap = [
 		tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
 	},
 
+
+
 	];
+
 
 export { blocktoolmap } ;

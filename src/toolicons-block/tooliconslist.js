@@ -142,6 +142,14 @@ const convertToBlocks =
 		key: 'convertToBlocks'
 	};
 
+export const converttoRegularBlocks =
+	{
+		text: __( 'Convert to Regular Blocks', 'sb-toolicons-block'),
+		label: __( 'Convert to Regular Blocks', 'sb-toolicons-block'),
+		description: __( 'Convert a reusable block back to regular blocks', 'sb-toolicons-block'),
+		key: 'converttoRegularBlocks'
+	};
+
 const copy =
 	{  text: '',
 		label: __('Copy','sb-toolicons-block'),
@@ -641,7 +649,7 @@ export { addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 var tooliconsmap = [
 	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings,
-	cancel, changeContentPosition, chevronDown, code, convertToBlocks, copy, crop,
+	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
 	dragHandle, duplicate,
 	editAsHTML, editURL,
 	formatBold, formatItalic, formatStrikethrough,
