@@ -15,6 +15,7 @@ import { __ } from '@wordpress/i18n';
 import { alignLeft, chevronDown, moreVertical, positionCenter } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
+import { buttonOutside } from './search-block-icons';
 
 const alignmentToolbar =
 	{
@@ -102,6 +103,16 @@ const cropGroup =
 		horizontal: true
 	};
 
+const changeButtonPosition =
+	{
+		icon: buttonOutside,
+		label: __( 'Change button position', 'sb-toolicons-block'),
+		description: __( 'Change the position of the Search button', 'sb-toolicons-block'),
+		tools: [ toolicon.nobutton, toolicon.searchbuttonOutside, toolicon.searchbuttonInside, toolicon.searchbuttonOnly],
+		key: 'changeButtonPosition',
+
+	};
+
 
 export { alignmentToolbar, moreNavigationControls, moreRichTextControls, headingGroup,
-	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup};
+	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup, changeButtonPosition};

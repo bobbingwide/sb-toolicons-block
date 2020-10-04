@@ -120,6 +120,13 @@ const blocktoolmap = [
 	tools: [ toolgroup.changeAlignment, toolicon.editRSSUrl, toolicon.list, toolicon.grid ]
 	},
 
+	{ blockname: 'core/search',
+		tools: [toolgroup.changeAlignment, toolicon.toggleSearchLabel,
+			toolgroup.changeButtonPosition,
+			toolicon.searchbuttonWithIcon
+			 ]
+	},
+
 	];
 
 

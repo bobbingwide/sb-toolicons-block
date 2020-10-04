@@ -18,6 +18,8 @@ import * as valign from './vertical-align-icons';
 
 import {__experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
 
+import * as search from './search-block-icons';
+
 /**
  * Copied from Gutenberg 9.0.0 on 2020/10/02
  * packages/block-library/src/navigation-link/icons.js
@@ -102,6 +104,39 @@ const blockSettings =
 	description: __('Show the block settings in the sidebar.','sb-toolicons-block'),
 	key: 'blockSettings'
 };
+
+export const searchbuttonInside =
+	{
+		icon: search.buttonInside,
+		label: __( 'Button inside','sb-toolicons-block'),
+		description: __('Show the Search button on the inside.','sb-toolicons-block'),
+		key: 'searchbuttonInside'
+	};
+
+export const searchbuttonOnly =
+	{
+		icon: search.buttonOnly,
+		label: __( 'Button only','sb-toolicons-block'),
+		description: __('Show the Search button only.','sb-toolicons-block'),
+		key: 'searchbuttonOnly'
+	};
+
+export const searchbuttonOutside =
+	{
+		icon: search.buttonOutside,
+		label: __( 'Button outside','sb-toolicons-block'),
+		description: __('Show the Search button on the outside.','sb-toolicons-block'),
+		key: 'searchbuttonOutside'
+	};
+
+export const searchbuttonWithIcon =
+	{
+		icon: search.buttonWithIcon,
+		label: __( 'Use button with icon', 'sb-toolicons-block'),
+		description: __( 'When selected uses the search icon, otherwise uses a text label that you enter.', 'sb-toolicons-block'),
+		key: 'searchbuttonWithIcon'
+	};
+
 
 const cancel =
 	{ text: __('Cancel', 'sb-toolicons-block'),
@@ -435,6 +470,13 @@ export const mediaright =
 		key: 'mediaright'
 	};
 
+export const nobutton =
+	{ icon: search.noButton,
+	label: __( 'No button', 'sb-toolicons-block'),
+	description: __( "Don't display a Search button", 'sb-toolicons-block' ),
+	key: 'nobutton',
+	};
+
 /**
  * Copied from Gutenberg 9.0.0 on 2020/10/02 - packages/block-library/src/navigation/use-block-navigator.js
  * @type {JSX.Element}
@@ -586,6 +628,14 @@ const textColor =
 	key: 'textColor'
 	};
 
+export const toggleSearchLabel =
+	{ icon: search.toggleLabel,
+	label: __( 'Toggle search label', 'sb-toolicons-block'),
+	description: __( 'Toggle the display of the label', 'sb-toolicons-block'),
+	key: 'toggleSearchLabel'
+	};
+
+
 export const unordered =
 	{
 		icon: icon.formatListBullets,
@@ -601,6 +651,7 @@ const upload =
 		description: __( 'Upload a file.','sb-toolicons-block'),
 		key: 'upload'
 	};
+
 
 const verticalAlignBottom =
 	{
@@ -657,7 +708,7 @@ export { addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 
 var tooliconsmap = [
 	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
-	blockSettings,
+	blockSettings, searchbuttonInside, searchbuttonOnly, searchbuttonOutside, searchbuttonWithIcon,
 	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
 	dragHandle, duplicate,
 	editAsHTML, editRSSUrl, editURL,
@@ -667,11 +718,12 @@ var tooliconsmap = [
 	image, indent, insertAfter, insertBefore,
 	link, list,
 	media, medialeft, mediaright, moveDown, moveLeft, moveRight, moveTo, moveUp,
+	nobutton,
 	openblocknavigator, opencolorsselector, ordered, outdent,
 	positionLeft, positionCenter, positionRight, preview,
 	removeBlock, replace, rotate,
 	subscript, superscript,	stretchWide, stretchFullWidth,
-	textColor,
+	textColor, toggleSearchLabel,
 	unordered,
 	upload,
 	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,

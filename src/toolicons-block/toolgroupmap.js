@@ -14,14 +14,13 @@ import {
 	moreNavigationControls,
 	moreOptions,
 	moreRichTextControls,
-
-	replaceGroup, verticallyAlign, cropGroup
+	replaceGroup, verticallyAlign, cropGroup, changeButtonPosition
 } from "./toolgroups";
 
 const toolgroupmap = [ alignmentToolbar, moreRichTextControls,
 	headingGroup, moreOptions, changeAlignment, replaceGroup,
 	verticallyAlign, cropGroup,
-	moreNavigationControls
+	moreNavigationControls, changeButtonPosition
 ];
 
 
