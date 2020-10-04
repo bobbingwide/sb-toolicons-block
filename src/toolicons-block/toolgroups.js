@@ -12,7 +12,7 @@
  */
 
 import { __ } from '@wordpress/i18n';
-import { alignLeft, chevronDown, moreVertical, positionCenter } from '@wordpress/icons';
+import { alignLeft, chevronDown, moreVertical, positionCenter, table } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
 import { buttonOutside } from './search-block-icons';
@@ -113,6 +113,14 @@ const changeButtonPosition =
 
 	};
 
+const editTableGroup =
+	{
+		icon: table,
+		label: __( 'Edit table', 'sb-toolicons-block'),
+		description: __( 'Edit rows or columns of the table'),
+		key: 'editTableGroup'
+	}
+
 
 export { alignmentToolbar, moreNavigationControls, moreRichTextControls, headingGroup,
-	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup, changeButtonPosition};
+	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup, changeButtonPosition, editTableGroup};

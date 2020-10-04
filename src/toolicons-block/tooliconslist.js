@@ -224,6 +224,7 @@ const editAsHTML =
 		key: 'editAsHTML'
 	};
 
+
 export const editRSSUrl =
 	{
 		icon: icon.edit,
@@ -232,6 +233,13 @@ export const editRSSUrl =
 		key: 'editRSSUrl'
 	};
 
+export const editTable =
+	{
+		icon: icon.table,
+		label: __( 'Edit table', 'sb-toolicons-block'),
+		description: __( 'Edit the tables rows or columns', 'sb-toolicons-block'),
+		key: 'editTable'
+	};
 
 const editURL =
 	{
@@ -711,7 +719,7 @@ var tooliconsmap = [
 	blockSettings, searchbuttonInside, searchbuttonOnly, searchbuttonOutside, searchbuttonWithIcon,
 	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
 	dragHandle, duplicate,
-	editAsHTML, editRSSUrl, editURL,
+	editAsHTML, editRSSUrl, editTable, editURL,
 	formatBold, formatItalic, formatStrikethrough,
 	grid, group,
 	heading1, heading2, heading3, heading4, heading5, heading6, html,

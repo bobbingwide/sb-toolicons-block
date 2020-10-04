@@ -133,6 +133,10 @@ const blocktoolmap = [
 	{ blockname: 'core/social-links', tools: [ toolgroup.changeAlignment ]},
 	{ blockname: 'core/spacer', tools: []},
 
+	{blockname: 'core/table',
+		tools: [ toolgroup.changeAlignment, toolgroup.editTableGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
+	},
+
 
 	];
 
