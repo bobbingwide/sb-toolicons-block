@@ -127,8 +127,10 @@ const blocktoolmap = [
 			 ]
 	},
 
-	{blockname: 'core/separator', tools: []},
-	{blockname: 'core/shortcode', tools: []},
+	{ blockname: 'core/separator', tools: []},
+	{ blockname: 'core/shortcode', tools: []},
+	{ blockname: 'core/social-link', tools: [], leftright: true},
+	{ blockname: 'core/social-links', tools: [ toolgroup.changeAlignment ]},
 
 	];
 
