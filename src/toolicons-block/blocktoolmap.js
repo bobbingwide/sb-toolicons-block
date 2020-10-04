@@ -131,6 +131,8 @@ const blocktoolmap = [
 	{ blockname: 'core/shortcode', tools: []},
 	{ blockname: 'core/social-link', tools: [], leftright: true},
 	{ blockname: 'core/social-links', tools: [ toolgroup.changeAlignment ]},
+	{ blockname: 'core/spacer', tools: []},
+
 
 	];
 
