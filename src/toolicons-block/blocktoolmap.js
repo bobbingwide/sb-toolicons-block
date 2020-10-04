@@ -128,6 +128,7 @@ const blocktoolmap = [
 	},
 
 	{blockname: 'core/separator', tools: []},
+	{blockname: 'core/shortcode', tools: []},
 
 	];
 
