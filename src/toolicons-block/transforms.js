@@ -9,7 +9,7 @@ import { BlockIcon  } from '@wordpress/editor';
 import { getBlockLink} from './blocklink';
 
 
-function Transforms( blockName, showTransforms, showLinks=true ) {
+function Transforms( blockName, showTransforms, showLinks ) {
 	if ( !showTransforms ) {
 		return('');
 	}
@@ -53,8 +53,10 @@ function getTransformLink( transform ) {
 }
 
 function TransformItem( transform, showLinks) {
-
+	//console.log( 'TransformItem');
+	//console.log( showLinks);
 	var linkortext = ( showLinks) ? getTransformLink( transform ) : transform.title;
+	//console.log( linkortext);
 	return (
 
 		<li key={transform.name}>

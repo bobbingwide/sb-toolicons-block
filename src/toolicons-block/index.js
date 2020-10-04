@@ -121,6 +121,11 @@ registerBlockType( 'oik-sb/toolicons', {
 			default: true
 		},
 
+		showLinks: {
+			type: 'boolean',
+			default: false
+		},
+
 
 	},
 

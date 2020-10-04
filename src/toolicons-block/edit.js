@@ -75,6 +75,9 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { showTransforms: ! attributes.showTransforms });
 	}
 
+	const onChangeShowLinks = ( event ) => {
+		setAttributes( { showLinks: ! attributes.showLinks });
+	}
 	var toolicon = toolIconStyled( attributes.selection,
 		attributes.blocktype,
 		attributes.toolgroup,
@@ -82,7 +85,8 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		attributes.showToolbar,
 		attributes.showDropDownMenus,
 		attributes.showMoreOptions,
-		attributes.showTransforms );
+		attributes.showTransforms,
+		attributes.showLinks);
 
 	var selectionOptions = getSelectionOptions();
 	var blockTypeOptions = getBlockTypeOptions();
@@ -158,6 +162,17 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 
 						/>
 						</PanelRow>
+					}
+					{('blocktype' === attributes.selection && attributes.showTransforms) &&
+
+					<PanelRow>
+						<ToggleControl
+							label={__('Show Links', 'sb-toolicons-block')}
+							checked={!!attributes.showLinks}
+							onChange={onChangeShowLinks}
+
+						/>
+					</PanelRow>
 					}
 				</PanelBody>
 			</InspectorControls>
