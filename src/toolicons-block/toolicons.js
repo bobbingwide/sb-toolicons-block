@@ -277,13 +277,13 @@ function groupToolbar( toolgroupkey ) {
 function toolIconStyled( selection,
 	blocktype,
 	toolgroup,
-	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms ) {
+	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms, showLinks ) {
 	//var toolIcons = toolIconsList( props );
 	if ( 'blocktype' === selection) {
 		var toolBar = ( showToolBar) ? blockToolbar(blocktype) : '';
 		var blockTools = allBlockTools(blocktype, showMoreOptions);
 		//var blockTools = 'blockTools';
-		var transforms = Transforms(blocktype, showTransforms);
+		var transforms = Transforms(blocktype, showTransforms, showLinks);
 		return(
 			<Fragment>
 				{toolBar}

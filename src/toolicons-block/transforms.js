@@ -6,9 +6,10 @@
 import { getBlockType, getBlockTransforms, getPossibleBlockTransformations } from '@wordpress/blocks';
 import { Fragment } from '@wordpress/element';
 import { BlockIcon  } from '@wordpress/editor';
+import { getBlockLink} from './blocklink';
 
 
-function Transforms( blockName, showTransforms ) {
+function Transforms( blockName, showTransforms, showLinks=true ) {
 	if ( !showTransforms ) {
 		return('');
 	}
@@ -32,10 +33,7 @@ function Transforms( blockName, showTransforms ) {
 
 	 */
 
-	var transformList = possible.map( ( transform ) => <li key={transform.name}>
-		<BlockIcon icon={transform.icon} />
-		{transform.title}
-		</li> );
+	var transformList = possible.map( ( transform ) => TransformItem( transform, showLinks ) );
 	return(
 		<Fragment>
 			<h3>{block.title} transforms to:</h3>
@@ -45,6 +43,24 @@ function Transforms( blockName, showTransforms ) {
 		</Fragment>
 	);
 
+}
+
+
+
+function getTransformLink( transform ) {
+	var url = getBlockLink( transform );
+	return( <a key={transform.name} href={url}>{transform.title}</a> );
+}
+
+function TransformItem( transform, showLinks) {
+
+	var linkortext = ( showLinks) ? getTransformLink( transform ) : transform.title;
+	return (
+
+		<li key={transform.name}>
+			<BlockIcon icon={transform.icon}/>
+			{linkortext}
+		</li>);
 }
 /*
 import { Toolbar, ToolbarItem, Button, Icon } from '@wordpress/components';
