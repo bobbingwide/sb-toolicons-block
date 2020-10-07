@@ -118,6 +118,8 @@ const editTableGroup =
 		icon: table,
 		label: __( 'Edit table', 'sb-toolicons-block'),
 		description: __( 'Edit rows or columns of the table'),
+		tools: [ toolicon.tableRowBefore, toolicon.tableRowAfter, toolicon.tableRowDelete,
+			toolicon.tableColumnBefore, toolicon.tableColumnAfter, toolicon.tableColumnDelete],
 		key: 'editTableGroup'
 	}
 

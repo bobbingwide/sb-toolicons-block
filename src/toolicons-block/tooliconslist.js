@@ -629,6 +629,53 @@ const superscript =
 		key: 'superscript'
 	};
 
+export const tableColumnAfter =
+	{
+		icon: icon.tableColumnAfter,
+		label: __('Insert column after', 'sb-toolicons-block'),
+		description: __('Insert a column after the selected column', 'sb-toolicons-block'),
+		key: 'tableColumnAfter'
+	};
+
+export const tableColumnBefore =
+	{
+		icon: icon.tableColumnBefore,
+		label: __('Insert column before', 'sb-toolicons-block'),
+		description: __('Insert a column before the selected column', 'sb-toolicons-block'),
+		key: 'tableColumnBefore'
+	};
+
+export const tableColumnDelete =
+	{
+		icon: icon.tableColumnDelete,
+		label: __('Delete column', 'sb-toolicons-block'),
+		description: __('Delete the selected column', 'sb-toolicons-block'),
+		key: 'tableColumnDelete'
+	};
+
+export const tableRowAfter =
+	{
+		icon: icon.tableRowAfter,
+		label: __('Insert row after', 'sb-toolicons-block'),
+		description: __('Insert a row after the selected column', 'sb-toolicons-block'),
+		key: 'tableRowAfter'
+	};
+export const tableRowBefore =
+	{
+		icon: icon.tableRowBefore,
+		label: __('Insert row before', 'sb-toolicons-block'),
+		description: __('Insert a row before the selected column', 'sb-toolicons-block'),
+		key: 'tableRowBefore'
+	};
+
+export const tableRowDelete =
+	{
+		icon: icon.tableRowDelete,
+		label: __('Delete row', 'sb-toolicons-block'),
+		description: __('Delete the selected row', 'sb-toolicons-block'),
+		key: 'tableRowDelete'
+	};
+
 const textColor =
 	{ icon: icon.textColor,
 	 label: __('Text color','sb-toolicons-block'),
@@ -731,6 +778,8 @@ var tooliconsmap = [
 	positionLeft, positionCenter, positionRight, preview,
 	removeBlock, replace, rotate,
 	subscript, superscript,	stretchWide, stretchFullWidth,
+	tableColumnAfter, tableColumnBefore, tableColumnDelete,
+	tableRowAfter, tableRowBefore, tableRowDelete,
 	textColor, toggleSearchLabel,
 	unordered,
 	upload,
