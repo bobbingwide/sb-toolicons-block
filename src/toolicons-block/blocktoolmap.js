@@ -136,9 +136,22 @@ const blocktoolmap = [
 	{blockname: 'core/table',
 		tools: [ toolgroup.changeAlignment, toolgroup.editTableGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
 	},
+	{ blockname: 'core/tag-cloud', tools: [ toolgroup.changeAlignment ]},
+	/* It's not possible to display the tooblar for a missing block. */
+	/* 	{blockname: 'core/missing'}, */
+	{
+		blockname: 'core/verse',
+		tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
+	},
+	{
+		blockname: 'core/video',
+		tools: [ toolgroup.changeAlignment, toolgroup.replaceGroup ]
+	},
 
 
-	];
+
+
+];
 
 
 export { blocktoolmap } ;
