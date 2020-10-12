@@ -7,9 +7,16 @@
 
 import { tooliconsmap }  from "./tooliconslist";
 
+/**
+ * This array should be sorted by value
+ *
+ * @returns {{label: *, value: *}[]}
+ */
 function getToolIconOptions( ) {
-	return tooliconsmap.map( ( toolicon ) => MyToolIconOption( toolicon ));
-	//var icons = block.tools.map( ( icon ) => MyToolBar( icon ) );
+	var toolicons = tooliconsmap.map( ( toolicon ) => MyToolIconOption( toolicon ));
+	toolicons = toolicons.sort( ( a, b ) => a.value.localeCompare( b.value ) );
+	//block_types = block_types.sort( (a, b) => a.title.localeCompare(b.title));
+	return toolicons;
 }
 function MyToolIconOption( toolicon ) {
 	return {  label: toolicon.label, value: toolicon.key };

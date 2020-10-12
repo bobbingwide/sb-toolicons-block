@@ -300,10 +300,18 @@ function toolIconStyled( selection,
 	}
 
 	if ('toolicon' === selection ) {
-		var icon = tooliconsmap.find( iconobj => iconobj.key === toolicon );
-		var iconOrText = MyIconOrText( icon );
 
-		return( <div>{iconOrText}</div>);
+		if ( true ) {
+			// Show all tool icons
+
+			var icons = tooliconsmap.map( icon => MyToolIcon( icon ));
+			return( <ol>{icons}</ol>);
+		} else {
+			var icon = tooliconsmap.find(iconobj => iconobj.key === toolicon);
+			var iconOrText = MyIconOrText(icon);
+
+			return (<div>{iconOrText}</div>);
+		}
 	}
 }
 
