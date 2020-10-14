@@ -4,7 +4,7 @@
 * Tags:              block, toolicons, toolbar, icons
 * Requires at least: 5.5.1
 * Tested up to:      5.5.1
-* Stable tag:        0.1.0
+* Stable tag:        0.2.0
 * Requires PHP:      7.2.0
 * License:           GPL-2.0-or-later
 * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -36,9 +36,14 @@ No. The plugin is delivered with the production version of the block.
 If you do wish to modify the code then you can find instructions in the src folder.
 
 ## Screenshots 
-1. tbc
+1. Block toolbar variation showing core/column
+2. Group toolbar variation showing Change text alignment
+3. Tool icon variation showing all icons
 
 ## Upgrade Notice 
+# 0.2.0 
+Now supports most of the core blocks ( 42 ) excluding those used in Full Site Editing.
+
 # 0.1.0 
 First version that displays toolbars and their icons on the front-end for 8 of 131 core blocks.
 
@@ -47,6 +52,18 @@ Initial version copied from sb-children-block, which uses wp-scripts and oik-blo
 where the use of `import { iconname } from '@wordpress/icons';` broke the Image block in Gutenberg 9.0.0
 
 ## Changelog 
+# 0.2.0 
+* Added: Add Show all icons toggle for Tool icon variation,https://github.com/bobbingwide/sb-toolicons-block/issues/9
+* Added: Add 3 variations,https://github.com/bobbingwide/sb-toolicons-block/issues/7
+* Added: Add more core blocks,https://github.com/bobbingwide/sb-toolicons-block/issues/1
+* Added: Add display of Tranforms with optional link to the target block documentation,https://github.com/bobbingwide/sb-toolicons-block/issues/8
+* Changed: Update the cropGroup horizontal toolbar for core/image when Crop has been chosen,https://github.com/bobbingwide/sb-toolicons-block/issues/6
+* Changed: Cater for icons which are not in the @wordpress/icons library,https://github.com/bobbingwide/sb-toolicons-block/issues/4
+* Added: Add Show transforms option,https://github.com/bobbingwide/sb-toolicons-block/issues/3
+* Tested: With Gutenberg 9.1.1
+* Tested: With WordPress 5.5.1
+* Tested: With PHP 7.4
+
 # 0.1.0 
 * Changed: Choose from 8 block types, https://github.com/bobbingwide/sb-toolicons-block/issues/1
 * Changed: Option to Show More Options

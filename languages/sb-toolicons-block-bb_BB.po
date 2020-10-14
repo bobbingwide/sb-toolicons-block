@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the SB Toolicons block plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: SB Toolicons block 0.1.0\n"
+"Project-Id-Version: SB Toolicons block 0.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sb-toolicons-block\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Language: bb_BB\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2020-10-04T22:11:38+00:00\n"
+"POT-Creation-Date: 2020-10-14T17:26:50+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: sb-toolicons-block\n"
@@ -26,7 +26,7 @@ msgstr "https://www.oik-plugins.com/oik-plugins/sb-toolicons-block"
 
 
 #. Description of the plugin
-#: build/index.js:3
+#: build/index.js:7000
 msgid "Helps you to document tool icons for a block."
 msgstr "Hleps yOU tO dcomunet tool iocns fOr A bolck."
 
@@ -41,841 +41,921 @@ msgid "https://www.bobbingwide.com/about-bobbing-wide"
 msgstr "https://www.bobbingwide.com/about-bobbing-wide"
 
 
-#: build/index.js:1
-msgid "Add submenu"
-msgstr "Add sbuemnu"
+#: build/index.js:6797
+msgid "Selection"
+msgstr "Sleceiton"
 
 
-#: build/index.js:1
-msgid "Add a submenu to the navigation"
-msgstr "Add A sbuemnu tO thE nvagitaoin"
+#: build/index.js:6802
+msgid "Block type"
+msgstr "Bolck tpye"
 
 
-#: build/index.js:1
-msgid "Add to Reusable blocks"
-msgstr "Add tO Rueaslbe bolkcs"
+#: build/index.js:6807
+msgid "Tool group"
+msgstr "Tool gorup"
 
 
-#: build/index.js:1
-msgid "Create a Reusable block."
-msgstr "Certae A Rueaslbe bolck."
+#: build/index.js:6812
+msgid "Show all icons"
+msgstr "Sohw All iocns"
 
 
-#: build/index.js:1
-msgid "Align text center"
-msgstr "Ailgn txet cneetr"
+#: build/index.js:6816
+msgid "Icon"
+msgstr "Iocn"
 
 
-#: build/index.js:1
-msgid "Align content centrally."
-msgstr "Ailgn cnoetnt cnertlaly."
+#: build/index.js:6821
+msgid "Show toolbar"
+msgstr "Sohw tooblar"
 
 
-#: build/index.js:1
-msgid "Align text left"
-msgstr "Ailgn txet lfet"
+#: build/index.js:6825
+msgid "Show Drop down menus"
+msgstr "Sohw Dorp dwon mneus"
 
 
-#: build/index.js:1
-msgid "Use the Align text left drop-down from the toolbar to align text to the left."
-msgstr "UsE thE Ailgn txet lfet dorp-dwon form thE tooblar tO ailgn txet tO thE lfet."
+#: build/index.js:6829
+msgid "Show More options menu items"
+msgstr "Sohw Mroe otpoins mneu ietms"
 
 
-#: build/index.js:1
-msgid "Align text right"
-msgstr "Ailgn txet rgiht"
+#: build/index.js:6833
+msgid "Show Transforms"
+msgstr "Sohw Tarsnofmrs"
 
 
-#: build/index.js:1
-msgid "Use the Align text right drop-down from the toolbar to align text to the right."
-msgstr "UsE thE Ailgn txet rgiht dorp-dwon form thE tooblar tO ailgn txet tO thE rgiht."
+#: build/index.js:6837
+msgid "Show Links"
+msgstr "Sohw Lniks"
 
 
-#: build/index.js:1
-msgid "Apply"
-msgstr "Apply"
+#: build/index.js:6994
+msgid "Toolbar icons"
+msgstr "Tooblar iocns"
 
 
-#: build/index.js:1
-msgid "Show More Settings"
-msgstr "Sohw Mroe Steitgns"
+#: build/index.js:7014
+msgid "Icons"
+msgstr "Iocns"
 
 
-#: build/index.js:1
-msgid "Show the block settings in the sidebar."
-msgstr "Sohw thE bolck steitgns In thE sdibear."
+#: build/index.js:7014
+msgid "Blocks"
+msgstr "Bolkcs"
 
 
-#: build/index.js:1
-msgid "Button inside"
-msgstr "Btuotn isndie"
+#: build/index.js:7014
+msgid "Toolbar"
+msgstr "Tooblar"
 
 
-#: build/index.js:1
-msgid "Show the Search button on the inside."
-msgstr "Sohw thE Saecrh btuotn On thE isndie."
+#: build/index.js:7014
+msgid "Tools"
+msgstr "Tools"
 
 
-#: build/index.js:1
-msgid "Button only"
-msgstr "Btuotn olny"
+#: build/index.js:7348
+msgid "Change text alignment"
+msgstr "Cahgne txet ailngemnt"
 
 
-#: build/index.js:1
-msgid "Show the Search button only."
-msgstr "Sohw thE Saecrh btuotn olny."
+#: build/index.js:7349
+msgid "Use Change text alignment to choose how to align the text."
+msgstr "UsE Cahgne txet ailngemnt tO cohsoe hOw tO ailgn thE txet."
 
 
-#: build/index.js:1
-msgid "Button outside"
-msgstr "Btuotn otuisde"
-
-
-#: build/index.js:1
-msgid "Show the Search button on the outside."
-msgstr "Sohw thE Saecrh btuotn On thE otuisde."
-
-
-#: build/index.js:1
-msgid "Use button with icon"
-msgstr "UsE btuotn wtih iocn"
-
-
-#: build/index.js:1
-msgid "When selected uses the search icon, otherwise uses a text label that you enter."
-msgstr "Wehn sleceetd uess thE saecrh iocn, ohtreiwse uess A txet lbael taht yOU etner."
-
-
-#: build/index.js:1
-msgid "Cancel"
-msgstr "Cnaecl"
-
-
-#: build/index.js:1
-#: build/index.js:3
+#: build/index.js:7355
+#: build/index.js:7362
+#: build/index.js:8045
 msgid "More rich text controls"
 msgstr "Mroe rcih txet cnortlos"
 
 
-#: build/index.js:1
-msgid "View more rich text controls."
-msgstr "Veiw mroe rcih txet cnortlos."
+#: build/index.js:7356
+#: build/index.js:7363
+msgid "Find more text controls in this dropdown."
+msgstr "Fnid mroe txet cnortlos In tihs dordpwon."
 
 
-#: build/index.js:1
-msgid "Inline code"
-msgstr "Ilnnie cdoe"
+#: build/index.js:7371
+msgid "Change heading level"
+msgstr "Cahgne haeidng lveel"
 
 
-#: build/index.js:1
-msgid "Use inline code feature to format code snippets within your text."
-msgstr "UsE ilnnie cdoe faeutre tO froamt cdoe sinpptes wtiihn yuor txet."
+#: build/index.js:7372
+msgid "Use Change heading level to choose the heading level."
+msgstr "UsE Cahgne haeidng lveel tO cohsoe thE haeidng lveel."
 
 
-#: build/index.js:1
-msgid "Convert to blocks"
-msgstr "Cnoevrt tO bolkcs"
+#: build/index.js:7379
+msgid "More options"
+msgstr "Mroe otpoins"
 
 
-#: build/index.js:1
-msgid "Convert to Regular Blocks"
-msgstr "Cnoevrt tO Rgeluar Bolkcs"
+#: build/index.js:7380
+msgid "Display more options"
+msgstr "Dsilpay mroe otpoins"
 
 
-#: build/index.js:1
-msgid "Convert a reusable block back to regular blocks"
-msgstr "Cnoevrt A rueaslbe bolck bcak tO rgeluar bolkcs"
+#: build/index.js:7386
+msgid "Change alignment"
+msgstr "Cahgne ailngemnt"
 
 
-#: build/index.js:1
-msgid "Copy"
-msgstr "Cpoy"
+#: build/index.js:7387
+msgid "Use Change alignment to choose the alignment"
+msgstr "UsE Cahgne ailngemnt tO cohsoe thE ailngemnt"
 
 
-#: build/index.js:1
-msgid "Copy the block to the clipboard."
-msgstr "Cpoy thE bolck tO thE cilbpaord."
+#: build/index.js:7392
+#: build/index.js:7393
+#: build/index.js:8390
+#: build/index.js:8391
+msgid "Replace"
+msgstr "Rpealce"
 
 
-#: build/index.js:1
-msgid "Crop"
-msgstr "Corp"
+#: build/index.js:7394
+msgid "Replace the selected file."
+msgstr "Rpealce thE sleceetd flie."
 
 
-#: build/index.js:1
-#: build/index.js:3
+#: build/index.js:7400
+msgid "Change vertical alignment"
+msgstr "Cahgne vreitacl ailngemnt"
+
+
+#: build/index.js:7401
+msgid "Change the vertical alignment of the columns"
+msgstr "Cahgne thE vreitacl ailngemnt Of thE clomuns"
+
+
+#: build/index.js:7407
+msgid "Crop image"
+msgstr "Corp iamge"
+
+
+#: build/index.js:7408
+#: build/index.js:8076
 msgid "Crop the image."
 msgstr "Corp thE iamge."
 
 
-#: build/index.js:1
-msgid "Drag block"
-msgstr "Darg bolck"
+#: build/index.js:7415
+msgid "Change button position"
+msgstr "Cahgne btuotn psotioin"
 
 
-#: build/index.js:1
-msgid "Use to drag the selected block to another location."
-msgstr "UsE tO darg thE sleceetd bolck tO aonhter lcotaoin."
+#: build/index.js:7416
+msgid "Change the position of the Search button"
+msgstr "Cahgne thE psotioin Of thE Saecrh btuotn"
 
 
-#: build/index.js:1
-msgid "Duplicate"
-msgstr "Dpuilacte"
-
-
-#: build/index.js:1
-msgid "Use Duplicate to create a copy of the block."
-msgstr "UsE Dpuilacte tO certae A cpoy Of thE bolck."
-
-
-#: build/index.js:1
-msgid "Edit as HTML"
-msgstr "Eidt As HMTL"
-
-
-#: build/index.js:1
-msgid "Edit the HTML of the block."
-msgstr "Eidt thE HMTL Of thE bolck."
-
-
-#: build/index.js:1
-msgid "Edit RSS URL"
-msgstr "Eidt RSS URL"
-
-
-#: build/index.js:1
-msgid "Use Edit RSS URL to change the URL for the RSS feed. Overwrite the existing URL and click on the “Use URL” Button on the right."
-msgstr "UsE Eidt RSS URL tO cahgne thE URL fOr thE RSS feed. Oevwrirte thE eixtsnig URL And cilck On thE “sUe ULR” Btuotn On thE rgiht."
-
-
-#: build/index.js:1
-#: build/index.js:3
+#: build/index.js:7422
+#: build/index.js:8105
 msgid "Edit table"
 msgstr "Eidt tbale"
 
 
-#: build/index.js:1
+#: build/index.js:7961
+msgid "Add submenu"
+msgstr "Add sbuemnu"
+
+
+#: build/index.js:7962
+msgid "Add a submenu to the navigation"
+msgstr "Add A sbuemnu tO thE nvagitaoin"
+
+
+#: build/index.js:7967
+msgid "Add to Reusable blocks"
+msgstr "Add tO Rueaslbe bolkcs"
+
+
+#: build/index.js:7968
+msgid "Create a Reusable block."
+msgstr "Certae A Rueaslbe bolck."
+
+
+#: build/index.js:7973
+msgid "Align text center"
+msgstr "Ailgn txet cneetr"
+
+
+#: build/index.js:7974
+msgid "Align content centrally."
+msgstr "Ailgn cnoetnt cnertlaly."
+
+
+#: build/index.js:7979
+msgid "Align text left"
+msgstr "Ailgn txet lfet"
+
+
+#: build/index.js:7980
+msgid "Use the Align text left drop-down from the toolbar to align text to the left."
+msgstr "UsE thE Ailgn txet lfet dorp-dwon form thE tooblar tO ailgn txet tO thE lfet."
+
+
+#: build/index.js:7985
+msgid "Align text right"
+msgstr "Ailgn txet rgiht"
+
+
+#: build/index.js:7986
+msgid "Use the Align text right drop-down from the toolbar to align text to the right."
+msgstr "UsE thE Ailgn txet rgiht dorp-dwon form thE tooblar tO ailgn txet tO thE rgiht."
+
+
+#: build/index.js:7990
+#: build/index.js:7991
+msgid "Apply"
+msgstr "Apply"
+
+
+#: build/index.js:8003
+msgid "Show More Settings"
+msgstr "Sohw Mroe Steitgns"
+
+
+#: build/index.js:8004
+msgid "Show the block settings in the sidebar."
+msgstr "Sohw thE bolck steitgns In thE sdibear."
+
+
+#: build/index.js:8009
+msgid "Button inside"
+msgstr "Btuotn isndie"
+
+
+#: build/index.js:8010
+msgid "Show the Search button on the inside."
+msgstr "Sohw thE Saecrh btuotn On thE isndie."
+
+
+#: build/index.js:8015
+msgid "Button only"
+msgstr "Btuotn olny"
+
+
+#: build/index.js:8016
+msgid "Show the Search button only."
+msgstr "Sohw thE Saecrh btuotn olny."
+
+
+#: build/index.js:8021
+msgid "Button outside"
+msgstr "Btuotn otuisde"
+
+
+#: build/index.js:8022
+msgid "Show the Search button on the outside."
+msgstr "Sohw thE Saecrh btuotn On thE otuisde."
+
+
+#: build/index.js:8027
+msgid "Use button with icon"
+msgstr "UsE btuotn wtih iocn"
+
+
+#: build/index.js:8028
+msgid "When selected uses the search icon, otherwise uses a text label that you enter."
+msgstr "Wehn sleceetd uess thE saecrh iocn, ohtreiwse uess A txet lbael taht yOU etner."
+
+
+#: build/index.js:8032
+#: build/index.js:8033
+msgid "Cancel"
+msgstr "Cnaecl"
+
+
+#: build/index.js:8046
+msgid "View more rich text controls."
+msgstr "Veiw mroe rcih txet cnortlos."
+
+
+#: build/index.js:8051
+msgid "Inline code"
+msgstr "Ilnnie cdoe"
+
+
+#: build/index.js:8052
+msgid "Use inline code feature to format code snippets within your text."
+msgstr "UsE ilnnie cdoe faeutre tO froamt cdoe sinpptes wtiihn yuor txet."
+
+
+#: build/index.js:8056
+#: build/index.js:8057
+msgid "Convert to blocks"
+msgstr "Cnoevrt tO bolkcs"
+
+
+#: build/index.js:8062
+#: build/index.js:8063
+msgid "Convert to Regular Blocks"
+msgstr "Cnoevrt tO Rgeluar Bolkcs"
+
+
+#: build/index.js:8064
+msgid "Convert a reusable block back to regular blocks"
+msgstr "Cnoevrt A rueaslbe bolck bcak tO rgeluar bolkcs"
+
+
+#: build/index.js:8069
+msgid "Copy"
+msgstr "Cpoy"
+
+
+#: build/index.js:8070
+msgid "Copy the block to the clipboard."
+msgstr "Cpoy thE bolck tO thE cilbpaord."
+
+
+#: build/index.js:8075
+msgid "Crop"
+msgstr "Corp"
+
+
+#: build/index.js:8081
+msgid "Drag block"
+msgstr "Darg bolck"
+
+
+#: build/index.js:8082
+msgid "Use to drag the selected block to another location."
+msgstr "UsE tO darg thE sleceetd bolck tO aonhter lcotaoin."
+
+
+#: build/index.js:8087
+msgid "Duplicate"
+msgstr "Dpuilacte"
+
+
+#: build/index.js:8088
+msgid "Use Duplicate to create a copy of the block."
+msgstr "UsE Dpuilacte tO certae A cpoy Of thE bolck."
+
+
+#: build/index.js:8093
+msgid "Edit as HTML"
+msgstr "Eidt As HMTL"
+
+
+#: build/index.js:8094
+msgid "Edit the HTML of the block."
+msgstr "Eidt thE HMTL Of thE bolck."
+
+
+#: build/index.js:8099
+msgid "Edit RSS URL"
+msgstr "Eidt RSS URL"
+
+
+#: build/index.js:8100
+msgid "Use Edit RSS URL to change the URL for the RSS feed. Overwrite the existing URL and click on the “Use URL” Button on the right."
+msgstr "UsE Eidt RSS URL tO cahgne thE URL fOr thE RSS feed. Oevwrirte thE eixtsnig URL And cilck On thE “sUe ULR” Btuotn On thE rgiht."
+
+
+#: build/index.js:8106
 msgid "Edit the tables rows or columns"
 msgstr "Eidt thE tbaels rwos Or clomuns"
 
 
-#: build/index.js:1
+#: build/index.js:8111
 msgid "Edit URL"
 msgstr "Eidt URL"
 
 
-#: build/index.js:1
+#: build/index.js:8112
 msgid "Use Edit URL to change the embed URL in the embed block. Overwrite the existing URL and click on the “Embed” Button on the right."
 msgstr "UsE Eidt URL tO cahgne thE ebmed URL In thE ebmed bolck. Oevwrirte thE eixtsnig URL And cilck On thE “mEebd” Btuotn On thE rgiht."
 
 
-#: build/index.js:1
+#: build/index.js:8117
 msgid "Bold"
 msgstr "Blod"
 
 
-#: build/index.js:1
+#: build/index.js:8118
 msgid "Use Bold to mark selected text as bold."
 msgstr "UsE Blod tO mrak sleceetd txet As blod."
 
 
-#: build/index.js:1
+#: build/index.js:8123
 msgid "Italic"
 msgstr "Iatilc"
 
 
-#: build/index.js:1
+#: build/index.js:8124
 msgid "Use Italic to mark selected text as italic."
 msgstr "UsE Iatilc tO mrak sleceetd txet As iatilc."
 
 
-#: build/index.js:1
+#: build/index.js:8129
 msgid "Strikethrough"
 msgstr "Srtkiterhuogh"
 
 
-#: build/index.js:1
+#: build/index.js:8130
 msgid "Use Strikethrough to strikethrough the selected text."
 msgstr "UsE Srtkiterhuogh tO srtkiterhuogh thE sleceetd txet."
 
 
-#: build/index.js:1
+#: build/index.js:8135
 msgid "Group"
 msgstr "Gorup"
 
 
-#: build/index.js:1
+#: build/index.js:8136
 msgid "Transform the selected block(s) into a group."
 msgstr "Tarsnofrm thE sleceetd bolck(s) itno A gorup."
 
 
-#: build/index.js:1
+#: build/index.js:8141
 msgid "Grid view"
 msgstr "Gird veiw"
 
 
-#: build/index.js:1
+#: build/index.js:8142
 msgid "Display the content in a grid"
 msgstr "Dsilpay thE cnoetnt In A gird"
 
 
 #. translators: %d: heading level e.g: "1", "2", "3"
-#: build/index.js:3
+#: build/index.js:8154
+#: build/index.js:8162
+#: build/index.js:8170
+#: build/index.js:8178
+#: build/index.js:8186
+#: build/index.js:8194
 msgid "Heading %d"
 msgstr "Haeidng %d"
 
 
-#: build/index.js:3
+#: build/index.js:8155
 msgid "Choose heading level 1."
 msgstr "Cohsoe haeidng lveel 1."
 
 
-#: build/index.js:3
+#: build/index.js:8163
 msgid "Choose heading level 2."
 msgstr "Cohsoe haeidng lveel 2."
 
 
-#: build/index.js:3
+#: build/index.js:8171
 msgid "Choose heading level 3."
 msgstr "Cohsoe haeidng lveel 3."
 
 
-#: build/index.js:3
+#: build/index.js:8179
 msgid "Choose heading level 4."
 msgstr "Cohsoe haeidng lveel 4."
 
 
-#: build/index.js:3
+#: build/index.js:8187
 msgid "Choose heading level 5."
 msgstr "Cohsoe haeidng lveel 5."
 
 
-#: build/index.js:3
+#: build/index.js:8195
 msgid "Choose heading level 6."
 msgstr "Cohsoe haeidng lveel 6."
 
 
-#: build/index.js:3
+#: build/index.js:8199
 msgid "HTML"
 msgstr "HMTL"
 
 
-#: build/index.js:3
+#: build/index.js:8219
 msgid "Inline image"
 msgstr "Ilnnie iamge"
 
 
-#: build/index.js:3
+#: build/index.js:8220
 msgid "Insert an inline image."
 msgstr "Isnret An ilnnie iamge."
 
 
-#: build/index.js:3
+#: build/index.js:8225
 msgid "Indent list item"
 msgstr "Idnnet lsit ietm"
 
 
-#: build/index.js:3
+#: build/index.js:8226
 msgid "Indent the selected list item"
 msgstr "Idnnet thE sleceetd lsit ietm"
 
 
-#: build/index.js:3
+#: build/index.js:8231
 msgid "Insert After"
 msgstr "Isnret Atfer"
 
 
-#: build/index.js:3
+#: build/index.js:8232
 msgid "Insert a new block after the selected block(s)."
 msgstr "Isnret A nEw bolck atfer thE sleceetd bolck(s)."
 
 
-#: build/index.js:3
+#: build/index.js:8237
 msgid "Insert Before"
 msgstr "Isnret Bferoe"
 
 
-#: build/index.js:3
+#: build/index.js:8238
 msgid "Insert a new block before the selected block(s)."
 msgstr "Isnret A nEw bolck bferoe thE sleceetd bolck(s)."
 
 
-#: build/index.js:3
+#: build/index.js:8243
 msgid "Link"
 msgstr "Lnik"
 
 
-#: build/index.js:3
+#: build/index.js:8244
 msgid "Use Link to create a hyperlink to your highlighted text."
 msgstr "UsE Lnik tO certae A hpyreilnk tO yuor hgilhgithed txet."
 
 
-#: build/index.js:3
+#: build/index.js:8249
 msgid "List view"
 msgstr "Lsit veiw"
 
 
-#: build/index.js:3
+#: build/index.js:8250
 msgid "View as a list."
 msgstr "Veiw As A lsit."
 
 
-#: build/index.js:3
+#: build/index.js:8255
 msgid "Move down"
 msgstr "Mvoe dwon"
 
 
-#: build/index.js:3
+#: build/index.js:8256
 msgid "Move the block downwards"
 msgstr "Mvoe thE bolck dwownrads"
 
 
-#: build/index.js:3
+#: build/index.js:8261
 msgid "Move left"
 msgstr "Mvoe lfet"
 
 
-#: build/index.js:3
+#: build/index.js:8262
 msgid "Move the block to the left"
 msgstr "Mvoe thE bolck tO thE lfet"
 
 
-#: build/index.js:3
+#: build/index.js:8267
 msgid "Move right"
 msgstr "Mvoe rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8268
 msgid "Move the block to the right"
 msgstr "Mvoe thE bolck tO thE rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8273
 msgid "Move To"
 msgstr "Mvoe TO"
 
 
-#: build/index.js:3
+#: build/index.js:8274
 msgid " Use Move To to move a block. Up/Down or Left/Right"
 msgstr " UsE Mvoe TO tO mvoe A bolck. Up/Dwon Or Lfet/Rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8279
 msgid "Move up"
 msgstr "Mvoe Up"
 
 
-#: build/index.js:3
+#: build/index.js:8280
 msgid "Move the block upwards"
 msgstr "Mvoe thE bolck uwprads"
 
 
-#: build/index.js:3
+#: build/index.js:8285
 msgid "Open Media Library"
 msgstr "Oepn Mdeia Lbiarry"
 
 
-#: build/index.js:3
+#: build/index.js:8286
 msgid "Choose from the Media library."
 msgstr "Cohsoe form thE Mdeia lbiarry."
 
 
-#: build/index.js:3
+#: build/index.js:8291
 msgid "Show media left"
 msgstr "Sohw mdeia lfet"
 
 
-#: build/index.js:3
+#: build/index.js:8292
 msgid "Show media on the left hand side"
 msgstr "Sohw mdeia On thE lfet hnad sdie"
 
 
-#: build/index.js:3
+#: build/index.js:8297
 msgid "Show media right"
 msgstr "Sohw mdeia rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8298
 msgid "Show media on the right hand side"
 msgstr "Sohw mdeia On thE rgiht hnad sdie"
 
 
-#: build/index.js:3
+#: build/index.js:8303
 msgid "No button"
 msgstr "NO btuotn"
 
 
-#: build/index.js:3
+#: build/index.js:8304
 msgid "Don't display a Search button"
 msgstr "DOn't dsilpay A Saecrh btuotn"
 
 
-#: build/index.js:3
+#: build/index.js:8322
 msgid "Open block navigator"
 msgstr "Oepn bolck nvagitaor"
 
 
-#: build/index.js:3
+#: build/index.js:8343
 msgid "Open colors selector"
 msgstr "Oepn cloros sleceotr"
 
 
-#: build/index.js:3
+#: build/index.js:8344
 msgid "Open the dialog to select colors"
 msgstr "Oepn thE daiolg tO slecet cloros"
 
 
-#: build/index.js:3
+#: build/index.js:8349
 msgid "Convert to ordered list"
 msgstr "Cnoevrt tO odrreed lsit"
 
 
-#: build/index.js:3
+#: build/index.js:8350
 msgid "Convert the selected list to an ordered list"
 msgstr "Cnoevrt thE sleceetd lsit tO An odrreed lsit"
 
 
-#: build/index.js:3
+#: build/index.js:8355
 msgid "Outdent list item"
 msgstr "Otuednt lsit ietm"
 
 
-#: build/index.js:3
+#: build/index.js:8356
 msgid "Outdent the selected list item"
 msgstr "Otuednt thE sleceetd lsit ietm"
 
 
-#: build/index.js:3
+#: build/index.js:8361
 msgid "Align left"
 msgstr "Ailgn lfet"
 
 
-#: build/index.js:3
+#: build/index.js:8362
 msgid "Align to the left"
 msgstr "Ailgn tO thE lfet"
 
 
-#: build/index.js:3
+#: build/index.js:8367
 msgid "Align center"
 msgstr "Ailgn cneetr"
 
 
-#: build/index.js:3
+#: build/index.js:8368
 msgid "Align in the center"
 msgstr "Ailgn In thE cneetr"
 
 
-#: build/index.js:3
+#: build/index.js:8373
 msgid "Align right"
 msgstr "Ailgn rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8374
 msgid "Align to the right"
 msgstr "Ailgn tO thE rgiht"
 
 
-#: build/index.js:3
+#: build/index.js:8378
+#: build/index.js:8379
 msgid "Preview"
 msgstr "Perivew"
 
 
-#: build/index.js:3
+#: build/index.js:8380
 msgid "Preview the formatted HTML"
 msgstr "Perivew thE froamtted HMTL"
 
 
-#: build/index.js:3
+#: build/index.js:8385
 msgid "Remove block"
 msgstr "Rmevoe bolck"
 
 
-#: build/index.js:3
+#: build/index.js:8386
 msgid "Delete the block."
 msgstr "Dletee thE bolck."
 
 
-#: build/index.js:3
-msgid "Replace"
-msgstr "Rpealce"
-
-
-#: build/index.js:3
+#: build/index.js:8392
 msgid "Replace the existing file."
 msgstr "Rpealce thE eixtsnig flie."
 
 
-#: build/index.js:3
+#: build/index.js:8397
 msgid "Rotate"
 msgstr "Rtotae"
 
 
-#: build/index.js:3
+#: build/index.js:8398
 msgid "Rotate the image"
 msgstr "Rtotae thE iamge"
 
 
-#: build/index.js:3
+#: build/index.js:8403
 msgid "Wide width"
 msgstr "Wdie wdith"
 
 
-#: build/index.js:3
+#: build/index.js:8404
 msgid "Increase the width of the block beyond the content size. Requires theme support."
 msgstr "Icnersae thE wdith Of thE bolck byenod thE cnoetnt szie. Rqeiuers tehme spuoprt."
 
 
-#: build/index.js:3
+#: build/index.js:8409
 msgid "Full width"
 msgstr "Flul wdith"
 
 
-#: build/index.js:3
+#: build/index.js:8410
 msgid "Extend the block to cover the full width of the screen. Requires theme support."
 msgstr "Etxned thE bolck tO cvoer thE flul wdith Of thE srceen. Rqeiuers tehme spuoprt."
 
 
-#: build/index.js:3
+#: build/index.js:8415
 msgid "Subscript"
 msgstr "Sbucsirpt"
 
 
-#: build/index.js:3
+#: build/index.js:8416
 msgid "Use Subscript to add subscript to your highlighted text."
 msgstr "UsE Sbucsirpt tO Add sbucsirpt tO yuor hgilhgithed txet."
 
 
-#: build/index.js:3
+#: build/index.js:8421
 msgid "Superscript"
 msgstr "Spurecsirpt"
 
 
-#: build/index.js:3
+#: build/index.js:8422
 msgid "Use Superscript to add superscript to your highlighted text."
 msgstr "UsE Spurecsirpt tO Add spurecsirpt tO yuor hgilhgithed txet."
 
 
-#: build/index.js:3
+#: build/index.js:8427
+msgid "Insert column after"
+msgstr "Isnret clomun atfer"
+
+
+#: build/index.js:8428
+msgid "Insert a column after the selected column"
+msgstr "Isnret A clomun atfer thE sleceetd clomun"
+
+
+#: build/index.js:8433
+msgid "Insert column before"
+msgstr "Isnret clomun bferoe"
+
+
+#: build/index.js:8434
+msgid "Insert a column before the selected column"
+msgstr "Isnret A clomun bferoe thE sleceetd clomun"
+
+
+#: build/index.js:8439
+msgid "Delete column"
+msgstr "Dletee clomun"
+
+
+#: build/index.js:8440
+msgid "Delete the selected column"
+msgstr "Dletee thE sleceetd clomun"
+
+
+#: build/index.js:8445
+msgid "Insert row after"
+msgstr "Isnret rOw atfer"
+
+
+#: build/index.js:8446
+msgid "Insert a row after the selected column"
+msgstr "Isnret A rOw atfer thE sleceetd clomun"
+
+
+#: build/index.js:8451
+msgid "Insert row before"
+msgstr "Isnret rOw bferoe"
+
+
+#: build/index.js:8452
+msgid "Insert a row before the selected column"
+msgstr "Isnret A rOw bferoe thE sleceetd clomun"
+
+
+#: build/index.js:8457
+msgid "Delete row"
+msgstr "Dletee rOw"
+
+
+#: build/index.js:8458
+msgid "Delete the selected row"
+msgstr "Dletee thE sleceetd rOw"
+
+
+#: build/index.js:8463
 msgid "Text color"
 msgstr "Txet cloor"
 
 
-#: build/index.js:3
+#: build/index.js:8464
 msgid "Use Text color to change the color of the selected text"
 msgstr "UsE Txet cloor tO cahgne thE cloor Of thE sleceetd txet"
 
 
-#: build/index.js:3
+#: build/index.js:8469
 msgid "Toggle search label"
 msgstr "Tgolge saecrh lbael"
 
 
-#: build/index.js:3
+#: build/index.js:8470
 msgid "Toggle the display of the label"
 msgstr "Tgolge thE dsilpay Of thE lbael"
 
 
-#: build/index.js:3
+#: build/index.js:8475
 msgid "Convert to unordered list"
 msgstr "Cnoevrt tO uondrreed lsit"
 
 
-#: build/index.js:3
+#: build/index.js:8476
 msgid "Convert the list to a bulleted/ unordered list"
 msgstr "Cnoevrt thE lsit tO A blueletd/ uondrreed lsit"
 
 
-#: build/index.js:3
+#: build/index.js:8481
 msgid "Upload"
 msgstr "Ulpaod"
 
 
-#: build/index.js:3
+#: build/index.js:8482
 msgid "Upload a file."
 msgstr "Ulpaod A flie."
 
 
-#: build/index.js:3
+#: build/index.js:8487
 msgid "Vertically Align Bottom"
 msgstr "Vreitaclly Ailgn Btootm"
 
 
-#: build/index.js:3
+#: build/index.js:8488
 msgid "Vertically align the columns to the bottom"
 msgstr "Vreitaclly ailgn thE clomuns tO thE btootm"
 
 
-#: build/index.js:3
+#: build/index.js:8493
 msgid "Vertically Align Middle"
 msgstr "Vreitaclly Ailgn Mdilde"
 
 
-#: build/index.js:3
+#: build/index.js:8494
 msgid "Vertically align the columns to the middle"
 msgstr "Vreitaclly ailgn thE clomuns tO thE mdilde"
 
 
-#: build/index.js:3
+#: build/index.js:8499
 msgid "Vertically Align Top"
 msgstr "Vreitaclly Ailgn TOp"
 
 
-#: build/index.js:3
+#: build/index.js:8500
 msgid "Vertically align the columns"
 msgstr "Vreitaclly ailgn thE clomuns"
 
 
-#: build/index.js:3
+#: build/index.js:8505
 msgid "Zoom"
 msgstr "Zoom"
 
 
-#: build/index.js:3
+#: build/index.js:8506
 msgid "Zoom in or out."
 msgstr "Zoom In Or OUt."
-
-
-#: build/index.js:3
-msgid "Change text alignment"
-msgstr "Cahgne txet ailngemnt"
-
-
-#: build/index.js:3
-msgid "Use Change text alignment to choose how to align the text."
-msgstr "UsE Cahgne txet ailngemnt tO cohsoe hOw tO ailgn thE txet."
-
-
-#: build/index.js:3
-msgid "Find more text controls in this dropdown."
-msgstr "Fnid mroe txet cnortlos In tihs dordpwon."
-
-
-#: build/index.js:3
-msgid "Change heading level"
-msgstr "Cahgne haeidng lveel"
-
-
-#: build/index.js:3
-msgid "Use Change heading level to choose the heading level."
-msgstr "UsE Cahgne haeidng lveel tO cohsoe thE haeidng lveel."
-
-
-#: build/index.js:3
-msgid "More options"
-msgstr "Mroe otpoins"
-
-
-#: build/index.js:3
-msgid "Display more options"
-msgstr "Dsilpay mroe otpoins"
-
-
-#: build/index.js:3
-msgid "Change alignment"
-msgstr "Cahgne ailngemnt"
-
-
-#: build/index.js:3
-msgid "Use Change alignment to choose the alignment"
-msgstr "UsE Cahgne ailngemnt tO cohsoe thE ailngemnt"
-
-
-#: build/index.js:3
-msgid "Replace the selected file."
-msgstr "Rpealce thE sleceetd flie."
-
-
-#: build/index.js:3
-msgid "Change vertical alignment"
-msgstr "Cahgne vreitacl ailngemnt"
-
-
-#: build/index.js:3
-msgid "Change the vertical alignment of the columns"
-msgstr "Cahgne thE vreitacl ailngemnt Of thE clomuns"
-
-
-#: build/index.js:3
-msgid "Crop image"
-msgstr "Corp iamge"
-
-
-#: build/index.js:3
-msgid "Change button position"
-msgstr "Cahgne btuotn psotioin"
-
-
-#: build/index.js:3
-msgid "Change the position of the Search button"
-msgstr "Cahgne thE psotioin Of thE Saecrh btuotn"
-
-
-#: build/index.js:3
-msgid "Toolbar icons"
-msgstr "Tooblar iocns"
-
-
-#: build/index.js:3
-msgid "Icons"
-msgstr "Iocns"
-
-
-#: build/index.js:3
-msgid "Blocks"
-msgstr "Bolkcs"
-
-
-#: build/index.js:3
-msgid "Toolbar"
-msgstr "Tooblar"
-
-
-#: build/index.js:3
-msgid "Tools"
-msgstr "Tools"
-
-
-#: build/index.js:3
-msgid "Selection"
-msgstr "Sleceiton"
-
-
-#: build/index.js:3
-msgid "Block type"
-msgstr "Bolck tpye"
-
-
-#: build/index.js:3
-msgid "Tool group"
-msgstr "Tool gorup"
-
-
-#: build/index.js:3
-msgid "Icon"
-msgstr "Iocn"
-
-
-#: build/index.js:3
-msgid "Show toolbar"
-msgstr "Sohw tooblar"
-
-
-#: build/index.js:3
-msgid "Show Drop down menus"
-msgstr "Sohw Dorp dwon mneus"
-
-
-#: build/index.js:3
-msgid "Show More options menu items"
-msgstr "Sohw Mroe otpoins mneu ietms"
-
-
-#: build/index.js:3
-msgid "Show Transforms"
-msgstr "Sohw Tarsnofmrs"
-
-
-#: build/index.js:3
-msgid "Show Links"
-msgstr "Sohw Lniks"
 
