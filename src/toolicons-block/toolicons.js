@@ -277,7 +277,7 @@ function groupToolbar( toolgroupkey ) {
 function toolIconStyled( selection,
 	blocktype,
 	toolgroup,
-	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms, showLinks ) {
+	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms, showLinks, showAllIcons ) {
 	//var toolIcons = toolIconsList( props );
 	if ( 'blocktype' === selection) {
 		var toolBar = ( showToolBar) ? blockToolbar(blocktype) : '';
@@ -301,16 +301,17 @@ function toolIconStyled( selection,
 
 	if ('toolicon' === selection ) {
 
-		if ( true ) {
+		if ( showAllIcons ) {
 			// Show all tool icons
 
 			var icons = tooliconsmap.map( icon => MyToolIcon( icon ));
-			return( <ol>{icons}</ol>);
+			return( <ol className="icons">{icons}</ol>);
 		} else {
 			var icon = tooliconsmap.find(iconobj => iconobj.key === toolicon);
 			var iconOrText = MyIconOrText(icon);
+			iconOrText = MyToolIcon( icon );
 
-			return (<div>{iconOrText}</div>);
+			return (<ul className="icons">{iconOrText}</ul>);
 		}
 	}
 }

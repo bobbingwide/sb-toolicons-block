@@ -23,6 +23,7 @@ export default function save( { attributes } ) {
 		attributes.showDropDownMenus,
 		attributes.showMoreOptions,
 		attributes.showTransforms,
-		attributes.showLinks);
+		attributes.showLinks,
+		attributes.showAllIcons);
 	return( <div> { toolicon } </div> );
 }

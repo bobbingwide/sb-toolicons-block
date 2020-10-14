@@ -45,14 +45,16 @@ ul.transform {
   list-style-type: none;
 }
 
-ul.icons svg {
+.icons svg
+.icons svg {
   display: inline;
   margin-right: 1em;
 }
 
 .blockToolbar svg,
 .groupToolbar svg,
-ul.icons svg,
+.icons svg,
+.icons svg,
 ul.transform svg{
   height: 48px;
  min-width: 48px;
@@ -61,7 +63,8 @@ ul.transform svg{
 
 }
 
-ul.icons li {
+.icons li,
+.icons.li {
   display: grid;
   grid-template-columns: 2fr 3fr 6fr ;
   grid-template-rows: 1fr;
@@ -75,17 +78,17 @@ ul.transform li {
   grid-template-rows: 1fr;
 }
 
-ul.icons span.tool,
-ul.icons span.label,
-ul.icons span.description{
+.icons span.tool,
+.icons span.label,
+.icons span.description{
   display: grid;
 }
 
-ul.icons span.tool {
+.icons span.tool {
   min-width: 48px;
 }
 
-ul.icons span {
+.icons span {
   padding: 8px;
 }
 

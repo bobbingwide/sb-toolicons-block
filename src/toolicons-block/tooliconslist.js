@@ -805,7 +805,7 @@ export { default as atSymbol } from './library/at-symbol';
 export { default as aspectRatio } from './library/aspect-ratio';
 export { default as audio } from './library/audio';
 export { default as backup } from './library/backup';
-export { default as blockDefault } from './library/block-default';
+? export { default as blockDefault } from './library/block-default';
 export { default as blockTable } from './library/block-table';
 export { default as box } from './library/box';
 export { default as brush } from './library/brush';

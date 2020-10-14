@@ -1,6 +1,6 @@
 import {blocktoolmap} from "./blocktoolmap";
 
-import { group  } from '@wordpress/icons';
+import { group, blockDefault, tool  } from '@wordpress/icons';
 
 
 const variations = [
@@ -8,7 +8,7 @@ const variations = [
 		name: 'blocktype',
 		attributes: { selection: 'blocktype' },
 		title: 'Block toolbar',
-		icon: 'block-default',
+		icon: blockDefault,
 		description: 'Helps you to document tool icons for a block',
 		scope: ['inserter']
 	},
@@ -26,7 +26,7 @@ const variations = [
 		name: 'toolicon',
 		attributes: {selection: 'toolicon'},
 		title: 'Tool icon',
-		icon: 'icon',
+		icon: tool,
 		description: 'Helps you to document a single tool icon',
 		scope: ['inserter', 'block']
 	}
