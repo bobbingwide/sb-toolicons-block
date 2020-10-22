@@ -382,6 +382,14 @@ export const indent =
 		key: 'indent'
 	};
 
+export const info =
+	{
+		icon: icon.info,
+		label: __( 'Content structure', 'sb-toolicons-block'),
+		description: __( 'Display summary information about the content', 'sb-toolicons-block'),
+		key: 'info'
+	};
+
 const insertAfter =
 	{
 		text: '',
@@ -478,6 +486,36 @@ export const mediaright =
 		key: 'mediaright'
 	};
 
+/* Copied from Gutenberg 9.1.0 on 2020/10/21 packages/block-editor/src/components/block-navigation/dropdown.js
+*/
+
+const MenuIcon = (
+	<SVG
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 24 24"
+		width="24"
+		height="24"
+	>
+		<Path d="M13.8 5.2H3v1.5h10.8V5.2zm-3.6 12v1.5H21v-1.5H10.2zm7.2-6H6.6v1.5h10.8v-1.5z" />
+	</SVG>
+);
+
+export const menuicon =
+	{
+		icon: MenuIcon,
+		label: __( 'Block navigation', 'sb-toolicons-block'),
+		description: __( 'View the hierarchy of blocks', 'sb-toolicons-block'),
+		key: 'menuicon'
+	};
+
+export const moreToolsAndOptions =
+	{
+		icon: icon.moreVertical,
+		label: __( 'More tools and options', 'sb-toolicons-block'),
+		description: __( 'Display more tools and options', 'sb-toolicons-block'),
+		key: 'moreToolsAndOptions'
+	};
+
 export const nobutton =
 	{ icon: search.noButton,
 	label: __( 'No button', 'sb-toolicons-block'),
@@ -545,6 +583,14 @@ export const outdent =
 		key: 'outdent'
 	};
 
+export const plus =
+	{
+		icon: icon.plus,
+		label: __( 'Add block', 'sb-toolicons-block'),
+		description: __( 'Add a block using the block inserter', 'sb-toolicons-block'),
+		key: 'plus',
+	}
+
 const positionLeft =
 	{
 		icon: icon.positionLeft,
@@ -575,6 +621,22 @@ const preview =
 		key: 'preview'
 	};
 
+export const previewPost =
+	{
+		text: __( 'Preview', 'sb-toolicons-block'),
+		label: __( 'Preview','sb-toolicons-block'),
+		description: __( 'Preview the post', 'sb-toolicons-block'),
+		key: 'previewPost'
+	};
+
+export const redo =
+	{
+		icon: icon.redo,
+		label: __('Redo', 'sb-toolicon-block'),
+		description: __( 'Redo the most recent undone change.', 'sb-toolicon-block'),
+		key: 'redo'
+	};
+
 const removeBlock =
 	{
 		text: '',
@@ -597,6 +659,13 @@ const rotate =
 		label: __( 'Rotate', 'sb-toolicons-block'),
 		description: __( 'Rotate the image', 'sb-toolicons-block'),
 		key: 'rotate'
+	};
+
+export const settings =
+	{ icon: icon.cog,
+		label: __( 'Settings','sb-toolicons-block'),
+		description: __( 'Show/hide settings.','sb-toolicons-block'),
+		key: 'settings'
 	};
 
 const stretchWide =
@@ -627,6 +696,14 @@ const superscript =
 		label: __('Superscript','sb-toolicons-block'),
 		description: __( 'Use Superscript to add superscript to your highlighted text.','sb-toolicons-block'),
 		key: 'superscript'
+	};
+
+export const switchToDraft =
+	{
+		text: __( 'Switch to draft', 'sb-toolicons-block'),
+		label: __( 'Switch to draft', 'sb-toolicons-block'),
+		description: __('Save the content as a draft', 'sb-toolicons-block'),
+		key: 'switchToDraft'
 	};
 
 export const tableColumnAfter =
@@ -690,6 +767,21 @@ export const toggleSearchLabel =
 	key: 'toggleSearchLabel'
 	};
 
+export const tools =
+	{
+		icon: icon.edit,
+		label: __( 'Tools', 'sb-toolicon-block'),
+		description: __( 'Choose the method for selecting and interacting with blocks'),
+		key: 'tools'
+	};
+
+export const undo =
+	{
+		icon: icon.undo,
+		label: __('Undo', 'sb-toolicon-block'),
+		description: __( 'Undo the most recent change.', 'sb-toolicon-block'),
+		key: 'undo'
+	};
 
 export const unordered =
 	{
@@ -705,6 +797,14 @@ const upload =
 		label: __('Upload','sb-toolicons-block'),
 		description: __( 'Upload a file.','sb-toolicons-block'),
 		key: 'upload'
+	};
+
+export const update =
+	{
+		text: __('Update', 'sb-toolicons-block'),
+		label: __('Update','sb-toolicons-block'),
+		description: __( 'Update the post. Save your changes','sb-toolicons-block'),
+		key: 'update'
 	};
 
 
@@ -770,19 +870,19 @@ var tooliconsmap = [
 	formatBold, formatItalic, formatStrikethrough,
 	grid, group,
 	heading1, heading2, heading3, heading4, heading5, heading6, html,
-	image, indent, insertAfter, insertBefore,
+	image, indent, info, insertAfter, insertBefore,
 	link, list,
-	media, medialeft, mediaright, moveDown, moveLeft, moveRight, moveTo, moveUp,
+	media, medialeft, mediaright, menuicon, moreToolsAndOptions, moveDown, moveLeft, moveRight, moveTo, moveUp,
 	nobutton,
 	openblocknavigator, opencolorsselector, ordered, outdent,
-	positionLeft, positionCenter, positionRight, preview,
-	removeBlock, replace, rotate,
-	subscript, superscript,	stretchWide, stretchFullWidth,
+	plus, positionLeft, positionCenter, positionRight, preview, previewPost,
+	redo, removeBlock, replace, rotate,
+	settings, subscript, superscript,	stretchWide, stretchFullWidth, switchToDraft,
 	tableColumnAfter, tableColumnBefore, tableColumnDelete,
 	tableRowAfter, tableRowBefore, tableRowDelete,
 	textColor, toggleSearchLabel,
-	unordered,
-	upload,
+	tools,
+	undo, unordered, update, upload,
 	verticalAlignTop, verticalAlignCenter, verticalAlignBottom,
 	zoom
 	];
@@ -845,7 +945,7 @@ export { default as currencyPound } from './library/currency-pound';
 export { default as desktop } from './library/desktop';
 export { default as dragHandle } from './library/drag-handle';
 export { default as download } from './library/download';
-export { default as edit } from './library/edit';
+? export { default as edit } from './library/edit';
 export { default as expand } from './library/expand';
 export { default as external } from './library/external';
 export { default as file } from './library/file';
@@ -877,7 +977,7 @@ export { default as institution } from './library/institution';
 export { default as home } from './library/home';
 export { default as html } from './library/html';
 export { default as image } from './library/image';
-export { default as info } from './library/info';
+y export { default as info } from './library/info';
 export { default as insertAfter } from './library/insert-after';
 export { default as insertBefore } from './library/insert-before';
 export { default as keyboardClose } from './library/keyboard-close';
@@ -914,7 +1014,7 @@ export { default as pin } from './library/pin';
 export { default as plugins } from './library/plugins';
 export { default as plusCircleFilled } from './library/plus-circle-filled';
 export { default as plusCircle } from './library/plus-circle';
-export { default as plus } from './library/plus';
+? export { default as plus } from './library/plus';
 export { default as postComments } from './library/post-comments';
 export { default as postCommentsCount } from './library/post-comments-count';
 export { default as postCommentsForm } from './library/post-comments-form';
@@ -961,7 +1061,7 @@ export { default as tag } from './library/tag';
 export { default as textColor } from './library/text-color';
 export { default as tablet } from './library/tablet';
 export { default as title } from './library/title';
-export { default as tool } from './library/tool';
+? export { default as tool } from './library/tool';
 export { default as trash } from './library/trash';
 export { default as typography } from './library/typography';
 export { default as undo } from './library/undo';

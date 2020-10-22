@@ -12,7 +12,7 @@
  */
 
 import { __ } from '@wordpress/i18n';
-import { alignLeft, chevronDown, moreVertical, positionCenter, table } from '@wordpress/icons';
+import { alignLeft, chevronDown, moreVertical, positionCenter, table, plus, cog} from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
 import { buttonOutside } from './search-block-icons';
@@ -121,8 +121,27 @@ const editTableGroup =
 		tools: [ toolicon.tableRowBefore, toolicon.tableRowAfter, toolicon.tableRowDelete,
 			toolicon.tableColumnBefore, toolicon.tableColumnAfter, toolicon.tableColumnDelete],
 		key: 'editTableGroup'
-	}
+	};
+
+const headerToolbarLeft =
+	{
+		icon: plus,
+		label: __('Document tools', 'sb-toolicons-block'),
+		description: __( '', 'sb-toolicons-block'),
+		tools: [ toolicon.plus, toolicon.tools, toolicon.undo, toolicon.redo, toolicon.info, toolicon.menuicon ],
+		key: 'headerToolbarLeft'
+	};
+
+export const headerSettings =
+	{
+		icon: cog, /* Dummy icon */
+		label: __( 'Edit post settings', 'sb-toolicons-block'),
+		description: __( '', 'sb-toolicons-block'),
+		tools: [ toolicon.switchToDraft, toolicon.previewPost, toolicon.update, toolicon.settings, toolicon.moreToolsAndOptions],
+		key: 'headerSettings'
+	};
 
 
 export { alignmentToolbar, moreNavigationControls, moreRichTextControls, headingGroup,
-	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup, changeButtonPosition, editTableGroup};
+	moreOptions, changeAlignment, replaceGroup, verticallyAlign, cropGroup, changeButtonPosition, editTableGroup,
+headerToolbarLeft};

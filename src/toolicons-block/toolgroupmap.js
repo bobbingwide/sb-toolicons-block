@@ -11,6 +11,8 @@ import {
 	alignmentToolbar,
 	changeAlignment,
 	headingGroup,
+	headerSettings,
+	headerToolbarLeft,
 	moreNavigationControls,
 	moreOptions,
 	moreRichTextControls,
@@ -20,7 +22,9 @@ import {
 const toolgroupmap = [ alignmentToolbar, moreRichTextControls,
 	headingGroup, moreOptions, changeAlignment, replaceGroup,
 	verticallyAlign, cropGroup,
-	moreNavigationControls, changeButtonPosition
+	moreNavigationControls, changeButtonPosition,
+	headerSettings,
+	headerToolbarLeft
 ];
 
 
