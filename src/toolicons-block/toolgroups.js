@@ -12,7 +12,7 @@
  */
 
 import { __ } from '@wordpress/i18n';
-import { alignLeft, chevronDown, moreVertical, positionCenter, table, plus, cog} from '@wordpress/icons';
+import { alignLeft, chevronDown, moreVertical, positionCenter, table, plus, cog, edit } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
 import { buttonOutside } from './search-block-icons';
@@ -123,12 +123,21 @@ const editTableGroup =
 		key: 'editTableGroup'
 	};
 
+export const tools =
+	{
+		icon: edit,
+		label: __( 'Tools', 'sb-toolicons-block'),
+		description: __('Choose the block selection tool', 'sb-toolicons-block'),
+		tools: [ toolicon.tools, toolicon.select ],
+		key: 'tools'
+	};
+
 const headerToolbarLeft =
 	{
 		icon: plus,
 		label: __('Document tools', 'sb-toolicons-block'),
 		description: __( '', 'sb-toolicons-block'),
-		tools: [ toolicon.plus, toolicon.tools, toolicon.undo, toolicon.redo, toolicon.info, toolicon.menuicon ],
+		tools: [ toolicon.plus, tools, toolicon.undo, toolicon.redo, toolicon.info, toolicon.menuicon ],
 		key: 'headerToolbarLeft'
 	};
 
@@ -140,6 +149,8 @@ export const headerSettings =
 		tools: [ toolicon.switchToDraft, toolicon.previewPost, toolicon.update, toolicon.settings, toolicon.moreToolsAndOptions],
 		key: 'headerSettings'
 	};
+
+
 
 
 export { alignmentToolbar, moreNavigationControls, moreRichTextControls, headingGroup,
