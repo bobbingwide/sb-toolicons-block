@@ -16,16 +16,24 @@ import {
 	moreNavigationControls,
 	moreOptions,
 	moreRichTextControls,
+	previewPost,
 	replaceGroup, verticallyAlign, cropGroup, changeButtonPosition, tools
 } from "./toolgroups";
 
-const toolgroupmap = [ alignmentToolbar, moreRichTextControls,
-	headingGroup, moreOptions, changeAlignment, replaceGroup,
-	verticallyAlign, cropGroup,
-	moreNavigationControls, changeButtonPosition,
+const toolgroupmap = [ alignmentToolbar,
+	moreRichTextControls,
+	headingGroup,
+	moreOptions,
+	changeAlignment,
+	replaceGroup,
+	verticallyAlign,
+	cropGroup,
+	moreNavigationControls,
+	changeButtonPosition,
 	headerSettings,
 	headerToolbarLeft,
 	tools,
+	previewPost,
 ];
 
 

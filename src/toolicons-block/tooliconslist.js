@@ -200,6 +200,14 @@ const crop =
 		key: 'crop'
 	};
 
+export const desktop =
+	{
+		text: '',
+		label: __( 'Desktop', 'sb-toolicons-block'),
+		description: __( 'Preview the desktop view.', 'sb-toolicons-block'),
+		key: 'desktop'
+	};
+
 const dragHandle =
 	{
 		icon: icon.dragHandle,
@@ -422,6 +430,15 @@ export const list =
 		key: 'list'
 	};
 
+export const mobile =
+	{
+		text: '',
+		label: __( 'Mobile', 'sb-toolicons-block'),
+		description: __( 'Preview the mobile view.', 'sb-toolicons-block'),
+		key: 'mobile'
+	};
+
+
 const moveDown =
 	{
 		icon: icon.chevronDown,
@@ -621,6 +638,15 @@ const preview =
 		key: 'preview'
 	};
 
+export const previewInNewTab =
+	{
+		icon: icon.external,
+		label: __( 'Preview in new tab', 'sb-toolicons-block'),
+		description: __( 'Preview in a new browser tab.', 'sb-toolicons-block'),
+		key: 'previewInNewTab'
+	};
+
+
 export const previewPost =
 	{
 		text: __( 'Preview', 'sb-toolicons-block'),
@@ -776,6 +802,15 @@ export const tableRowDelete =
 		key: 'tableRowDelete'
 	};
 
+export const tablet =
+	{
+		text: '',
+		label: __( 'Tablet', 'sb-toolicons-block'),
+		description: __( 'Preview the tablet view.', 'sb-toolicons-block'),
+		key: 'tablet'
+	};
+
+
 const textColor =
 	{ icon: icon.textColor,
 	 label: __('Text color','sb-toolicons-block'),
@@ -888,21 +923,21 @@ var tooliconsmap = [
 	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings, searchbuttonInside, searchbuttonOnly, searchbuttonOutside, searchbuttonWithIcon,
 	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
-	dragHandle, duplicate,
+	desktop, dragHandle, duplicate,
 	editAsHTML, editRSSUrl, editTable, editURL,
 	formatBold, formatItalic, formatStrikethrough,
 	grid, group,
 	heading1, heading2, heading3, heading4, heading5, heading6, html,
 	image, indent, info, insertAfter, insertBefore,
 	link, list,
-	media, medialeft, mediaright, menuicon, moreToolsAndOptions, moveDown, moveLeft, moveRight, moveTo, moveUp,
+	media, medialeft, mediaright, menuicon, mobile, moreToolsAndOptions, moveDown, moveLeft, moveRight, moveTo, moveUp,
 	nobutton,
 	openblocknavigator, opencolorsselector, ordered, outdent,
-	plus, positionLeft, positionCenter, positionRight, preview, previewPost,
+	plus, positionLeft, positionCenter, positionRight, preview, previewInNewTab, previewPost,
 	redo, removeBlock, replace, rotate,
 	select, settings, subscript, superscript,	stretchWide, stretchFullWidth, switchToDraft,
 	tableColumnAfter, tableColumnBefore, tableColumnDelete,
-	tableRowAfter, tableRowBefore, tableRowDelete,
+	tableRowAfter, tableRowBefore, tableRowDelete, tablet,
 	textColor, toggleSearchLabel,
 	tools,
 	undo, unordered, update, upload,
@@ -970,7 +1005,7 @@ export { default as dragHandle } from './library/drag-handle';
 export { default as download } from './library/download';
 ? export { default as edit } from './library/edit';
 export { default as expand } from './library/expand';
-export { default as external } from './library/external';
+y export { default as external } from './library/external';
 export { default as file } from './library/file';
 export { default as flipHorizontal } from './library/flip-horizontal';
 export { default as flipVertical } from './library/flip-vertical';

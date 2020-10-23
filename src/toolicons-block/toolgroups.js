@@ -132,6 +132,16 @@ export const tools =
 		key: 'tools'
 	};
 
+export const previewPost =
+	{
+		text: __( 'Preview', 'sb-toolicons-block'),
+		label: __( 'Preview','sb-toolicons-block'),
+		description: __( 'Preview the post', 'sb-toolicons-block'),
+		tools: [ toolicon.desktop, toolicon.tablet, toolicon.mobile, toolicon.previewInNewTab ],
+		key: 'previewPost'
+	};
+
+
 const headerToolbarLeft =
 	{
 		icon: plus,
@@ -146,7 +156,7 @@ export const headerSettings =
 		icon: cog, /* Dummy icon */
 		label: __( 'Edit post settings', 'sb-toolicons-block'),
 		description: __( '', 'sb-toolicons-block'),
-		tools: [ toolicon.switchToDraft, toolicon.previewPost, toolicon.update, toolicon.settings, toolicon.moreToolsAndOptions],
+		tools: [ toolicon.switchToDraft, previewPost, toolicon.update, toolicon.settings, toolicon.moreToolsAndOptions],
 		key: 'headerSettings'
 	};
 
