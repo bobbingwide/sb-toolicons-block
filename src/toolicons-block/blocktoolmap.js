@@ -121,7 +121,7 @@ const blocktoolmap = [
 	{ blockname: 'core/post-hierarchical-terms',tools: [ toolgroup.alignmentToolbar ]	},
 	{ blockname: 'core/post-tags',tools: [ toolgroup.alignmentToolbar ]	},
 	{ blockname: 'core/post-title',tools: [ toolgroup.changeAlignment, toolgroup.headingGroup, toolgroup.alignmentToolbar ]	},
-	{ blockname: 'core/query',tools: [ /* toolgroup.displaySettings, toolicon.listView, toolicon.gridView */ ]	},
+	{ blockname: 'core/query',tools: [ toolicon.displaySettings, toolicon.list, toolicon.grid  ]	},
 
 
 

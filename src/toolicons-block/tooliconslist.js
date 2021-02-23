@@ -230,6 +230,13 @@ export const desktop =
 		key: 'desktop'
 	};
 
+export const displaySettings =
+	{ icon: icon.settings,
+		label: __( 'Display settings','sb-toolicons-block'),
+		description: __( 'Adjust the display settings.','sb-toolicons-block'),
+		key: 'displaySettings'
+	};
+
 const dragHandle =
 	{
 		icon: icon.dragHandle,
