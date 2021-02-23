@@ -13,6 +13,8 @@ import { dragHandle, moveUp, moveDown, moveLeft, moveRight, tooliconsmap } from 
 import * as toolgroup from "./toolgroups";
 import { Transforms } from './transforms';
 
+import classnames from 'classnames';
+
 
 function getBlockTypeOptions( ) {
 	return blocktoolmap.map( ( blocktool ) => MyBlockTypeOption( blocktool ));
@@ -66,9 +68,10 @@ function MyToolIcon( icon ) {
 	} else {
 		//console.log( 'iconkey' + icon.key );
 		var iconOrText = MyIconOrText( icon );
+		var toolClasses = classnames( "tool", icon.key );
 		return (
 			<li key={icon.key}>
-				<span className={"tool"}>{iconOrText}</span>
+				<span className={toolClasses}>{iconOrText}</span>
 				<span className={"label"}>{icon.label}</span>
 				<span className={"description"}>{icon.description}</span>
 			</li>
@@ -108,7 +111,9 @@ function MyToolBar( icon ) {
 	classText += icon.key ;
 	return(
 		<div className={classText} key={icon.key} >
+			<div>
 			{iconOrText}
+			</div>
 		</div>
 	);
 }
@@ -191,18 +196,22 @@ function MoveLeftRightIcons() {
 function blockToolbarControls( blockName, blocktool ) {
 	//console.log( blockName );
 	var block = getBlockType( blockName);
+	console.log( block);
 	if ( !block) {
 		alert( 'Unrecognised block' + blockName );
 		return('');
 	}
+	var className = classnames( "block", blockName.replace( '/', '-' ) );
 	var dragHandleIcon = MyToolBar( dragHandle);
 	var leftright = ( undefined === blocktool.leftright) ? false : blocktool.leftright;
 	var moveUpDownLeftRight = leftright ? MoveLeftRightIcons() : MoveUpDownIcons();
 	return(
 /* components-toolbar-group block-editor-block-toolbar__block-controls */
 <Fragment>
-	<div className={blockName}>
+	<div className={className}>
+		<div>
 		<Icon icon={block.icon.src} />
+		</div>
 	</div>
 	{ dragHandleIcon }
 	{ moveUpDownLeftRight}
@@ -277,7 +286,7 @@ function groupToolbar( toolgroupkey ) {
 function toolIconStyled( selection,
 	blocktype,
 	toolgroup,
-	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms, showLinks, showAllIcons ) {
+	toolicon, showToolBar, showDropDownMenus, showMoreOptions, showTransforms, showLinks, showAllIcons, showIconOnly ) {
 	//var toolIcons = toolIconsList( props );
 	if ( 'blocktype' === selection) {
 		var toolBar = ( showToolBar) ? blockToolbar(blocktype) : '';
@@ -308,10 +317,14 @@ function toolIconStyled( selection,
 			return( <ol className="icons">{icons}</ol>);
 		} else {
 			var icon = tooliconsmap.find(iconobj => iconobj.key === toolicon);
-			var iconOrText = MyIconOrText(icon);
-			iconOrText = MyToolIcon( icon );
-
-			return (<ul className="icons">{iconOrText}</ul>);
+			var iconOrText = ( showIconOnly ) ? MyIconOrText( icon ) : MyToolIcon( icon );
+			console.log( iconOrText);
+			if ( showIconOnly ) {
+				const classes = classnames( 'icon', icon.key );
+				return( <div className={ classes }>{iconOrText}</div> );
+			} else {
+				return (<ul className="icons">{iconOrText}</ul>);
+			}
 		}
 	}
 }

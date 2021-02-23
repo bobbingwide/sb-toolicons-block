@@ -42,6 +42,7 @@ import { getToolGroupOptions } from './toolgroupmap';
  */
 export default function edit ( { attributes, className, isSelected, setAttributes } )   {
 	console.log( "edit being called");
+	console.log( className );
 
 	const onChangeSelection = ( event ) => {
 		setAttributes( { selection: event } );
@@ -83,6 +84,11 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		setAttributes( { showAllIcons: ! attributes.showAllIcons });
 	}
 
+	const onChangeShowIconOnly = ( event ) => {
+		console.log( "Toggle showIconOnly");
+		setAttributes( { showIconOnly: ! attributes.showIconOnly });
+	}
+
 	var toolicon = toolIconStyled( attributes.selection,
 		attributes.blocktype,
 		attributes.toolgroup,
@@ -92,7 +98,8 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 		attributes.showMoreOptions,
 		attributes.showTransforms,
 		attributes.showLinks,
-		attributes.showAllIcons);
+		attributes.showAllIcons,
+		attributes.showIconOnly);
 
 	var selectionOptions = getSelectionOptions();
 	var blockTypeOptions = getBlockTypeOptions();
@@ -136,6 +143,15 @@ export default function edit ( { attributes, className, isSelected, setAttribute
 					<PanelRow>
 						<SelectControl label={__("Icon", 'sb-toolicons-block')} value={attributes.toolicon}
 									   onChange={onChangeToolIcon} options={toolIconOptions}/>
+					</PanelRow>
+					}
+
+					{'toolicon' === attributes.selection &&
+					<PanelRow>
+						<ToggleControl
+							label={__('Show icon only', 'sb-toolicons-block')} checked={!!attributes.showIconOnly}
+							onChange={onChangeShowIconOnly}
+						/>
 					</PanelRow>
 					}
 

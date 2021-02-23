@@ -24,6 +24,7 @@ export default function save( { attributes } ) {
 		attributes.showMoreOptions,
 		attributes.showTransforms,
 		attributes.showLinks,
-		attributes.showAllIcons);
+		attributes.showAllIcons,
+		attributes.showIconOnly);
 	return( <div> { toolicon } </div> );
 }
