@@ -1,5 +1,5 @@
 /**
- * (C) Copyright Bobbing Wide 2020
+ * (C) Copyright Bobbing Wide 2020,2021
  *
  * List of the icons that are used in the toolbars.
  * with the tooltip as the label
@@ -137,12 +137,34 @@ export const searchbuttonWithIcon =
 		key: 'searchbuttonWithIcon'
 	};
 
-
 const cancel =
 	{ text: __('Cancel', 'sb-toolicons-block'),
 		label: __( 'Cancel', 'sb-toolicons-block'),
 		description: __( 'Cancel the changes'),
 		key: 'cancel'
+	};
+
+export const changeDate =
+	{
+		icon: icon.edit,
+		label: __( 'Change date', 'sb-toolicon-block'),
+		description: __( 'Change the post publication date', 'sb-toolicon-block'),
+		key: 'changeDate'
+	};
+
+const chartBar =
+	{
+		icon: icon.chartBar,
+		label: __( 'Bar chart', 'sb-toolicons-block'),
+		description: __( 'Select the Bar chart'),
+		key: 'chartBar'
+	};
+
+const chartLine =
+	{  icon: icon.chartLine,
+		label: __( 'Line chart', 'sb-toolicons-block'),
+		description: __( 'Select the Line chart'),
+		key: 'chartLine'
 	};
 
 const changeContentPosition =
@@ -922,7 +944,7 @@ export { addToReusable, apply, aspectRatio,
 var tooliconsmap = [
 	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings, searchbuttonInside, searchbuttonOnly, searchbuttonOutside, searchbuttonWithIcon,
-	cancel, changeContentPosition, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
+	cancel, changeContentPosition, chartBar, chartLine, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
 	desktop, dragHandle, duplicate,
 	editAsHTML, editRSSUrl, editTable, editURL,
 	formatBold, formatItalic, formatStrikethrough,
@@ -974,8 +996,8 @@ export { default as cancelCircleFilled } from './library/cancel-circle-filled';
 export { default as capturePhoto } from './library/capture-photo';
 export { default as captureVideo } from './library/capture-video';
 export { default as category } from './library/category';
-export { default as chartBar } from './library/chart-bar';
-export { default as chartLine } from './library/chart-line';
+y export { default as chartBar } from './library/chart-bar';
+y export { default as chartLine } from './library/chart-line';
 export { default as check } from './library/check';
 export { default as chevronBackIOS } from './library/chevron-back-ios';
 export { default as chevronDown } from './library/chevron-down';

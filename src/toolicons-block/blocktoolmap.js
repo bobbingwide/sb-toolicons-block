@@ -1,6 +1,6 @@
 /**
  * This toolmap is intended to list all the toolbar icons for each block type.
- * There are currently 131 block types in WordPress core, including variations.
+ * There are currently 170 block types in Gutenberg 10.0.0, including variations.
  * In oik-blocks we flattened variations to `blockname|variation`
  *
  * For each block we'll list the icons in the tools array.
@@ -102,6 +102,28 @@ const blocktoolmap = [
 		variation: null,
 		tools: [  toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
 	},
+
+	{ blockname: 'core/post-author',
+		tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
+	},
+
+	{ blockname: 'core/post-comment',tools: [] 	},
+	{ blockname: 'core/post-comment-author',tools: [] 	},
+	{ blockname: 'core/post-comment-content',tools: [] 	},
+	{ blockname: 'core/post-comment-date',tools: []	},
+	{ blockname: 'core/post-comments',tools: [ toolgroup.changeAlignment, toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-comments-count',tools: [ toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-comments-form',tools: [ toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-content',tools: [ toolgroup.changeAlignment ]	},
+	{ blockname: 'core/post-date',tools: [ toolgroup.alignmentToolbar, toolicon.changeDate ]	},
+	{ blockname: 'core/post-excerpt',tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls  ]	},
+	{ blockname: 'core/post-featured-image',tools: [ toolgroup.changeAlignment, toolicon.replace ]},
+	{ blockname: 'core/post-hierarchical-terms',tools: [ toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-tags',tools: [ toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-title',tools: [ toolgroup.changeAlignment, toolgroup.headingGroup, toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/query',tools: [ /* toolgroup.displaySettings, toolicon.listView, toolicon.gridView */ ]	},
+
+
 
 	{ blockname: 'core/preformatted',
 	  tools: [ toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls ]
