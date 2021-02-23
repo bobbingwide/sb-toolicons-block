@@ -18,10 +18,10 @@
 		"l10n": "l10n sb-toolicons-block"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^12.1.1"
+		"@wordpress/scripts": "^12.6.1"
 	},
 	"dependencies": {
-		"@wordpress/blocks": "^6.22.0",
-		"@wordpress/icons": "^2.6.0"
+		"@wordpress/blocks": "^6.25.2",
+		"@wordpress/icons": "^2.9.1"
 	}
 }
