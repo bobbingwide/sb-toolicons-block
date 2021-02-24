@@ -3,7 +3,7 @@
  * Plugin Name:     SB Toolicons block
  * Plugin URI: 		https://www.oik-plugins.com/oik-plugins/sb-toolicons-block
  * Description:     Helps you to document tool icons for a block.
- * Version:         0.2.0
+ * Version:         0.3.0
  * Author:          bobbingwide
  * Author URI: 		https://www.bobbingwide.com/about-bobbing-wide
  * License:         GPL-2.0-or-later

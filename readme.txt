@@ -2,8 +2,8 @@
 Contributors:      bobbingwide
 Tags:              block, toolicons, toolbar, icons
 Requires at least: 5.5.1
-Tested up to:      5.5.1
-Stable tag:        0.2.0
+Tested up to:      5.7-beta3
+Stable tag:        0.3.0
 Requires PHP:      7.2.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -40,6 +40,9 @@ If you do wish to modify the code then you can find instructions in the src fold
 3. Tool icon variation showing all icons
 
 == Upgrade Notice ==
+= 0.3.0 =
+Now supports FSE blocks, up to Gutenberg 10.0.2
+
 = 0.2.0 = 
 Now supports most of the core blocks ( 42 ) excluding those used in Full Site Editing.  
 
@@ -51,6 +54,18 @@ Initial version copied from sb-children-block, which uses wp-scripts and oik-blo
 where the use of `import { iconname } from '@wordpress/icons';` broke the Image block in Gutenberg 9.0.0
 
 == Changelog ==
+= 0.3.0 =
+* Added: FSE blocks
+* Changed: Update packages - for new icons
+* Changed: Add logic for Show icon only toggle,[github bobbingwide sb-toolicons-block issues 9]
+* Changed: Added some support for documenting the editor post header toolbar areas,[github bobbingwide sb-toolicons-block issues 11]
+* Changed: Copy selectIcon,[github bobbingwide sb-toolicons-block issues 4]
+* Tested: With Gutenberg 10.0.2
+* Tested: With WordPress 5.7-beta3 and WordPress Multi Site
+* Tested: With WordPress 5.6.2 and WordPress Multi Site
+* Tested: With PHP 8.0
+* Built: With node v12.8.4 and npm 6.4.11
+
 = 0.2.0 = 
 * Added: Add Show all icons toggle for Tool icon variation,[github bobbingwide sb-toolicons-block issues 9]
 * Added: Add 3 variations,[github bobbingwide sb-toolicons-block issues 7]
