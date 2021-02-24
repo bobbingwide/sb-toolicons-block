@@ -191,6 +191,31 @@ const code =
 		key: 'code'
 	};
 
+
+export const contentJustificationCenter =
+	{
+		icon: icon.justifyCenter,
+		label: __( 'Justify items center','sb-toolicons-block'),
+		description: __( 'Justify items centrally','sb-toolicons-block'),
+		key: 'contentJustificationCenter'
+	};
+
+export const contentJustificationLeft =
+	{
+		icon: icon.justifyLeft,
+		label: __( 'Justify items left','sb-toolicons-block'),
+		description: __( 'Justify items to the left','sb-toolicons-block'),
+		key: 'contentJustificationLeft'
+	};
+
+export const contentJustificationRight =
+	{
+		icon: icon.justifyRight,
+		label: __( 'Justify items right','sb-toolicons-block'),
+		description: __( 'Justify items to the right','sb-toolicons-block'),
+		key: 'contentJustificationRight'
+	};
+
 const convertToBlocks =
 	{
 		text: __('Convert to blocks', 'sb-toolicons-block'),
@@ -220,6 +245,14 @@ const crop =
 		label: __('Crop', 'sb-toolicons-block'),
 		description: __( 'Crop the image.', 'sb-toolicons-block'),
 		key: 'crop'
+	};
+
+export const deleteSiteLogo =
+	{
+		icon: icon.trash,
+		label: __( 'Delete Site Logo', 'sb-toolicons-block'),
+		description: __( 'Remove the site logo image.', 'sb-toolicons-block'),
+		key: 'deleteSiteLogo'
 	};
 
 export const desktop =
@@ -951,7 +984,9 @@ export { addToReusable, apply, aspectRatio,
 var tooliconsmap = [
 	addsubmenu,	addToReusable, alignCenter, alignLeft, alignRight, apply, aspectRatio,
 	blockSettings, searchbuttonInside, searchbuttonOnly, searchbuttonOutside, searchbuttonWithIcon,
-	cancel, changeContentPosition, chartBar, chartLine, chevronDown, code, convertToBlocks, converttoRegularBlocks, copy, crop,
+	cancel, changeContentPosition, chartBar, chartLine, chevronDown, code,
+	contentJustificationCenter,	contentJustificationLeft, contentJustificationRight,
+	convertToBlocks, converttoRegularBlocks, copy, crop,
 	desktop, dragHandle, duplicate,
 	editAsHTML, editRSSUrl, editTable, editURL,
 	formatBold, formatItalic, formatStrikethrough,

@@ -12,10 +12,11 @@
  */
 
 import { __ } from '@wordpress/i18n';
-import { alignLeft, chevronDown, moreVertical, positionCenter, table, plus, cog, edit } from '@wordpress/icons';
+import { alignLeft, chevronDown, moreVertical, positionCenter, table, plus, cog, edit, justifyLeft } from '@wordpress/icons';
 import * as toolicon from './tooliconslist';
 import { HeadingLevelIcon } from './heading-level-icon';
 import { buttonOutside } from './search-block-icons';
+import {contentJustificationRightIcon} from "./tooliconslist";
 
 const alignmentToolbar =
 	{
@@ -159,6 +160,15 @@ export const headerSettings =
 		tools: [ toolicon.switchToDraft, previewPost, toolicon.update, toolicon.settings, toolicon.moreToolsAndOptions],
 		key: 'headerSettings'
 	};
+
+export const changeJustification =
+	{
+		icon: justifyLeft,
+		label: __( 'Change items justification', 'sb-toolicons-block'),
+		description: __( '', 'sb-toolicons-block'),
+		tools: [ toolicon.contentJustificationLeft, toolicon.contentJustificationCenter, toolicon.contentJustificationRight ],
+		key: 'changeJustification'
+	}
 
 
 

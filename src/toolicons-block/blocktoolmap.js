@@ -38,7 +38,7 @@ const blocktoolmap = [
 
 	{
 		blockname: 'core/buttons',
-		tools: [toolgroup.changeAlignment]
+		tools: [toolgroup.changeAlignment, toolgroup.changeJustification]
 	},
 
 	{ blockname: 'core/calendar',
@@ -97,6 +97,7 @@ const blocktoolmap = [
 		leftright: true },
 
 	{blockname: 'core/nextpage', tools: []},
+	{ blockname: 'core/page-list',tools: [] 	},
 
 	{ blockname: 'core/paragraph',
 		variation: null,
@@ -119,9 +120,15 @@ const blocktoolmap = [
 	{ blockname: 'core/post-excerpt',tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls  ]	},
 	{ blockname: 'core/post-featured-image',tools: [ toolgroup.changeAlignment, toolicon.replace ]},
 	{ blockname: 'core/post-hierarchical-terms',tools: [ toolgroup.alignmentToolbar ]	},
+	{ blockname: 'core/post-navigation-link',tools: [ toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic] 	},
 	{ blockname: 'core/post-tags',tools: [ toolgroup.alignmentToolbar ]	},
 	{ blockname: 'core/post-title',tools: [ toolgroup.changeAlignment, toolgroup.headingGroup, toolgroup.alignmentToolbar ]	},
 	{ blockname: 'core/query',tools: [ toolicon.displaySettings, toolicon.list, toolicon.grid  ]	},
+	{ blockname: 'core/query-loop',tools: [ ] },
+	{ blockname: 'core/query-pagination',tools: [ ] },
+	{ blockname: 'core/query-pagination-next',tools: [ ] },
+	{ blockname: 'core/query-pagination-numbers',tools: [ ] },
+	{ blockname: 'core/query-pagination-previous',tools: [ ] },
 
 
 
@@ -151,9 +158,13 @@ const blocktoolmap = [
 
 	{ blockname: 'core/separator', tools: []},
 	{ blockname: 'core/shortcode', tools: []},
+	{ blockname: 'core/site-logo',tools: [ toolgroup.changeAlignment, toolicon.replace, toolicon.deleteSiteLogo ] },
+	{ blockname: 'core/site-tagline',tools: [ toolgroup.alignmentToolbar ] },
+	{ blockname: 'core/site-title',tools: [ toolgroup.changeAlignment, toolgroup.alignmentToolbar, toolgroup.headingGroup ] },
+
 	{ blockname: 'core/social-link', tools: [], leftright: true},
 	{ blockname: 'core/social-links', tools: [ toolgroup.changeAlignment ]},
-	{ blockname: 'core/spacer', tools: []},
+	{ blockname: 'core/spacer', tools: [toolgroup.changeAlignment]},
 
 	{blockname: 'core/table',
 		tools: [ toolgroup.changeAlignment, toolgroup.editTableGroup, toolgroup.alignmentToolbar, toolicon.formatBold, toolicon.formatItalic, toolicon.link, toolgroup.moreRichTextControls]
